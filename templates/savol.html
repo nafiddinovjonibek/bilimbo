@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ savol.order }}-savol — {{ savol.bolimcha.name }} — Bilimbo{% endblock %}
+
+{% block extra_style %}
+<style>
+    .savol-card {
+        position: relative;
+        z-index: 2;
+        max-width: 580px;
+        margin: 36px auto 160px;
+        background: #fff;
+        border-radius: 28px;
+        padding: 28px 30px 32px;
+        box-shadow: 0 10px 0 rgba(53, 64, 125, .18);
+    }
+    .savol-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+    }
+    .savol-raqam { font-size: 17px; font-weight: 800; color: #6c76ad; }
+    .daraja-badge {
+        padding: 4px 16px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 800;
+        color: #fff;
+    }
+    .daraja-badge.oson     { background: var(--green); }
+    .daraja-badge.orta     { background: #dfae23; }
+    .daraja-badge.qiyin    { background: var(--orange); }
+    .daraja-badge.tanqidiy { background: var(--purple); }
+    .potentsial {
+        font-size: 14px;
+        font-weight: 700;
+        color: #6c76ad;
+        margin-bottom: 14px;
+    }
+    .savol-matn {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.45;
+        margin: 12px 0 22px;
+    }
+    .variant-btn {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        padding: 13px 16px;
+        margin-bottom: 12px;
+        background: #fff;
+        border: 3px solid #dbe4ff;
+        border-radius: 18px;
+        font-family: inherit;
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--ink);
+        text-align: left;
+        cursor: pointer;
+        transition: transform .12s, border-color .12s, background .12s;
+    }
+    .variant-btn:hover { transform: scale(1.02); border-color: var(--sky-top); background: #f2faff; }
+    .variant-btn:active { transform: scale(.98); }
+    .variant-harf {
+        flex-shrink: 0;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        color: #fff;
+    }
+    .variant-btn:nth-of-type(1) .variant-harf { background: var(--coral); }
+    .variant-btn:nth-of-type(2) .variant-harf { background: var(--green); }
+    .variant-btn:nth-of-type(3) .variant-harf { background: var(--purple); }
+    .xato-msg {
+        background: #ffecec;
+        border: 3px solid #ffc9c9;
+        color: #e23c3c;
+        border-radius: 16px;
+        padding: 10px 16px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        animation: shake .4s;
+    }
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-7px); }
+        75% { transform: translateX(7px); }
+    }
+
+    /* Yutuq */
+    .yutuq { text-align: center; padding: 12px 0 4px; }
+    .yutuq .stars-big {
+        font-size: 58px;
+        letter-spacing: 6px;
+        display: inline-block;
+        animation: stars-pop .6s cubic-bezier(.34, 1.56, .64, 1);
+    }
+    @keyframes stars-pop {
+        from { scale: 0; rotate: -20deg; }
+        to   { scale: 1; rotate: 0deg; }
+    }
+    .yutuq h2 { font-size: 28px; margin: 10px 0 6px; }
+    .yutuq p { font-size: 16px; font-weight: 700; color: #6c76ad; margin-bottom: 22px; }
+    .yutuq .btn { margin: 0 6px 10px; }
+
+    @media (max-width: 640px) {
+        .savol-card {
+            margin: 18px 14px 120px;
+            padding: 22px 18px 26px;
+            border-radius: 22px;
+        }
+        .savol-matn { font-size: 19px; margin: 10px 0 18px; }
+        .variant-btn { font-size: 16px; padding: 12px 14px; gap: 11px; }
+        .variant-harf { width: 34px; height: 34px; font-size: 15px; }
+        .yutuq .stars-big { font-size: 48px; }
+        .yutuq h2 { font-size: 24px; }
+        .yutuq .btn { display: block; margin: 0 0 12px; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="savol-card">
+    {% if yutuq %}
+        <div class="yutuq">
+            <span class="stars-big">{{ stars_str }}</span>
+            <h2>Barakalla! 🎉</h2>
+            <p>Siz {{ stars }} ta yulduz yutdingiz!</p>
+            {% if next_savol %}
+                <a href="{% url 'savol' next_savol.pk %}" class="btn btn-green">Keyingi savol ➡️</a>
+            {% else %}
+                <p style="font-size:20px; color:var(--ink)">Siz bu bo'limchani tugatdingiz! 🏆</p>
+            {% endif %}
+            <a href="{% url 'bolimcha' savol.bolimcha.pk %}" class="btn btn-outline">Savollar xaritasi</a>
+        </div>
+    {% else %}
+        <div class="savol-head">
+            <span class="savol-raqam">{{ savol.order }}-savol / 10</span>
+            <span class="daraja-badge {{ savol.daraja }}">{{ savol.get_daraja_display }}</span>
+        </div>
+        <div class="potentsial">Hozir topsangiz: {{ potentsial_str }}</div>
+
+        {% if xato %}
+            <div class="xato-msg">Xato! Yana urinib ko'ring 💪</div>
+        {% endif %}
+
+        <div class="savol-matn">{{ savol.matn }}</div>
+
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="javob" value="a" class="variant-btn">
+                <span class="variant-harf">A</span> {{ savol.variant_a }}
+            </button>
+            <button type="submit" name="javob" value="b" class="variant-btn">
+                <span class="variant-harf">B</span> {{ savol.variant_b }}
+            </button>
+            <button type="submit" name="javob" value="c" class="variant-btn">
+                <span class="variant-harf">C</span> {{ savol.variant_c }}
+            </button>
+        </form>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ bolimcha.name }} — Bilimbo{% endblock %}
+
+{% block extra_style %}
+<style>
+    .progress-pill {
+        display: inline-block;
+        background: #fff;
+        padding: 6px 20px;
+        border-radius: 999px;
+        font-size: 17px;
+        font-weight: 800;
+        color: #b8860b;
+        box-shadow: 0 4px 0 rgba(53, 64, 125, .12);
+        margin-top: 10px;
+    }
+
+    /* ===== Savollar yo'li ===== */
+    .savol-yol {
+        position: relative;
+        max-width: 520px;
+        margin: 20px auto 0;
+        height: 1350px;
+    }
+    .yol-svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    .yol-svg path {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 6;
+        stroke-dasharray: 1 15;
+        stroke-linecap: round;
+        opacity: .95;
+    }
+    .savol-node {
+        position: absolute;
+        transform: translateX(-50%);
+        width: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        text-decoration: none;
+        color: var(--ink);
+        animation: pop-in .45s cubic-bezier(.34, 1.56, .64, 1) backwards;
+    }
+    .pos-1  { left: 50%; top: 15px;   animation-delay: .05s; }
+    .pos-2  { left: 20%; top: 140px;  animation-delay: .13s; }
+    .pos-3  { left: 44%; top: 265px;  animation-delay: .21s; }
+    .pos-4  { left: 80%; top: 390px;  animation-delay: .29s; }
+    .pos-5  { left: 52%; top: 515px;  animation-delay: .37s; }
+    .pos-6  { left: 18%; top: 640px;  animation-delay: .45s; }
+    .pos-7  { left: 46%; top: 765px;  animation-delay: .53s; }
+    .pos-8  { left: 82%; top: 890px;  animation-delay: .61s; }
+    .pos-9  { left: 50%; top: 1015px; animation-delay: .69s; }
+    .pos-10 { left: 50%; top: 1148px; animation-delay: .77s; }
+    .savol-circle {
+        position: relative;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: 800;
+        color: #fff;
+        transition: transform .18s cubic-bezier(.34, 1.56, .64, 1);
+    }
+    /* Final (tanqidiy) savol — kattaroq */
+    .pos-10 .savol-circle { width: 106px; height: 106px; font-size: 40px; }
+    a.savol-node:hover .savol-circle { transform: scale(1.12) rotate(-4deg); }
+    a.savol-node:active .savol-circle { transform: scale(.95); }
+    .daraja-oson .savol-circle     { background: var(--green);  box-shadow: 0 6px 0 #3fae4a; }
+    .daraja-orta .savol-circle     { background: var(--yellow); box-shadow: 0 6px 0 #dfae23; }
+    .daraja-qiyin .savol-circle    { background: var(--orange); box-shadow: 0 6px 0 #e0802a; }
+    .daraja-tanqidiy .savol-circle { background: var(--purple); box-shadow: 0 6px 0 #8250cf; }
+    .savol-node.qulflangan .savol-circle {
+        background: #c7cde4;
+        box-shadow: 0 6px 0 #a6adcc;
+        font-size: 26px;
+    }
+    .savol-node.qulflangan { opacity: .8; }
+
+    /* Hozirgi savol — pulsatsiyalanuvchi halqa */
+    .hozirgi .savol-circle { animation: bob 2.6s ease-in-out infinite; }
+    .hozirgi .savol-circle::after {
+        content: '';
+        position: absolute;
+        inset: -16px;
+        border-radius: 50%;
+        border: 4px solid rgba(255, 255, 255, .95);
+        animation: halqa 1.6s ease-out infinite;
+    }
+    @keyframes halqa {
+        0%   { scale: .82; opacity: 1; }
+        100% { scale: 1.18; opacity: 0; }
+    }
+
+    .daraja-pill {
+        font-size: 12px;
+        font-weight: 800;
+        padding: 2px 12px;
+        border-radius: 999px;
+        background: #fff;
+        box-shadow: 0 3px 0 rgba(53, 64, 125, .12);
+    }
+    .daraja-oson .daraja-pill     { color: #2e9739; }
+    .daraja-orta .daraja-pill     { color: #b8860b; }
+    .daraja-qiyin .daraja-pill    { color: #d1691e; }
+    .daraja-tanqidiy .daraja-pill { color: #8250cf; }
+    .qulflangan .daraja-pill      { color: #8b93b8; }
+    .node-stars { font-size: 14px; min-height: 18px; letter-spacing: 2px; }
+    .back-row { text-align: center; margin-top: 30px; }
+
+    @media (max-width: 640px) {
+        .savol-yol { height: 1350px; }
+        .savol-node { width: 110px; }
+        .savol-circle { width: 76px; height: 76px; font-size: 28px; border-width: 4px; }
+        .pos-10 .savol-circle { width: 94px; height: 94px; font-size: 36px; }
+        .savol-node.qulflangan .savol-circle { font-size: 23px; }
+        .hozirgi .savol-circle::after { inset: -13px; border-width: 3px; }
+        .daraja-pill { font-size: 11px; padding: 2px 10px; }
+        .progress-pill { font-size: 15px; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-title">
+        <h1>{{ bolimcha.emoji }} {{ bolimcha.name }}</h1>
+        <p>Yo'l bo'ylab yurib, savollarni yeching!</p>
+        <span class="progress-pill">⭐ {{ jami_yulduz }} / {{ max_yulduz }}</span>
+    </div>
+
+    <div class="savol-yol">
+        <svg class="yol-svg" viewBox="0 0 100 1350" preserveAspectRatio="none">
+            <path vector-effect="non-scaling-stroke"
+                  d="M50,60 C40,105 28,140 20,185 S36,265 44,310 S72,390 80,435
+                     S58,515 52,560 S26,640 18,685 S38,765 46,810
+                     S74,890 82,935 S56,1015 50,1060 S50,1160 50,1200"/>
+        </svg>
+        {% for item in savollar %}
+            {% if item.ochiq %}
+                <a href="{% url 'savol' item.savol.pk %}"
+                   class="savol-node pos-{{ forloop.counter }} daraja-{{ item.savol.daraja }}{% if item.hozirgi %} hozirgi{% endif %}">
+                    <div class="savol-circle">{{ item.savol.order }}</div>
+                    <span class="daraja-pill">{{ item.savol.get_daraja_display }}</span>
+                    <span class="node-stars">{{ item.stars_str }}</span>
+                </a>
+            {% else %}
+                <span class="savol-node pos-{{ forloop.counter }} daraja-{{ item.savol.daraja }} qulflangan">
+                    <div class="savol-circle">🔒</div>
+                    <span class="daraja-pill">{{ item.savol.get_daraja_display }}</span>
+                    <span class="node-stars"></span>
+                </span>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="back-row">
+        <a href="{% url 'bolim' bolimcha.bolim.order %}" class="btn">⬅️ Orqaga</a>
+    </div>
+</div>
+{% endblock %}

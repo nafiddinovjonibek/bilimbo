@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Bilimbo — o'yin olami{% endblock %}
+
+{% block extra_style %}
+<style>
+    /* ===== Sarguzasht xaritasi ===== */
+    .path-map {
+        position: relative;
+        max-width: 1000px;
+        margin: 20px auto 0;
+        height: 420px;
+    }
+    .path-line {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+    }
+    .path-line path {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 6;
+        stroke-dasharray: 1 15;
+        stroke-linecap: round;
+        opacity: .95;
+    }
+    .path-mobile { display: none; }
+    .island {
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    /* Desktop: gorizontal to'lqin */
+    .isl-1 { left: 12%; top: 20px; }
+    .isl-2 { left: 31%; top: 160px; }
+    .isl-3 { left: 50%; top: 40px; }
+    .isl-4 { left: 69%; top: 180px; }
+    .isl-5 { left: 88%; top: 60px; }
+
+    /* Ketma-ket pop (SVG'lar oldinda turgani uchun nth-child ishlamaydi) */
+    .island.isl-1 { animation-delay: .05s; }
+    .island.isl-2 { animation-delay: .19s; }
+    .island.isl-3 { animation-delay: .33s; }
+    .island.isl-4 { animation-delay: .47s; }
+    .island.isl-5 { animation-delay: .61s; }
+    .island.isl-1 .bubble { animation-delay: 0s; }
+    .island.isl-2 .bubble { animation-delay: -.7s; }
+    .island.isl-3 .bubble { animation-delay: -1.4s; }
+    .island.isl-4 .bubble { animation-delay: -2.1s; }
+    .island.isl-5 .bubble { animation-delay: -2.8s; }
+
+    /* Kirmagan mehmon uchun */
+    .welcome {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .welcome .big-emoji { font-size: 80px; animation: bob 3s ease-in-out infinite; display: inline-block; }
+    .welcome h1 {
+        font-size: clamp(30px, 5vw, 48px);
+        font-weight: 800;
+        text-shadow: 0 3px 0 rgba(255, 255, 255, .6);
+        margin: 10px 0 8px;
+    }
+    .welcome p { font-size: 19px; font-weight: 700; color: #4a55a0; margin-bottom: 26px; }
+    .welcome .btn { font-size: 20px; padding: 14px 36px; }
+
+    @media (max-width: 720px) {
+        /* Mobil: vertikal so'qmoq */
+        .path-map { height: 730px; max-width: 420px; margin-top: 8px; }
+        .path-desktop { display: none; }
+        .path-mobile { display: block; }
+        .isl-1 { left: 50%; top: 10px; }
+        .isl-2 { left: 24%; top: 150px; }
+        .isl-3 { left: 62%; top: 290px; }
+        .isl-4 { left: 26%; top: 430px; }
+        .isl-5 { left: 58%; top: 570px; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% if user.is_authenticated %}
+        <div class="page-title">
+            <h1>Salom, {{ user.first_name|default:user.username }}! 👋</h1>
+            <p>Bugun qaysi o'yinni o'ynaymiz?</p>
+        </div>
+
+        <div class="path-map">
+            <svg class="path-line path-desktop" viewBox="0 0 100 420" preserveAspectRatio="none">
+                <path vector-effect="non-scaling-stroke"
+                      d="M12,85 C18,190 25,218 31,225 S44,140 50,105 S63,238 69,245 S82,160 88,125"/>
+            </svg>
+            <svg class="path-line path-mobile" viewBox="0 0 100 730" preserveAspectRatio="none">
+                <path vector-effect="non-scaling-stroke"
+                      d="M50,62 C40,110 30,160 24,202 S52,300 62,342 S34,440 26,482 S50,580 58,622"/>
+            </svg>
+            {% for b in bolimlar %}
+                <a href="{% url 'bolim' b.order %}" class="island isl-{{ forloop.counter }}">
+                    <div class="bubble bubble-c{% cycle '1' '2' '3' '4' '5' %}"><span class="num">{{ b.order }}</span>{{ b.emoji }}</div>
+                    <span class="island-name">{{ b.name }}</span>
+                </a>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="welcome">
+            <span class="big-emoji">🎈</span>
+            <h1>Bilimbo o'yin olamiga xush kelibsiz!</h1>
+            <p>O'ynaymiz, o'rganamiz, quvonamiz!</p>
+            <a href="{% url 'register' %}" class="btn btn-green">Boshlaymiz! 🚀</a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

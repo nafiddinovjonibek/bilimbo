@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ bolim.name }} — Bilimbo{% endblock %}
+
+{% block extra_style %}
+<style>
+    .sub-islands {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: clamp(24px, 6vw, 70px);
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .star-count {
+        background: #fff;
+        padding: 4px 14px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 800;
+        color: #b8860b;
+        box-shadow: 0 3px 0 rgba(53, 64, 125, .12);
+    }
+    .back-row { text-align: center; margin-top: 56px; }
+
+    @media (max-width: 640px) {
+        .sub-islands { gap: 26px 18px; margin-top: 28px; }
+        .star-count { font-size: 13px; }
+        .back-row { margin-top: 36px; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-title">
+        <h1>{{ bolim.emoji }} {{ bolim.name }}</h1>
+        <p>Qaysi o'yinchani tanlaysiz?</p>
+    </div>
+
+    <div class="sub-islands">
+        {% for item in items %}
+            <a href="{% url 'bolimcha' item.sub.pk %}" class="island">
+                <div class="bubble bubble-c{% cycle '2' '4' '5' %}"><span class="num">{{ item.sub.order }}</span>{{ item.sub.emoji }}</div>
+                <span class="island-name">{{ item.sub.name }}</span>
+                <span class="star-count">⭐ {{ item.jami_yulduz }} / {{ item.max_yulduz }}</span>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="back-row">
+        <a href="{% url 'home' %}" class="btn">⬅️ Xaritaga qaytish</a>
+    </div>
+</div>
+{% endblock %}

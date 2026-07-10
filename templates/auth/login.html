@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Kirish — Bilimbo{% endblock %}
+
+{% block content %}
+<div class="auth-card">
+    <div class="auth-emoji">🔑</div>
+    <h1>Tizimga kirish</h1>
+    <p class="auth-sub">Yana o'ynashga tayyormisiz?</p>
+
+    {% if form.non_field_errors %}
+        <div class="form-errors">
+            {% for error in form.non_field_errors %}{{ error }}{% endfor %}
+        </div>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="field">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}<div class="errors">{{ field.errors }}</div>{% endif %}
+            </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-green">Kirish 🎮</button>
+    </form>
+
+    <p class="auth-switch">Hisobingiz yo'qmi? <a href="{% url 'register' %}">Ro'yxatdan o'ting</a></p>
+</div>
+{% endblock %}
