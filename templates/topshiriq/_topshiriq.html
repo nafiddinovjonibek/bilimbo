@@ -1,0 +1,247 @@
+{% load static %}
+{# Bitta topshiriqning tanasi. Kvest ichida ham, alohida ham shu partial ishlatiladi. #}
+<div class="topshiriq" data-tur="{{ h.savol.tur }}" data-pk="{{ h.savol.pk }}">
+
+    {% if h.savol.sarlavha %}
+        <div class="topshiriq-nom">{{ h.savol.sarlavha }}</div>
+    {% endif %}
+
+    <div class="savol-matn">
+        {{ h.savol.matn|linebreaksbr }}
+        <button type="button" class="ovoz-btn" data-say="{{ h.savol.aytiladigan_matn }}"
+                aria-label="Savolni eshitish">🔊</button>
+    </div>
+
+    {% if h.savol.audio_fayl %}
+        {# Haqiqiy ovoz — matn o'qilsa javob oshkor bo'lib qolardi #}
+        <button type="button" class="audio-btn" data-play="{% static h.savol.audio_fayl %}">
+            🔊 Audioni eshitish
+        </button>
+    {% elif h.savol.audio_matn %}
+        <button type="button" class="audio-btn" data-say="{{ h.savol.audio_matn }}">
+            🔊 Audioni eshitish
+        </button>
+    {% endif %}
+
+    {% if h.savol.rasm and h.savol.tur != 'qurish' %}
+        {# "Yig'ish" turida bu rasm namuna sifatida quyiroqda ko'rsatiladi #}
+        <img class="topshiriq-rasm" src="{% static h.savol.rasm %}" alt="{{ h.savol.sarlavha }}">
+    {% endif %}
+
+    {# ===== Variantdan tanlash ===== #}
+    {% if h.savol.tur == 'tanlov' %}
+        <div class="variantlar">
+            {% for v in h.variantlar %}
+                {% if kvestda %}
+                    <label class="variant {% if v.rang %}variant-rang{% endif %}{% if v.rasm %} variant-rasmli{% endif %}"
+                           {% if v.rang %}style="--v-rang: {{ v.rang }}"{% endif %}>
+                        <input type="radio" name="javob_{{ h.savol.pk }}" value="{{ v.pk }}" required>
+                        {% include 'topshiriq/_variant_ichi.html' with v=v %}
+                    </label>
+                {% else %}
+                    <button type="submit" name="javob_{{ h.savol.pk }}" value="{{ v.pk }}"
+                            class="variant {% if v.rang %}variant-rang{% endif %}{% if v.rasm %} variant-rasmli{% endif %}"
+                            {% if v.rang %}style="--v-rang: {{ v.rang }}"{% endif %}>
+                        {% include 'topshiriq/_variant_ichi.html' with v=v %}
+                    </button>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    {# ===== Ketma-ketlikka joylash (drag & drop) ===== #}
+    {% elif h.savol.tur == 'tartib' %}
+        <p class="yordam">Kartochkalarni sudrab yoki bosib joyini almashtir.</p>
+        <div class="tartib" data-pk="{{ h.savol.pk }}">
+            {% for v in h.variantlar %}
+                <div class="chip{% if v.rasm %} chip-rasmli{% endif %}"
+                     draggable="true" data-pk="{{ v.pk }}" tabindex="0">
+                    <span class="chip-raqam"></span>
+                    {% if v.rasm %}
+                        <img class="chip-rasm" src="{% static v.rasm %}"
+                             alt="{% if not h.savol.variant_matni_korinsin %}{{ v.matn }}{% endif %}">
+                    {% elif v.emoji %}
+                        <span class="chip-emoji">{{ v.emoji }}</span>
+                    {% endif %}
+                    {% if v.matn and h.savol.variant_matni_korinsin or v.matn and not v.rasm %}
+                        <span class="chip-matn">{{ v.matn }}</span>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+    {# ===== Juftlarni moslashtirish ===== #}
+    {% elif h.savol.tur == 'moslash' %}
+        <p class="yordam">Chapdagini bosing, so'ng unga mos o'ngdagini bosing.</p>
+        <div class="moslash" data-pk="{{ h.savol.pk }}">
+            {# Bog'lanishlar shu qatlamda ip ko'rinishida chiziladi #}
+            <svg class="moslash-ip" aria-hidden="true"></svg>
+            <div class="moslash-ustun chap">
+                {% for v in h.variantlar %}
+                    <button type="button" data-yon="chap" data-pk="{{ v.pk }}"
+                            class="juft-btn{% if v.rasm %} juft-rasmli{% endif %}">
+                        {% if v.rasm %}
+                            <img class="juft-rasm" src="{% static v.rasm %}" alt="{{ v.matn }}">
+                        {% else %}
+                            {% if v.emoji %}<span class="juft-emoji">{{ v.emoji }}</span>{% endif %}
+                            <span class="juft-matn">{{ v.matn }}</span>
+                        {% endif %}
+                    </button>
+                    <input type="hidden" name="moslash_{{ h.savol.pk }}_{{ v.pk }}"
+                           id="moslash_{{ h.savol.pk }}_{{ v.pk }}" value="">
+                {% endfor %}
+            </div>
+            <div class="moslash-ustun ong">
+                {% for v in h.juftlar %}
+                    <button type="button" data-yon="ong" data-pk="{{ v.pk }}"
+                            class="juft-btn{% if v.juft_rasm %} juft-rasmli{% endif %}">
+                        {% if v.juft_rasm %}
+                            <img class="juft-rasm" src="{% static v.juft_rasm %}" alt="{{ v.juft_matn }}">
+                        {% else %}
+                            {% if v.juft_emoji %}<span class="juft-emoji">{{ v.juft_emoji }}</span>{% endif %}
+                            <span class="juft-matn">{{ v.juft_matn }}</span>
+                        {% endif %}
+                    </button>
+                {% endfor %}
+            </div>
+        </div>
+
+    {# ===== Bir nechta variantni tanlash / xarid ===== #}
+    {% elif h.savol.tur == 'koptanlov' or h.savol.tur == 'xarid' %}
+        {% if h.savol.tur == 'xarid' %}
+            <p class="yordam">Kerakli mahsulotlarni bosing. Jami pulingizga
+                to'g'ri kelishi kerak.</p>
+            <div class="hisob" data-byudjet="{{ h.savol.byudjet }}">
+                <span class="hisob-jami">0</span> / {{ h.savol.byudjet }} tanga
+            </div>
+        {% else %}
+            <p class="yordam">Kerakli bo'lganlarning hammasini belgilang.</p>
+        {% endif %}
+        <div class="variantlar koptanlov" data-pk="{{ h.savol.pk }}">
+            {% for v in h.variantlar %}
+                <label class="variant{% if v.rasm %} variant-rasmli{% endif %}">
+                    <input type="checkbox" name="tanlangan_{{ h.savol.pk }}"
+                           value="{{ v.pk }}" data-narx="{{ v.narx|default:0 }}">
+                    <span class="belgi-katak" aria-hidden="true"></span>
+                    {% include 'topshiriq/_variant_ichi.html' with v=v %}
+                    {% if v.narx %}<span class="narx">{{ v.narx }} tanga</span>{% endif %}
+                </label>
+            {% endfor %}
+        </div>
+
+    {# ===== Savatlarga ajratish ===== #}
+    {% elif h.savol.tur == 'guruh' %}
+        <p class="yordam">Elementni savatga sudrang. Bosib tanlab ham qo'ysa bo'ladi.</p>
+        <div class="guruh" data-pk="{{ h.savol.pk }}">
+            <div class="g-tokcha">
+                {% for v in h.variantlar %}
+                    <button type="button" class="g-element" data-pk="{{ v.pk }}">
+                        {% if v.rasm %}
+                            <img src="{% static v.rasm %}" alt="{{ v.matn }}">
+                        {% else %}{{ v.belgi }}{% endif %}
+                    </button>
+                    <input type="hidden" name="guruh_{{ h.savol.pk }}_{{ v.pk }}"
+                           id="guruh_{{ h.savol.pk }}_{{ v.pk }}" value="">
+                {% endfor %}
+            </div>
+            <div class="g-savatlar">
+                {% for s in h.savatlar %}
+                    <div class="g-savat" data-nom="{{ s.nom }}">
+                        {% if s.rasm %}
+                            <img class="g-savat-rasm" src="{% static s.rasm %}" alt="{{ s.nom }}">
+                        {% endif %}
+                        <span class="g-savat-nom">{{ s.nom }}</span>
+                        <div class="g-savat-ichi"></div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    {# ===== Namunaga qarab yig'ish ===== #}
+    {% elif h.savol.tur == 'qurish' %}
+        <p class="yordam">Bo'lakni bo'sh joyga sudrang. Bosib tanlab ham qo'ysa bo'ladi.</p>
+        <div class="qurish" data-pk="{{ h.savol.pk }}">
+            {% if h.savol.rasm %}
+                <figure class="q-namuna">
+                    <img src="{% static h.savol.rasm %}" alt="Namuna">
+                    <figcaption>Namuna</figcaption>
+                </figure>
+            {% endif %}
+            <div class="q-maydon">
+                {% for u in h.uyalar %}
+                    <div class="uya{% if u.oldindan %} uya-tayyor{% endif %}"
+                         data-slot="{{ u.togri_order }}" style="{{ u.slot_uslubi }}">
+                        {% if u.oldindan %}
+                            <img src="{% static u.rasm %}" alt="{{ u.matn }}">
+                        {% endif %}
+                    </div>
+                    <input type="hidden" name="qurish_{{ h.savol.pk }}_{{ u.togri_order }}"
+                           id="qurish_{{ h.savol.pk }}_{{ u.togri_order }}"
+                           value="{% if u.oldindan %}{{ u.pk }}{% endif %}">
+                {% endfor %}
+            </div>
+            <div class="q-tokcha">
+                {% for b in h.bolaklar %}
+                    <button type="button" class="bolak" data-pk="{{ b.pk }}">
+                        <img src="{% static b.rasm %}" alt="{{ b.matn }}">
+                    </button>
+                {% endfor %}
+            </div>
+        </div>
+
+    {# ===== Rasmni bo'yash ===== #}
+    {% elif h.savol.tur == 'boyash' %}
+        <p class="yordam">Rangni tanlang, so'ng rasmning bir qismini bosing.</p>
+        <div class="boyash" data-pk="{{ h.savol.pk }}">
+            <div class="b-chizma">{{ h.savol.boyash|safe }}</div>
+            <div class="b-palitra">
+                {% for v in h.variantlar %}
+                    <button type="button" class="b-rang{% if forloop.first %} tanlangan{% endif %}"
+                            style="--b-rang: {{ v.rang }}" data-rang="{{ v.rang }}"
+                            aria-label="{{ v.matn }}" title="{{ v.matn }}"></button>
+                {% endfor %}
+                <button type="button" class="b-rang b-ochirgich" data-rang=""
+                        aria-label="O'chirgich" title="O'chirgich">🧽</button>
+            </div>
+            <input type="hidden" name="boyash_{{ h.savol.pk }}"
+                   id="boyash_{{ h.savol.pk }}" value="{}">
+        </div>
+
+    {# ===== Labirint o'yini ===== #}
+    {% elif h.savol.tur == 'labirint' %}
+        <p class="yordam">Robotni strelkalar bilan boshqar. Devordan o'tib bo'lmaydi.</p>
+        <div class="labirint" data-pk="{{ h.savol.pk }}"
+             data-xarita="{{ h.savol.labirint_qatorlari|join:"|" }}">
+            <div class="lab-maydon">
+                <img class="lab-robot" src="{% static 'images/topshiriq/variantlar/robot.png' %}"
+                     alt="Robot">
+            </div>
+            <div class="lab-holat" role="status">Robotni uyigacha olib bor</div>
+            <div class="lab-tugmalar">
+                <button type="button" class="lab-tugma" data-yon="U" aria-label="Yuqoriga">⬆️</button>
+                <div class="lab-qator">
+                    <button type="button" class="lab-tugma" data-yon="L" aria-label="Chapga">⬅️</button>
+                    <button type="button" class="lab-tugma lab-qayta" data-yon="reset"
+                            aria-label="Boshidan">↺</button>
+                    <button type="button" class="lab-tugma" data-yon="R" aria-label="O'ngga">➡️</button>
+                </div>
+                <button type="button" class="lab-tugma" data-yon="D" aria-label="Pastga">⬇️</button>
+            </div>
+            <input type="hidden" name="labirint_{{ h.savol.pk }}"
+                   id="labirint_{{ h.savol.pk }}" value="">
+        </div>
+
+    {# ===== Mikrofon orqali javob ===== #}
+    {% elif h.savol.tur == 'mikrofon' %}
+        <div class="mikrofon" data-pk="{{ h.savol.pk }}">
+            <button type="button" class="mik-btn">🎤 Yozishni boshlash</button>
+            <span class="mik-holat">Tayyor</span>
+            <audio class="mik-audio" controls hidden></audio>
+            <input type="hidden" name="ovoz_{{ h.savol.pk }}" class="mik-bayroq" value="">
+            <input type="file" name="ovoz_fayl_{{ h.savol.pk }}" class="mik-fayl" hidden>
+        </div>
+    {% endif %}
+
+    {% if h.savol.izoh %}
+        <div class="izoh">{{ h.savol.izoh|linebreaksbr }}</div>
+    {% endif %}
+</div>

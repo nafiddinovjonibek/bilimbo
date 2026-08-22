@@ -104,6 +104,22 @@
         100% { scale: 1.18; opacity: 0; }
     }
 
+    /* Topshiriq turi — doiraning burchagidagi kichik belgi */
+    .tur-belgi {
+        position: absolute;
+        right: -6px;
+        bottom: -4px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #fff;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 0 rgba(53, 64, 125, .2);
+    }
+    .qulflangan .tur-belgi { display: none; }
     .daraja-pill {
         font-size: 12px;
         font-weight: 800;
@@ -111,6 +127,8 @@
         border-radius: 999px;
         background: #fff;
         box-shadow: 0 3px 0 rgba(53, 64, 125, .12);
+        text-align: center;
+        line-height: 1.35;
     }
     .daraja-oson .daraja-pill     { color: #2e9739; }
     .daraja-orta .daraja-pill     { color: #b8860b; }
@@ -152,14 +170,14 @@
             {% if item.ochiq %}
                 <a href="{% url 'savol' item.savol.pk %}"
                    class="savol-node pos-{{ forloop.counter }} daraja-{{ item.savol.daraja }}{% if item.hozirgi %} hozirgi{% endif %}">
-                    <div class="savol-circle">{{ item.savol.order }}</div>
-                    <span class="daraja-pill">{{ item.savol.get_daraja_display }}</span>
+                    <div class="savol-circle">{{ item.savol.order }}<span class="tur-belgi">{{ item.savol.tur_emoji }}</span></div>
+                    <span class="daraja-pill">{{ item.savol.sarlavha|default:item.savol.get_daraja_display }}</span>
                     <span class="node-stars">{{ item.stars_str }}</span>
                 </a>
             {% else %}
                 <span class="savol-node pos-{{ forloop.counter }} daraja-{{ item.savol.daraja }} qulflangan">
                     <div class="savol-circle">🔒</div>
-                    <span class="daraja-pill">{{ item.savol.get_daraja_display }}</span>
+                    <span class="daraja-pill">{{ item.savol.sarlavha|default:item.savol.get_daraja_display }}</span>
                     <span class="node-stars"></span>
                 </span>
             {% endif %}

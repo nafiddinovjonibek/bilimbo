@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,8 @@
     <style>
         :root {
             --sky-top: #57c9f5;
-            --sky-bottom: #aee9ff;
+            --sky-mid: #aee9ff;
+            --sky-ground: #d8f7c8;
             --sun: #ffd93d;
             --coral: #ff6b6b;
             --orange: #ff9f43;
@@ -18,70 +20,59 @@
             --green: #5fd068;
             --purple: #a06cf0;
             --ink: #35407d;
-            --cloud: #ffffff;
+            --card-bg: #ffffff;
+            --card-shadow: rgba(53, 64, 125, .18);
+            /* Fon rasmi — ekran o'lchamiga qarab almashadi */
+            --fon: url("{% static 'images/fon/kun.webp' %}");
+            --fon-rang: #4fb3f0;
+            --yozuv-soya: 0 2px 4px rgba(20, 60, 110, .35);
+        }
+        body.tun {
+            --sky-top: #0b1750;
+            --sky-mid: #1c2a6e;
+            --sky-ground: #16324a;
+            --ink: #e8ecff;
+            --card-bg: #232c63;
+            --card-shadow: rgba(0, 0, 0, .35);
+            --fon: url("{% static 'images/fon/tun.webp' %}");
+            --fon-rang: #141a4d;
+            --yozuv-soya: 0 2px 6px rgba(0, 0, 0, .55);
+        }
+        @media (max-width: 720px) {
+            :root { --fon: url("{% static 'images/fon/kun-mobile.webp' %}"); }
+            body.tun { --fon: url("{% static 'images/fon/tun-mobile.webp' %}"); }
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        html::-webkit-scrollbar { display: none; }
         body {
             font-family: 'Baloo 2', 'Comic Sans MS', 'Segoe UI', sans-serif;
             color: var(--ink);
             min-height: 100vh;
-            background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 70%, #d8f7c8 100%);
             overflow-x: hidden;
             position: relative;
+            background: var(--fon-rang);
+            transition: background .6s;
         }
-
-        /* ===== Osmon dekoratsiyasi ===== */
-        .sun {
-            position: fixed;
-            top: 70px; right: 40px;
-            width: 90px; height: 90px;
-            background: radial-gradient(circle, #fff3b0 20%, var(--sun) 60%);
-            border-radius: 50%;
-            box-shadow: 0 0 60px 25px rgba(255, 217, 61, .55);
-            animation: sun-glow 4s ease-in-out infinite;
-            z-index: 0;
-        }
-        @keyframes sun-glow {
-            0%, 100% { box-shadow: 0 0 60px 25px rgba(255, 217, 61, .55); }
-            50%      { box-shadow: 0 0 80px 35px rgba(255, 217, 61, .8); }
-        }
-        .cloud {
-            position: fixed;
-            background: var(--cloud);
-            border-radius: 999px;
-            opacity: .9;
-            z-index: 0;
-            animation: drift linear infinite;
-        }
-        .cloud::before, .cloud::after {
+        /* Fon rasmi alohida qatlamda: sahifa uzun bo'lsa ham joyida turadi
+           va o'tish paytida rangi sakramaydi */
+        body::before {
             content: '';
-            position: absolute;
-            background: var(--cloud);
-            border-radius: 50%;
-        }
-        .cloud-1 { width: 120px; height: 40px; top: 120px; left: -140px; animation-duration: 55s; }
-        .cloud-1::before { width: 50px; height: 50px; top: -22px; left: 20px; }
-        .cloud-1::after  { width: 38px; height: 38px; top: -16px; left: 62px; }
-        .cloud-2 { width: 90px; height: 32px; top: 240px; left: -110px; animation-duration: 75s; animation-delay: -30s; }
-        .cloud-2::before { width: 40px; height: 40px; top: -18px; left: 14px; }
-        .cloud-2::after  { width: 30px; height: 30px; top: -12px; left: 48px; }
-        .cloud-3 { width: 140px; height: 45px; top: 60px; left: -160px; animation-duration: 90s; animation-delay: -60s; }
-        .cloud-3::before { width: 55px; height: 55px; top: -25px; left: 25px; }
-        .cloud-3::after  { width: 42px; height: 42px; top: -18px; left: 72px; }
-        @keyframes drift {
-            from { transform: translateX(0); }
-            to   { transform: translateX(calc(100vw + 320px)); }
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background-image: var(--fon);
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image .6s;
         }
 
-        /* Pastdagi tepaliklar */
-        .hills {
-            position: fixed;
-            bottom: 0; left: 0; right: 0;
-            height: 140px;
-            z-index: 0;
-            pointer-events: none;
-        }
-        .hills svg { width: 100%; height: 100%; display: block; }
+        /* Fon rasmidagi manzara o'rnini bosgani uchun quyosh, bulut va
+           tepaliklar endi CSS bilan chizilmaydi. */
 
         /* ===== Navbar ===== */
         .navbar {
@@ -90,13 +81,14 @@
             margin: 16px auto 0;
             max-width: 1060px;
             width: calc(100% - 32px);
-            background: rgba(255, 255, 255, .92);
+            background: var(--card-bg);
             border-radius: 999px;
             padding: 10px 22px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            box-shadow: 0 6px 0 rgba(53, 64, 125, .15);
+            box-shadow: 0 6px 0 var(--card-shadow);
+            transition: background .6s, box-shadow .6s;
         }
         .brand {
             font-size: 26px;
@@ -115,12 +107,16 @@
         .user-info { font-weight: 700; font-size: 15px; }
         .logout-icon { display: none; }
         .badge {
-            padding: 3px 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 16px;
             border-radius: 999px;
-            font-size: 13px;
-            font-weight: 700;
+            font-size: 14px;
+            font-weight: 800;
             background: var(--yellow);
             color: #7a5c00;
+            box-shadow: 0 3px 0 rgba(180, 130, 0, .35);
         }
 
         /* ===== Tugmalar ===== */
@@ -146,7 +142,7 @@
         .btn-green:active { box-shadow: 0 2px 0 #3fae4a; }
         .btn-outline {
             background: #fff;
-            color: var(--ink);
+            color: #35407d;
             box-shadow: 0 5px 0 rgba(53, 64, 125, .25);
         }
         .btn-outline:hover { box-shadow: 0 7px 0 rgba(53, 64, 125, .25); }
@@ -166,10 +162,11 @@
             z-index: 2;
             max-width: 440px;
             margin: 40px auto 160px;
-            background: #fff;
+            background: var(--card-bg);
             border-radius: 28px;
             padding: 32px 30px;
-            box-shadow: 0 10px 0 rgba(53, 64, 125, .18);
+            box-shadow: 0 10px 0 var(--card-shadow);
+            transition: background .6s, box-shadow .6s;
         }
         .auth-card h1 { font-size: 26px; margin-bottom: 6px; text-align: center; }
         .auth-emoji { text-align: center; font-size: 44px; margin-bottom: 4px; }
@@ -184,7 +181,8 @@
             font-family: inherit;
             font-size: 16px;
             font-weight: 600;
-            color: var(--ink);
+            background: #fff;
+            color: #35407d;
             transition: border-color .15s;
         }
         .input:focus { outline: none; border-color: var(--sky-top); }
@@ -202,6 +200,8 @@
             font-weight: 700;
             font-size: 15px;
             text-align: center;
+            color: #35407d;
+            background: #fff;
             transition: transform .12s, border-color .12s, background .12s;
         }
         .role-choices label:hover { transform: scale(1.04); }
@@ -284,11 +284,12 @@
             justify-content: center;
             font-size: 20px;
             font-weight: 800;
-            color: var(--ink);
+            color: #35407d;
             box-shadow: 0 3px 0 rgba(53, 64, 125, .2);
         }
         .island-name {
             background: #fff;
+            color: #35407d;
             padding: 6px 18px;
             border-radius: 999px;
             font-size: clamp(15px, 1.8vw, 18px);
@@ -296,28 +297,31 @@
             box-shadow: 0 4px 0 rgba(53, 64, 125, .15);
             white-space: nowrap;
         }
+        /* Sarlavha fon rasmi ustida turadi — oq matn va soya bilan o'qiladi */
         .page-title {
             text-align: center;
             margin: 28px 0 10px;
         }
         .page-title h1 {
-            font-size: clamp(26px, 4.5vw, 42px);
+            font-size: clamp(28px, 5vw, 46px);
             font-weight: 800;
-            text-shadow: 0 3px 0 rgba(255, 255, 255, .6);
+            color: #fff;
+            text-shadow: var(--yozuv-soya);
         }
         .page-title p {
             font-size: clamp(16px, 2.5vw, 21px);
             font-weight: 700;
-            color: #4a55a0;
+            color: #eaf4ff;
             margin-top: 4px;
+            text-shadow: var(--yozuv-soya);
         }
+        body.tun .page-title p { color: #b9c2f5; }
 
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after { animation: none !important; transition: none !important; }
         }
         /* ===== Mobil moslashuv ===== */
         @media (max-width: 640px) {
-            .sun { width: 56px; height: 56px; top: 84px; right: 14px; box-shadow: 0 0 40px 15px rgba(255, 217, 61, .5); }
             .brand { font-size: 21px; }
             .navbar {
                 padding: 7px 8px 7px 16px;
@@ -349,7 +353,6 @@
             }
             .logout-text { display: none; }
             .logout-icon { display: inline; }
-            .hills { height: 80px; }
             .container { padding: 16px 12px 110px; }
             .auth-card {
                 margin: 20px 14px 120px;
@@ -377,18 +380,7 @@
     </style>
     {% block extra_style %}{% endblock %}
 </head>
-<body>
-    <div class="sun"></div>
-    <div class="cloud cloud-1"></div>
-    <div class="cloud cloud-2"></div>
-    <div class="cloud cloud-3"></div>
-    <div class="hills">
-        <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
-            <path d="M0,90 Q240,10 480,80 T960,70 T1440,90 L1440,140 L0,140 Z" fill="#7ed957"/>
-            <path d="M0,120 Q360,60 720,110 T1440,105 L1440,140 L0,140 Z" fill="#5fd068"/>
-        </svg>
-    </div>
-
+<body class="{% if tun %}tun{% endif %}">
     <nav class="navbar">
         <a href="{% url 'home' %}" class="brand"><span>B</span><span>i</span><span>l</span><span>i</span><span>m</span><span>b</span><span>o</span></a>
         <div class="nav-right">
@@ -408,5 +400,19 @@
         </div>
     </nav>
     {% block content %}{% endblock %}
+
+    {# DEBUG: kun/tun tugmasi — sinovdan so'ng shu blokni o'chirib tashlang #}
+    <button id="debug-tun-toggle" type="button"
+            style="position:fixed; bottom:16px; left:16px; z-index:50; padding:10px 16px;
+                   border:none; border-radius:999px; font-family:inherit; font-weight:700;
+                   font-size:14px; cursor:pointer; background:#222; color:#fff; opacity:.7;">
+        🌗 Kun/Tun
+    </button>
+    <script>
+        document.getElementById('debug-tun-toggle').addEventListener('click', function () {
+            document.body.classList.toggle('tun');
+        });
+    </script>
+    {# /DEBUG #}
 </body>
 </html>

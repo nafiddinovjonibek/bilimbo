@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Bilimbo — bolalarning mikrofon orqali yozgan ovozlari
+/media/
+
+

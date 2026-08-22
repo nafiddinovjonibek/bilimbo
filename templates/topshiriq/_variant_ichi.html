@@ -1,0 +1,11 @@
+{% load static %}
+{% comment %}
+Variantning ichki qismi. Rasm berilgan bo'lsa ekranda faqat rasm ko'rinadi —
+matn alt sifatida qoladi, ya'ni ekranni o'qib beruvchi dasturlar uchun.
+{% endcomment %}
+{% if v.rasm %}
+    <img class="variant-rasm" src="{% static v.rasm %}" alt="{{ v.matn }}">
+{% else %}
+    {% if v.emoji %}<span class="variant-emoji">{{ v.emoji }}</span>{% endif %}
+    {% if v.matn %}<span class="variant-matn">{{ v.matn }}</span>{% endif %}
+{% endif %}

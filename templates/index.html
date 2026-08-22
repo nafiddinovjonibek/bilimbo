@@ -4,79 +4,230 @@
 
 {% block extra_style %}
 <style>
-    /* ===== Sarguzasht xaritasi ===== */
-    .path-map {
-        position: relative;
+    /* ===== Bo'lim kartochkalari =====
+       Kartochkalar zinapoya bo'lib joylashadi: toq raqamlilar yuqorida,
+       juftlari pastda. Ular orasidagi nuqtali chiziq yo'l taassurotini beradi. */
+    .bolimlar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: clamp(10px, 2.2vw, 26px);
+        margin: 26px auto 0;
         max-width: 1000px;
-        margin: 20px auto 0;
-        height: 420px;
     }
-    .path-line {
+    .bolim-karta {
+        position: relative;
+        flex: 0 1 176px;
+        display: block;
+        text-decoration: none;
+        animation: karta-kir .5s cubic-bezier(.34, 1.56, .64, 1) backwards;
+    }
+    .bolim-karta:nth-child(even) { margin-top: 76px; }
+    .bolim-karta:nth-child(1) { animation-delay: .05s; }
+    .bolim-karta:nth-child(2) { animation-delay: .16s; }
+    .bolim-karta:nth-child(3) { animation-delay: .27s; }
+    .bolim-karta:nth-child(4) { animation-delay: .38s; }
+    .bolim-karta:nth-child(5) { animation-delay: .49s; }
+    @keyframes karta-kir {
+        from { opacity: 0; transform: translateY(26px) scale(.85); }
+        to   { opacity: 1; transform: none; }
+    }
+
+    /* Kartochkalarni bog'lovchi nuqtali yo'l */
+    .bolim-karta::after {
+        content: '';
         position: absolute;
-        inset: 0;
+        top: 46%;
+        left: 100%;
+        width: clamp(10px, 2.2vw, 26px);
+        height: 46px;
+        border-top: 5px dotted rgba(255, 255, 255, .85);
+        border-radius: 50%;
+    }
+    .bolim-karta:nth-child(odd)::after { transform: rotate(24deg); }
+    .bolim-karta:nth-child(even)::after { transform: rotate(-24deg); }
+    .bolim-karta:last-child::after { display: none; }
+
+    .karta-tana {
+        position: relative;
+        border-radius: 26px;
+        padding: 30px 14px 16px;
+        min-height: 196px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        box-shadow: 0 8px 0 var(--karta-soya), 0 12px 24px rgba(20, 40, 90, .22);
+        transition: transform .18s cubic-bezier(.34, 1.56, .64, 1),
+                    box-shadow .18s;
+    }
+    .bolim-karta:hover .karta-tana {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 0 var(--karta-soya), 0 18px 30px rgba(20, 40, 90, .28);
+    }
+    .bolim-karta:active .karta-tana { transform: translateY(3px); }
+    .bolim-karta:focus-visible .karta-tana { outline: 4px solid #fff; outline-offset: 4px; }
+
+    .karta-emoji {
+        font-size: clamp(46px, 6vw, 62px);
+        line-height: 1;
+        filter: drop-shadow(0 4px 5px rgba(0, 0, 0, .22));
+    }
+    .karta-nom {
+        display: block;
         width: 100%;
-        height: 100%;
-        z-index: 0;
+        background: #fff;
+        color: var(--karta-yozuv);
+        border-radius: 14px;
+        padding: 7px 8px;
+        font-size: 15px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 1.2;
+        box-shadow: 0 3px 0 rgba(53, 64, 125, .16);
+    }
+    .karta-raqam {
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: #fff;
+        color: var(--karta-yozuv);
+        font-size: 21px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 0 rgba(53, 64, 125, .2);
+        z-index: 2;
+    }
+    /* Kartochka burchagidagi kichik yulduzlar */
+    .karta-tana::before,
+    .karta-tana::after {
+        content: '⭐';
+        position: absolute;
+        font-size: 15px;
+        opacity: .75;
         pointer-events: none;
     }
-    .path-line path {
-        fill: none;
-        stroke: #ffffff;
-        stroke-width: 6;
-        stroke-dasharray: 1 15;
-        stroke-linecap: round;
-        opacity: .95;
-    }
-    .path-mobile { display: none; }
-    .island {
-        position: absolute;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
-    /* Desktop: gorizontal to'lqin */
-    .isl-1 { left: 12%; top: 20px; }
-    .isl-2 { left: 31%; top: 160px; }
-    .isl-3 { left: 50%; top: 40px; }
-    .isl-4 { left: 69%; top: 180px; }
-    .isl-5 { left: 88%; top: 60px; }
+    .karta-tana::before { top: 14px; right: 14px; }
+    .karta-tana::after { bottom: 62px; left: 14px; font-size: 12px; }
 
-    /* Ketma-ket pop (SVG'lar oldinda turgani uchun nth-child ishlamaydi) */
-    .island.isl-1 { animation-delay: .05s; }
-    .island.isl-2 { animation-delay: .19s; }
-    .island.isl-3 { animation-delay: .33s; }
-    .island.isl-4 { animation-delay: .47s; }
-    .island.isl-5 { animation-delay: .61s; }
-    .island.isl-1 .bubble { animation-delay: 0s; }
-    .island.isl-2 .bubble { animation-delay: -.7s; }
-    .island.isl-3 .bubble { animation-delay: -1.4s; }
-    .island.isl-4 .bubble { animation-delay: -2.1s; }
-    .island.isl-5 .bubble { animation-delay: -2.8s; }
+    /* Har bo'limning o'z rangi */
+    .karta-c1 { --karta-rang: #f2646b; --karta-soya: #cf4750; --karta-yozuv: #cf4750; }
+    .karta-c2 { --karta-rang: #f79a34; --karta-soya: #d47a19; --karta-yozuv: #c96f13; }
+    .karta-c3 { --karta-rang: #f5c531; --karta-soya: #d3a316; --karta-yozuv: #a97f06; }
+    .karta-c4 { --karta-rang: #4fbc63; --karta-soya: #329c46; --karta-yozuv: #2c8b3e; }
+    .karta-c5 { --karta-rang: #9a6ae8; --karta-soya: #7b4cc9; --karta-yozuv: #7245c4; }
+    .karta-tana { background: var(--karta-rang); }
 
-    /* Kirmagan mehmon uchun */
-    .welcome {
-        text-align: center;
-        margin-top: 60px;
+    /* ===== Statistika paneli ===== */
+    .stat-panel {
+        display: flex;
+        justify-content: center;
+        gap: clamp(14px, 4vw, 56px);
+        max-width: 700px;
+        margin: 40px auto 0;
+        padding: 18px 22px;
+        background: rgba(255, 255, 255, .82);
+        backdrop-filter: blur(6px);
+        border-radius: 22px;
+        box-shadow: 0 8px 22px rgba(20, 40, 90, .18);
     }
-    .welcome .big-emoji { font-size: 80px; animation: bob 3s ease-in-out infinite; display: inline-block; }
+    body.tun .stat-panel { background: rgba(38, 46, 105, .8); }
+    .stat {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1;
+        justify-content: center;
+    }
+    .stat + .stat { border-left: 2px solid rgba(53, 64, 125, .14); }
+    body.tun .stat + .stat { border-left-color: rgba(255, 255, 255, .16); }
+    .stat-emoji { font-size: 32px; line-height: 1; }
+    .stat-nom { font-size: 14px; font-weight: 700; color: #6c76ad; }
+    .stat-son { font-size: 21px; font-weight: 800; color: var(--ink); }
+    body.tun .stat-nom { color: #a9b3ea; }
+
+    /* ===== Maslahatlar ===== */
+    .maslahatlar {
+        display: flex;
+        justify-content: center;
+        gap: clamp(12px, 3vw, 40px);
+        max-width: 900px;
+        margin: 18px auto 0;
+        padding: 16px 22px;
+        background: rgba(255, 255, 255, .78);
+        backdrop-filter: blur(6px);
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(20, 40, 90, .16);
+    }
+    body.tun .maslahatlar { background: rgba(38, 46, 105, .75); }
+    .maslahat { display: flex; align-items: center; gap: 12px; flex: 1; }
+    .maslahat + .maslahat { border-left: 2px solid rgba(53, 64, 125, .14); padding-left: 16px; }
+    body.tun .maslahat + .maslahat { border-left-color: rgba(255, 255, 255, .16); }
+    .maslahat-emoji { font-size: 28px; line-height: 1; flex-shrink: 0; }
+    .maslahat b { display: block; font-size: 15px; color: var(--ink); }
+    .maslahat span { font-size: 13px; font-weight: 600; color: #6c76ad; }
+    body.tun .maslahat span { color: #a9b3ea; }
+
+    /* ===== Kirmagan mehmon ===== */
+    .welcome { text-align: center; margin-top: 60px; }
+    .welcome .big-emoji {
+        font-size: 80px;
+        display: inline-block;
+        animation: bob 3s ease-in-out infinite;
+    }
+    @keyframes bob {
+        0%, 100% { transform: translateY(0); }
+        50%      { transform: translateY(-9px); }
+    }
     .welcome h1 {
         font-size: clamp(30px, 5vw, 48px);
         font-weight: 800;
-        text-shadow: 0 3px 0 rgba(255, 255, 255, .6);
+        color: #fff;
+        text-shadow: var(--yozuv-soya);
         margin: 10px 0 8px;
     }
-    .welcome p { font-size: 19px; font-weight: 700; color: #4a55a0; margin-bottom: 26px; }
+    .welcome p {
+        font-size: 19px;
+        font-weight: 700;
+        color: #eaf4ff;
+        text-shadow: var(--yozuv-soya);
+        margin-bottom: 26px;
+    }
     .welcome .btn { font-size: 20px; padding: 14px 36px; }
 
+    @media (max-width: 900px) {
+        .maslahatlar { flex-direction: column; gap: 12px; max-width: 460px; }
+        .maslahat + .maslahat { border-left: none; padding-left: 0; }
+    }
     @media (max-width: 720px) {
-        /* Mobil: vertikal so'qmoq */
-        .path-map { height: 730px; max-width: 420px; margin-top: 8px; }
-        .path-desktop { display: none; }
-        .path-mobile { display: block; }
-        .isl-1 { left: 50%; top: 10px; }
-        .isl-2 { left: 24%; top: 150px; }
-        .isl-3 { left: 62%; top: 290px; }
-        .isl-4 { left: 26%; top: 430px; }
-        .isl-5 { left: 58%; top: 570px; }
+        /* Mobilda kartochkalar ikki ustunga tushadi, zinapoya saqlanadi */
+        .bolimlar {
+            flex-wrap: wrap;
+            gap: 14px 12px;
+            max-width: 380px;
+        }
+        /* min-width: 0 — aks holda uzun nom ("Qurish-yasash va matematika")
+           kartochkani kengaytirib, to'rni ekrandan chiqarib yuboradi */
+        .bolim-karta { flex: 0 1 calc(50% - 8px); min-width: 0; }
+        .bolim-karta:nth-child(even) { margin-top: 30px; }
+        .bolim-karta::after { display: none; }
+        .karta-tana { min-height: 168px; padding: 26px 10px 14px; }
+        .karta-nom { font-size: 14px; }
+        .stat-panel { flex-direction: column; gap: 12px; max-width: 320px; padding: 16px; }
+        .stat { justify-content: flex-start; }
+        .stat + .stat {
+            border-left: none;
+            border-top: 2px solid rgba(53, 64, 125, .14);
+            padding-top: 12px;
+        }
+        body.tun .stat + .stat { border-top-color: rgba(255, 255, 255, .16); }
     }
 </style>
 {% endblock %}
@@ -89,21 +240,65 @@
             <p>Bugun qaysi o'yinni o'ynaymiz?</p>
         </div>
 
-        <div class="path-map">
-            <svg class="path-line path-desktop" viewBox="0 0 100 420" preserveAspectRatio="none">
-                <path vector-effect="non-scaling-stroke"
-                      d="M12,85 C18,190 25,218 31,225 S44,140 50,105 S63,238 69,245 S82,160 88,125"/>
-            </svg>
-            <svg class="path-line path-mobile" viewBox="0 0 100 730" preserveAspectRatio="none">
-                <path vector-effect="non-scaling-stroke"
-                      d="M50,62 C40,110 30,160 24,202 S52,300 62,342 S34,440 26,482 S50,580 58,622"/>
-            </svg>
+        <div class="bolimlar">
             {% for b in bolimlar %}
-                <a href="{% url 'bolim' b.order %}" class="island isl-{{ forloop.counter }}">
-                    <div class="bubble bubble-c{% cycle '1' '2' '3' '4' '5' %}"><span class="num">{{ b.order }}</span>{{ b.emoji }}</div>
-                    <span class="island-name">{{ b.name }}</span>
+                <a href="{% url 'bolim' b.order %}"
+                   class="bolim-karta karta-c{{ forloop.counter }}">
+                    <span class="karta-raqam">{{ b.order }}</span>
+                    <span class="karta-tana">
+                        <span class="karta-emoji">{{ b.emoji }}</span>
+                        <span class="karta-nom">{{ b.name }}</span>
+                    </span>
                 </a>
             {% endfor %}
+        </div>
+
+        <div class="stat-panel">
+            <div class="stat">
+                <span class="stat-emoji">🏆</span>
+                <span>
+                    <span class="stat-nom">Yutuqlarim</span>
+                    <span class="stat-son">{{ yutuqlar }} ta</span>
+                </span>
+            </div>
+            <div class="stat">
+                <span class="stat-emoji">🎖️</span>
+                <span>
+                    <span class="stat-nom">Ballarim</span>
+                    <span class="stat-son">{{ ballar }}</span>
+                </span>
+            </div>
+            <div class="stat">
+                <span class="stat-emoji">🔥</span>
+                <span>
+                    <span class="stat-nom">Seriya</span>
+                    <span class="stat-son">{{ seriya }} kun</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="maslahatlar">
+            <div class="maslahat">
+                <span class="maslahat-emoji">⏰</span>
+                <span>
+                    <b>Har kuni o'yin o'yna</b>
+                    <span>Yangi bilimlar seni kutmoqda!</span>
+                </span>
+            </div>
+            <div class="maslahat">
+                <span class="maslahat-emoji">🎯</span>
+                <span>
+                    <b>Maqsadingga erish!</b>
+                    <span>Bosqichlarni bitirib, yulduzlarni yig'!</span>
+                </span>
+            </div>
+            <div class="maslahat">
+                <span class="maslahat-emoji">🎁</span>
+                <span>
+                    <b>Mukofotlar seni kutadi</b>
+                    <span>Faol bo'l va sovg'a qozon!</span>
+                </span>
+            </div>
         </div>
     {% else %}
         <div class="welcome">
