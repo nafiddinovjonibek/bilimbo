@@ -1,0 +1,1802 @@
+[
+  {
+    "pk": 121,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Dumaloq, qizil va bandida yashil bargi bor mevani top. Uning nomini ichingda aytib, mos rasmni tanla.",
+    "prepared": "Dumaloq, qizil va bandida yashil bargi bor mevani top. Uning nomini ichingda aytib, mos rasmni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/f29300ccdb5568721bd29432355c1530.mp3",
+    "created": false
+  },
+  {
+    "pk": 122,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Audioni oxirigacha tingla. Eshitgan ovozingni rasmdagi hayvonlarning ovozi bilan solishtir va mos hayvonni tanla.",
+    "prepared": "Audioni oxirigacha tingla. Eshitgan ovozingni rasmdagi hayvonlarning ovozi bilan solishtir va mos hayvonni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/d822e2da0766ab4fce2235cb5612d306.mp3",
+    "created": false
+  },
+  {
+    "pk": 123,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "«Anor» va «ari» so‘zlarini sekin ayt. Ikkalasining boshida eshitiladigan tovushning harfini top.",
+    "prepared": "\"Anor\" va \"ari\" soʻzlarini sekin ayt. Ikkalasining boshida eshitiladigan tovushning harfini top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c3131841da771411ab1cb1d6a26d6f09.mp3",
+    "created": false
+  },
+  {
+    "pk": 124,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Pishgan qizil olma rangiga mos rangni tanla. Ranglarning hammasini solishtirib ko‘r.",
+    "prepared": "Pishgan qizil olma rangiga mos rangni tanla. Ranglarning hammasini solishtirib koʻr.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/44826787d1d7688a3483834178d44a57.mp3",
+    "created": false
+  },
+  {
+    "pk": 125,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Uchta rasmda yeyiladigan meva bor. Shu guruhga kirmaydigan rasmni top.",
+    "prepared": "Uchta rasmda yeyiladigan meva bor. Shu guruhga kirmaydigan rasmni top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/069e61de2c4d340f6b25f6bd665c2969.mp3",
+    "created": false
+  },
+  {
+    "pk": 126,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "O, L, bo‘sh joy, A. Meva nomidagi yetishmagan harfni top.",
+    "prepared": "O, L, boʻsh joy, A. Meva nomidagi yetishmagan harfni top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/ed218e4f21babefcf274b812f56a9cc8.mp3",
+    "created": false
+  },
+  {
+    "pk": 127,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmdagi yulduzlarni ikki qatordan sana. Jami nechta yulduz bor?",
+    "prepared": "Rasmdagi yulduzlarni ikki qatordan sana. Jami nechta yulduz bor?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/412b1de1382654ed009bc0ade222247e.mp3",
+    "created": false
+  },
+  {
+    "pk": 128,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "It eshik oldida ovoz chiqardi. «It ...» gapini hayvonning ovoziga mos so‘z bilan tugat.",
+    "prepared": "It eshik oldida ovoz chiqardi. \"It...\" gapini hayvonning ovoziga mos soʻz bilan tugat.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/04b88fcc0800d600b4723cf00d29f202.mp3",
+    "created": true
+  },
+  {
+    "pk": 129,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "«Anor» so‘zini cho‘zib ayt. Uning birinchi tovushini tanla; so‘zning o‘rtasidagi tovush bilan adashtirma.",
+    "prepared": "\"Anor\" soʻzini choʻzib ayt. Uning birinchi tovushini tanla; soʻzning oʻrtasidagi tovush bilan adashtirma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c00ac1b0cea45d8ec503aca24161f036.mp3",
+    "created": false
+  },
+  {
+    "pk": 130,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmda bolaning qo‘lida nima bor va u nima qilyapti? Ikkalasini ham to‘g‘ri ifodalagan gapni tanla.",
+    "prepared": "Rasmda bolaning qoʻlida nima bor va u nima qilyapti? Ikkalasini ham toʻgʻri ifodalagan gapni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9f86dfb89d5f6c0e3b7b439d04083d43.mp3",
+    "created": false
+  },
+  {
+    "pk": 131,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Daraxtning o‘sish rasmlarini boshidan oxirigacha joylashtir: urug‘dan boshlab, yosh nihol va gullagan yosh daraxt orqali katta daraxtgacha.",
+    "prepared": "Daraxtning oʻsish rasmlarini boshidan oxirigacha joylashtir: urugʻdan boshlab, yosh nihol va gullagan yosh daraxt orqali katta daraxtgacha.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c1d184ff06fd712082be85853e910e5a.mp3",
+    "created": false
+  },
+  {
+    "pk": 132,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "«Kapalak» so‘zini bo‘g‘inlab ayt va har bo‘g‘inda bir marta chapak chal. Nechta chapak bo‘ldi?",
+    "prepared": "\"Kapalak\" soʻzini boʻgʻinlab ayt va har boʻgʻinda bir marta chapak chal. Nechta chapak boʻldi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9e7cf85fc030c50f2d72a4d5443cbe82.mp3",
+    "created": false
+  },
+  {
+    "pk": 133,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Har bir hayvonni rasmlarda ko‘rsatilgan eng mos yashash joyi bilan bog‘la. Baliq, daraxtga qo‘nadigan qush va tuyani solishtir.",
+    "prepared": "Har bir hayvonni rasmlarda koʻrsatilgan eng mos yashash joyi bilan bogʻla. Baliq, daraxtga qoʻnadigan qush va tuyani solishtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/f153bdcc094e618cf063b354e2cff8ac.mp3",
+    "created": false
+  },
+  {
+    "pk": 134,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Audiodagi ob-havo belgilarini tingla. Ta’rifning barcha belgilariga mos rasmni tanla.",
+    "prepared": "Audiodagi ob-havo belgilarini tingla. Taʼrifning barcha belgilariga mos rasmni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/6b9c19858f87b074997401f681a3fba8.mp3",
+    "created": false
+  },
+  {
+    "pk": 134,
+    "kind": "audio",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Soyalar yerga aniq tushgan. Osmon ochiq, yomg‘ir ham, qor ham yog‘mayapti. Bolalar quyoshdan pana joyda o‘ynashyapti.",
+    "prepared": "Soyalar yerga aniq tushgan. Osmon ochiq, yomgʻir ham, qor ham yogʻmayapti. Bolalar quyoshdan pana joyda oʻynashyapti.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/230877644f4aeebb302decd8f178eb36.mp3",
+    "created": false
+  },
+  {
+    "pk": 135,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "B, bo‘sh joy, L, I, Q. Suvda yashaydigan hayvon nomidagi yetishmagan harfni top.",
+    "prepared": "B, boʻsh joy, L, I, Q. Suvda yashaydigan hayvon nomidagi yetishmagan harfni top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/38d7cfe4eb6f738892728e4a64a66e84.mp3",
+    "created": false
+  },
+  {
+    "pk": 136,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Nomini aytganda «sh» tovushi bilan boshlanadigan hayvon rasmini top. «S» va «sh» tovushlarini adashtirma.",
+    "prepared": "Nomini aytganda \"sh\" tovushi bilan boshlanadigan hayvon rasmini top. \"S\" va \"sh\" tovushlarini adashtirma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c96adcca443526ad1cbf6fe6496792b6.mp3",
+    "created": false
+  },
+  {
+    "pk": 137,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Qizning harakatini kuzat: suv qayerga tushyapti? Rasmda ro‘y berayotgan ishni aniq ifodalagan gapni tanla.",
+    "prepared": "Qizning harakatini kuzat: suv qayerga tushyapti? Rasmda roʻy berayotgan ishni aniq ifodalagan gapni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/693dbb6eed40a2280f47b21b8a8f41c1.mp3",
+    "created": false
+  },
+  {
+    "pk": 138,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Yoqtirgan mevang haqida 3 ta bog‘langan gap ayt: nomi va ko‘rinishi, ta’mi, nima uchun yoqtirishing. Bir xil gapni takrorlama.",
+    "prepared": "Yoqtirgan mevang haqida uch ta bogʻlangan gap ayt: nomi va koʻrinishi, taʼmi, nima uchun yoqtirishing. Bir xil gapni takrorlama.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/8d1a71c04b128e1f93b5e42c75aba4c7.mp3",
+    "created": false
+  },
+  {
+    "pk": 139,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "«Baliq suvda yashaydi, lekin daraxt shoxiga uya quradi.» Gapning ikkala qismi ham to‘g‘rimi?",
+    "prepared": "\"Baliq suvda yashaydi, lekin daraxt shoxiga uya quradi.\" Gapning ikkala qismi ham toʻgʻrimi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c3b010ea1bd465e251717bba7250ed4f.mp3",
+    "created": false
+  },
+  {
+    "pk": 140,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Quyon savatini ko‘tarib sabzi terishga chiqdi. Yo‘lda do‘stini ko‘rdi va uni yordamga chaqirdi. Hikoyani maqsadga mos davom ettir.",
+    "prepared": "Quyon savatini koʻtarib sabzi terishga chiqdi. Yoʻlda doʻstini koʻrdi va uni yordamga chaqirdi. Hikoyani maqsadga mos davom ettir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7e089bab54e1044b854ea67a4a842387.mp3",
+    "created": false
+  },
+  {
+    "pk": 141,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Quyonning tayyorgarligi, yo‘lga chiqishi, bajargan ishi va uyga qaytishini ifodalovchi gaplarni mantiqiy tartibga qo‘y.",
+    "prepared": "Quyonning tayyorgarligi, yoʻlga chiqishi, bajargan ishi va uyga qaytishini ifodalovchi gaplarni mantiqiy tartibga qoʻy.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/cb3b5554f7d0acb8efb4705d08bfea26.mp3",
+    "created": false
+  },
+  {
+    "pk": 142,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Gaplarning uchtasi mushukning odatiy harakatini ifodalaydi. Bu guruhga mos kelmaydigan bitta gapni tanla.",
+    "prepared": "Gaplarning uchtasi mushukning odatiy harakatini ifodalaydi. Bu guruhga mos kelmaydigan bitta gapni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/879e30e4169a194263a70cc868341055.mp3",
+    "created": false
+  },
+  {
+    "pk": 143,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "So‘zlarni kim — nimani — nima qilyapti tartibida joylashtirib, tugallangan gap tuz.",
+    "prepared": "Soʻzlarni kim — nimani — nima qilyapti tartibida joylashtirib, tugallangan gap tuz.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/915f6101bbc8bbe5517d5c49786a90c4.mp3",
+    "created": false
+  },
+  {
+    "pk": 144,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmning asosiy ishini va bolalarning hamkorligini ifodalagan sarlavhani tanla. Mayda buyumga qarab javob berma.",
+    "prepared": "Rasmning asosiy ishini va bolalarning hamkorligini ifodalagan sarlavhani tanla. Mayda buyumga qarab javob berma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/464c64cca735c7b3abfc0cc56c68432d.mp3",
+    "created": false
+  },
+  {
+    "pk": 145,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasm asosida 5–6 ta bog‘langan gapdan hikoya tuz. Kimlar bor, nima qilishyapti, nega bu ish foydali va keyin nima bo‘lishini ayt. «Avval», «keyin», «chunki» so‘zlarini ishlat.",
+    "prepared": "Rasm asosida besh–olti ta bogʻlangan gapdan hikoya tuz. Kimlar bor, nima qilishyapti, nega bu ish foydali va keyin nima boʻlishini ayt. \"Avval\", \"keyin\", \"chunki\" soʻzlarini ishlat.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/87e96bfd60b8f06de6c2477e3bb536c6.mp3",
+    "created": false
+  },
+  {
+    "pk": 146,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "«Bog‘dagi gullar chiroyli ochildi.» Gapdagi «chiroyli» o‘rniga qaysi so‘zni qo‘ysak, ma’no deyarli o‘zgarmaydi?",
+    "prepared": "\"Bogʻdagi gullar chiroyli ochildi.\" Gapdagi \"chiroyli\" oʻrniga qaysi soʻzni qoʻysak, maʼno deyarli oʻzgarmaydi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/4c48b732e82ae673a92f5bb20830fd35.mp3",
+    "created": false
+  },
+  {
+    "pk": 147,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Birinchi minora baland, ikkinchisi esa uning teskarisi. «Baland» so‘ziga qarama-qarshi ma’noli so‘zni tanla.",
+    "prepared": "Birinchi minora baland, ikkinchisi esa uning teskarisi. \"Baland\" soʻziga qarama-qarshi maʼnoli soʻzni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/81ee34f0b5184e0039e8f392b761af22.mp3",
+    "created": false
+  },
+  {
+    "pk": 148,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kichkina tanam, yumaloq qulog‘im,\nUzun ingichka dumim bor.\nDon izlab teshiklarda yuraman.\nBelgilarining hammasi qaysi hayvonga mos?",
+    "prepared": "Kichkina tanam, yumaloq qulogʻim, Uzun ingichka dumim bor. Don izlab teshiklarda yuraman. Belgilarining hammasi qaysi hayvonga mos?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/b9d0900070ffbca9b72a918c701ade3c.mp3",
+    "created": false
+  },
+  {
+    "pk": 149,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Qush uyasiga tuxum qo‘ydi va chiqqan jo‘jalarini boqmoqda. Uya bu vaziyatda eng avvalo nimaga xizmat qiladi?",
+    "prepared": "Qush uyasiga tuxum qoʻydi va chiqqan joʻjalarini boqmoqda. Uya bu vaziyatda eng avvalo nimaga xizmat qiladi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7645d44a97e1cdabbae8ba5f78cc302d.mp3",
+    "created": false
+  },
+  {
+    "pk": 150,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Til sarguzashtida 5 bosqichni bajar: ovozni farqla, gap tuz, rasmni tahlil qil, fikringni hikoya qil va topishmoq belgilarini solishtir.",
+    "prepared": "Til sarguzashtida besh bosqichni bajar: ovozni farqla, gap tuz, rasmni tahlil qil, fikringni hikoya qil va topishmoq belgilarini solishtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/a26f14154e993a9bdae91c28ace489dc.mp3",
+    "created": false
+  },
+  {
+    "pk": 151,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Ovozni oxirigacha tingla. Rasmlardagi hayvonlardan aynan shu ovozni chiqaradiganini top.",
+    "prepared": "Ovozni oxirigacha tingla. Rasmlardagi hayvonlardan aynan shu ovozni chiqaradiganini top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/697a46f77b463a10edbf09730d1400c1.mp3",
+    "created": false
+  },
+  {
+    "pk": 152,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "So‘zlarni kim — nimani — nima qildi tartibiga keltir. Gapning boshini va tugashini tekshir.",
+    "prepared": "Soʻzlarni kim — nimani — nima qildi tartibiga keltir. Gapning boshini va tugashini tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9e0466f9e2b0d74dcadee0f21a4ffef6.mp3",
+    "created": false
+  },
+  {
+    "pk": 153,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bolalar qanday umumiy ishni bajaryapti? Rasmga eng aniq mos sarlavhani tanla.",
+    "prepared": "Bolalar qanday umumiy ishni bajaryapti? Rasmga eng aniq mos sarlavhani tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/d606d0de6c72cb9792d5d56f1527968f.mp3",
+    "created": false
+  },
+  {
+    "pk": 154,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Yoqtirgan o‘yining haqida 5 ta bog‘langan gap ayt: nomi, kerakli buyumlar, bitta qoida, navbat qanday berilishi va nima uchun yoqtirishing.",
+    "prepared": "Yoqtirgan oʻyining haqida besh ta bogʻlangan gap ayt: nomi, kerakli buyumlar, bitta qoida, navbat qanday berilishi va nima uchun yoqtirishing.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/08992111f92732387bead636bb6abd20.mp3",
+    "created": false
+  },
+  {
+    "pk": 155,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bahorda barg chiqaraman, yozda soya beraman. Kuzda barglarim to‘kiladi, qishda shoxlarim yalang‘och qoladi. Bu qaysi bargli o‘simlik?",
+    "prepared": "Bahorda barg chiqaraman, yozda soya beraman. Kuzda barglarim toʻkiladi, qishda shoxlarim yalangʻoch qoladi. Bu qaysi bargli oʻsimlik?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7d4f8e16670e8641a365f12257181dc6.mp3",
+    "created": false
+  },
+  {
+    "pk": 226,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "To‘rtta tomoni teng va to‘rtta burchagi bor shaklni tanla. Rangiga qarab emas, tomonlariga qarab tekshir.",
+    "prepared": "Toʻrtta tomoni teng va toʻrtta burchagi bor shaklni tanla. Rangiga qarab emas, tomonlariga qarab tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9f50101e76483016633a7a0fabd92c6a.mp3",
+    "created": false
+  },
+  {
+    "pk": 227,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Qizil va yashil olmalarni birga sana. Noklar hisobga kirmaydi. Jami nechta olma bor?",
+    "prepared": "Qizil va yashil olmalarni birga sana. Noklar hisobga kirmaydi. Jami nechta olma bor?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/0176a745286377ccd234d2e20374f954.mp3",
+    "created": false
+  },
+  {
+    "pk": 228,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kublarni shakliga qarab emas, rangiga qarab ajrat: qizillari qizil, ko‘klari ko‘k qutiga. Birorta kub tokchada qolmasin.",
+    "prepared": "Kublarni shakliga qarab emas, rangiga qarab ajrat: qizillari qizil, koʻklari koʻk qutiga. Birorta kub tokchada qolmasin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9e1cc9d42c9bdb7bb47e58356b0f782c.mp3",
+    "created": false
+  },
+  {
+    "pk": 229,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmdagi hayvonlar hayotda yonma-yon tursa, qaysi biri ancha katta bo‘ladi? Kartochkaning hajmiga qarab javob berma.",
+    "prepared": "Rasmdagi hayvonlar hayotda yonma-yon tursa, qaysi biri ancha katta boʻladi? Kartochkaning hajmiga qarab javob berma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/6e6acbea0ad1ef999ed1e779745fe53d.mp3",
+    "created": false
+  },
+  {
+    "pk": 230,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Shaklning tashqi chegarasini kuzat va unga aynan mos soyani top. Rang hamda ichki bezaklar bu safar muhim emas.",
+    "prepared": "Shaklning tashqi chegarasini kuzat va unga aynan mos soyani top. Rang hamda ichki bezaklar bu safar muhim emas.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/29666b6cfdf783157b51b8c7d2c88741.mp3",
+    "created": false
+  },
+  {
+    "pk": 231,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "3, 4, 5, __, 7\nSanash har safar bittaga ortmoqda. Tushib qolgan sonni tanla.",
+    "prepared": "uch, toʻrt, besh, boʻsh joy, yetti Sanash har safar bittaga ortmoqda. Tushib qolgan sonni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e99339de88b0e3d6dc24a8ae1a3c8974.mp3",
+    "created": true
+  },
+  {
+    "pk": 232,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmda ikkita bir xil kub bor. Ekranni qarshingdan kuzatib, o‘ng tomondagi kub ko‘rsatilgan rasmni tanla.",
+    "prepared": "Rasmda ikkita bir xil kub bor. Ekranni qarshingdan kuzatib, oʻng tomondagi kub koʻrsatilgan rasmni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/6edaf86e2a208c0e90adb22d87074ae4.mp3",
+    "created": false
+  },
+  {
+    "pk": 233,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Minoralar bir xil o‘lchamdagi bloklardan qurilgan. Pastki chiziqdan tepasigacha solishtirib, eng balandini top.",
+    "prepared": "Minoralar bir xil oʻlchamdagi bloklardan qurilgan. Pastki chiziqdan tepasigacha solishtirib, eng balandini top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e38b8e659031af5c89d96655a0497a6f.mp3",
+    "created": false
+  },
+  {
+    "pk": 234,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bir xil turdagi kiyimlarni juftla: qo‘lqop — qo‘lqop, paypoq — paypoq, poyabzal — poyabzal. Shakl va rangini ham solishtir.",
+    "prepared": "Bir xil turdagi kiyimlarni juftla: qoʻlqop — qoʻlqop, paypoq — paypoq, poyabzal — poyabzal. Shakl va rangini ham solishtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/feeab15c4c1d8b3dc7d2f290abf8f61a.mp3",
+    "created": false
+  },
+  {
+    "pk": 235,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Naqshdagi takrorlanadigan bo‘lakni top. Bo‘sh katakka qo‘yilganda shu tartibni saqlaydigan shaklni tanla.",
+    "prepared": "Naqshdagi takrorlanadigan boʻlakni top. Boʻsh katakka qoʻyilganda shu tartibni saqlaydigan shaklni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/528d06fe49a7cdc37f8edd4eb07b2ed5.mp3",
+    "created": false
+  },
+  {
+    "pk": 236,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Naqshdagi ranglarni guruhlab kuzat. Takrorlanayotgan bo‘lakni top va bo‘sh katakka shu qoidaga mos rangli kvadratni tanla.",
+    "prepared": "Naqshdagi ranglarni guruhlab kuzat. Takrorlanayotgan boʻlakni top va boʻsh katakka shu qoidaga mos rangli kvadratni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/98723a510d08860c15903825e15d5cc2.mp3",
+    "created": false
+  },
+  {
+    "pk": 237,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunaga qarab uychani yig‘. Ikki ko‘k devor yonma-yon, qizil tom ularning ustida tursin. Eshikni pastdagi markazga qo‘y. Derazalarning balandligini ham tekshir.",
+    "prepared": "Namunaga qarab uychani yigʻ. Ikki koʻk devor yonma-yon, qizil tom ularning ustida tursin. Eshikni pastdagi markazga qoʻy. Derazalarning balandligini ham tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/59849e5954197109f7e6a5d036a985f8.mp3",
+    "created": false
+  },
+  {
+    "pk": 238,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Sonlarni kichikdan kattaga joylashtir. Yonma-yon turgan har bir juftda o‘ngdagi son kattaroq bo‘lsin.",
+    "prepared": "Sonlarni kichikdan kattaga joylashtir. Yonma-yon turgan har bir juftda oʻngdagi son kattaroq boʻlsin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/d37839c79bfcc99bb0f7a29bf4350032.mp3",
+    "created": false
+  },
+  {
+    "pk": 239,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunadagi kublarni sana. Boshqacha joylashtirilgan bo‘lsa ham, aynan shuncha kubi bor kartochkani tanla.",
+    "prepared": "Namunadagi kublarni sana. Boshqacha joylashtirilgan boʻlsa ham, aynan shuncha kubi bor kartochkani tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/54819a337876f8a118b36afd93f45dd3.mp3",
+    "created": false
+  },
+  {
+    "pk": 240,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Robotni uyiga olib bor. Yurishdan oldin yo‘lni ko‘z bilan rejalashtir, berk yo‘llarni tekshir va devordan o‘tmasdan manzilga yet.",
+    "prepared": "Robotni uyiga olib bor. Yurishdan oldin yoʻlni koʻz bilan rejalashtir, berk yoʻllarni tekshir va devordan oʻtmasdan manzilga yet.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/dc79599b8463197442cef47a12bbe7fe.mp3",
+    "created": false
+  },
+  {
+    "pk": 241,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bir xil kattalikdagi ichi havo bilan to‘lgan yengil to‘p va yaxlit toshni solishtir. Qo‘lda ko‘targanda qaysi biri og‘irroq?",
+    "prepared": "Bir xil kattalikdagi ichi havo bilan toʻlgan yengil toʻp va yaxlit toshni solishtir. Qoʻlda koʻtarganda qaysi biri ogʻirroq?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c61af5723ee134e2bf9919c076a3bd96.mp3",
+    "created": false
+  },
+  {
+    "pk": 242,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunani diqqat bilan kuzat. Olti bo‘lakdan xuddi shunday robot yig‘: shakl, rang va bezaklar mos bo‘lsin. Qo‘l va oyoqlar ikki tomonda bir xil balandlikda tursin.",
+    "prepared": "Namunani diqqat bilan kuzat. Olti boʻlakdan xuddi shunday robot yigʻ: shakl, rang va bezaklar mos boʻlsin. Qoʻl va oyoqlar ikki tomonda bir xil balandlikda tursin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/a61ff219ec1fc413983aec7a636394e7.mp3",
+    "created": false
+  },
+  {
+    "pk": 243,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Savatga 6 ta olma qo‘yding, yana 3 ta qo‘shding. Keyin 2 tasini olding. Savatda nechta olma qoldi?",
+    "prepared": "Savatga olti ta olma qoʻyding, yana uch ta qoʻshding. Keyin ikki tasini olding. Savatda nechta olma qoldi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e0dc9c0b85518665c81b1eb6bb5facbc.mp3",
+    "created": false
+  },
+  {
+    "pk": 244,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Chapda 9 ta, o‘ngda 6 ta kub bor. Ular orasiga qaysi taqqoslash belgisi qo‘yiladi? Belgining ochiq tomoni katta songa qarasin.\n9 __ 6",
+    "prepared": "Chapda toʻqqiz ta, oʻngda olti ta kub bor. Ular orasiga qaysi taqqoslash belgisi qoʻyiladi? Belgining ochiq tomoni katta songa qarasin. toʻqqiz boʻsh joy olti",
+    "path": "audio/tts/uz-UZ-MadinaNeural/1583ed7ceccbcaf7030a4636dfb76cc1.mp3",
+    "created": false
+  },
+  {
+    "pk": 245,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "2, 4, 6, __, 10\nHar safar nechaga ortayotganini top va tushib qolgan sonni tanla.",
+    "prepared": "ikki, toʻrt, olti, boʻsh joy, oʻn Har safar nechaga ortayotganini top va tushib qolgan sonni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/1ba36faff785e5304472a900d6825e99.mp3",
+    "created": true
+  },
+  {
+    "pk": 246,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunadagi qasrni olti bo‘lakdan yig‘. Minoralarning balandligi va tomlarning yo‘nalishini solishtir. Devor bilan darvoza joyini topib, qasrning ikki tomonini bir xil qilib tugat.",
+    "prepared": "Namunadagi qasrni olti boʻlakdan yigʻ. Minoralarning balandligi va tomlarning yoʻnalishini solishtir. Devor bilan darvoza joyini topib, qasrning ikki tomonini bir xil qilib tugat.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/fa72ca5f8872a23c7f67c9cff02738e3.mp3",
+    "created": false
+  },
+  {
+    "pk": 247,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Chapdagi kapalak yarmini kuzat. Uchta o‘ng bo‘lakni mos joylarga qo‘yib, uning oyna aksini hosil qil. Qanotlarning shakli, rangi va naqshlari ikki tomonda mos kelsin.",
+    "prepared": "Chapdagi kapalak yarmini kuzat. Uchta oʻng boʻlakni mos joylarga qoʻyib, uning oyna aksini hosil qil. Qanotlarning shakli, rangi va naqshlari ikki tomonda mos kelsin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c55579a2240932caedace306f60a5fca.mp3",
+    "created": false
+  },
+  {
+    "pk": 248,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Naqshda takrorlanadigan uchta shakldan iborat bo‘lakni top. Bo‘sh qismni to‘liq uch shakl bilan davom ettiradigan variantni tanla.",
+    "prepared": "Naqshda takrorlanadigan uchta shakldan iborat boʻlakni top. Boʻsh qismni toʻliq uch shakl bilan davom ettiradigan variantni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/b74316e16b4171f14de85c312e2be890.mp3",
+    "created": false
+  },
+  {
+    "pk": 249,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Azizda 5 ta kub bor edi. Yana 4 ta oldi, keyin 2 tasini ukasiga berdi. Oxirgi miqdorni top; faqat birinchi amal bilan to‘xtama.",
+    "prepared": "Azizda besh ta kub bor edi. Yana toʻrt ta oldi, keyin ikki tasini ukasiga berdi. Oxirgi miqdorni top; faqat birinchi amal bilan toʻxtama.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/6079641ca83166eec294da5d83bf44d4.mp3",
+    "created": false
+  },
+  {
+    "pk": 250,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Robotdan bayroqqacha chizilgan yo‘lni kuzat. Har bir strelka robotni bitta katakka siljitadi. Barcha buyruqlarni yo‘lga mos ketma-ketlikka joylashtir.",
+    "prepared": "Robotdan bayroqqacha chizilgan yoʻlni kuzat. Har bir strelka robotni bitta katakka siljitadi. Barcha buyruqlarni yoʻlga mos ketma-ketlikka joylashtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/00df4f1c7a099c4fe56a8d2f07bf126e.mp3",
+    "created": false
+  },
+  {
+    "pk": 251,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Qalamlarning pastki uchlari bir chiziqda turibdi. Ularni uzunidan qisqasigacha tartibla; kartochka hajmini emas, qalam uzunligini solishtir.",
+    "prepared": "Qalamlarning pastki uchlari bir chiziqda turibdi. Ularni uzunidan qisqasigacha tartibla; kartochka hajmini emas, qalam uzunligini solishtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/8cefc6763db5ab3e8b403b88bebff1b2.mp3",
+    "created": false
+  },
+  {
+    "pk": 252,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Raketadagi barcha rangli bo‘laklarni tahlil qil. Uchburchaklar, to‘g‘ri to‘rtburchaklar va doiralarni alohida sana. Qaysi kartochkada aynan shu bo‘laklar bor?",
+    "prepared": "Raketadagi barcha rangli boʻlaklarni tahlil qil. Uchburchaklar, toʻgʻri toʻrtburchaklar va doiralarni alohida sana. Qaysi kartochkada aynan shu boʻlaklar bor?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/d15272574849d56dbf03124a6ed451fd.mp3",
+    "created": false
+  },
+  {
+    "pk": 253,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "3, 6, 9, 12, __\nQo‘shni sonlar orasidagi farqni top. Shu qoida bilan davom ettirilsa, navbatdagi son qaysi?",
+    "prepared": "uch, olti, toʻqqiz, oʻn ikki, boʻsh joy Qoʻshni sonlar orasidagi farqni top. Shu qoida bilan davom ettirilsa, navbatdagi son qaysi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/87bbefc47ce83a70b4a869062564fa85.mp3",
+    "created": false
+  },
+  {
+    "pk": 254,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunadagi ko‘prikni olti bo‘lakdan yig‘. Yo‘lak bo‘laklari bir tekis tutashsin, tayanchlar ikki tomonda teng tursin. Yuqoridagi ravoqni yo‘lakning ustiga moslab joylashtir.",
+    "prepared": "Namunadagi koʻprikni olti boʻlakdan yigʻ. Yoʻlak boʻlaklari bir tekis tutashsin, tayanchlar ikki tomonda teng tursin. Yuqoridagi ravoqni yoʻlakning ustiga moslab joylashtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/231712ffe53b0620c5b2fc09cb4e662a.mp3",
+    "created": false
+  },
+  {
+    "pk": 255,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "STEM sarguzashtining 5 bosqichida namunani yig‘, hisobla, naqshni davom ettir, robot yo‘lini tuz va inshootning bo‘laklarini joylashtir.",
+    "prepared": "STEM sarguzashtining besh bosqichida namunani yigʻ, hisobla, naqshni davom ettir, robot yoʻlini tuz va inshootning boʻlaklarini joylashtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/70ea9db25688599dfc09b691ebef21a9.mp3",
+    "created": false
+  },
+  {
+    "pk": 256,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Uch bo‘lakdan minorani yig‘: ikkita ko‘k blok ustma-ust, tom ularning tepasida bo‘lsin. Namuna bilan joylashuv va tartibni solishtir.",
+    "prepared": "Uch boʻlakdan minorani yigʻ: ikkita koʻk blok ustma-ust, tom ularning tepasida boʻlsin. Namuna bilan joylashuv va tartibni solishtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9affd5f495aaf97c2791b00b58520fee.mp3",
+    "created": false
+  },
+  {
+    "pk": 257,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Minoraga 5 ta blok qo‘yildi. Yana 4 ta qo‘shildi, keyin 2 tasi olindi. Minorada nechta blok qoldi?",
+    "prepared": "Minoraga besh ta blok qoʻyildi. Yana toʻrt ta qoʻshildi, keyin ikki tasi olindi. Minorada nechta blok qoldi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/077d75e46169ff4820ab90b9078b8756.mp3",
+    "created": false
+  },
+  {
+    "pk": 258,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Naqshning takrorlanadigan bo‘lagini top va bo‘sh katakni shu qoidaga mos shakl bilan to‘ldir.",
+    "prepared": "Naqshning takrorlanadigan boʻlagini top va boʻsh katakni shu qoidaga mos shakl bilan toʻldir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/167541b65597b31507b338270f3b6ab9.mp3",
+    "created": false
+  },
+  {
+    "pk": 259,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Robotning boshlanish joyidan bayroqqacha yo‘lni kuzat. Uchta buyruqni har biri bitta katakka yuradigan tartibda joylashtir.",
+    "prepared": "Robotning boshlanish joyidan bayroqqacha yoʻlni kuzat. Uchta buyruqni har biri bitta katakka yuradigan tartibda joylashtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/29cfe474b322f2269158cdefd11d4eab.mp3",
+    "created": false
+  },
+  {
+    "pk": 260,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunadagi inshootni barcha to‘rt bo‘lakdan yig‘. Ikki tayanchning ustiga qavat, qavatning ustiga gumbaz tushsin.",
+    "prepared": "Namunadagi inshootni barcha toʻrt boʻlakdan yigʻ. Ikki tayanchning ustiga qavat, qavatning ustiga gumbaz tushsin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/bfbf5f62f7092958ceaeb342370913da.mp3",
+    "created": false
+  },
+  {
+    "pk": 300,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bolaning tomog‘i og‘rib, yo‘talmoqda. Uni tekshirib, davolashni belgilaydigan kasb egasini tanla.",
+    "prepared": "Bolaning tomogʻi ogʻrib, yoʻtalmoqda. Uni tekshirib, davolashni belgilaydigan kasb egasini tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/442e13c01177a3a074c53fabb0a611e8.mp3",
+    "created": false
+  },
+  {
+    "pk": 301,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Shifokor bemorning yurak urishini tinglamoqchi. Aynan shu ish uchun kerak bo‘ladigan buyumni tanla.",
+    "prepared": "Shifokor bemorning yurak urishini tinglamoqchi. Aynan shu ish uchun kerak boʻladigan buyumni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/270dd9065631fddee1e65b55dc2ab62c.mp3",
+    "created": false
+  },
+  {
+    "pk": 302,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Oshxonada mahsulotlar yuvilib, to‘g‘raldi. Oshpazning vazifasiga mos keyingi ish qaysi?",
+    "prepared": "Oshxonada mahsulotlar yuvilib, toʻgʻraldi. Oshpazning vazifasiga mos keyingi ish qaysi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/799207f490fac5edb6678430922afb5a.mp3",
+    "created": false
+  },
+  {
+    "pk": 303,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Sotuvchi: «Assalomu alaykum!» Sen avval salomga javob bermoqchisan. Qaysi gap mos?",
+    "prepared": "Sotuvchi: \"Assalomu alaykum!\" Sen avval salomga javob bermoqchisan. Qaysi gap mos?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/a91f4ea53a2dd3faf0ce0cd5216402e2.mp3",
+    "created": false
+  },
+  {
+    "pk": 304,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Do‘konda non so‘ramoqchisan. Qaysi gap istagingni aniq va odob bilan ifodalaydi?",
+    "prepared": "Doʻkonda non soʻramoqchisan. Qaysi gap istagingni aniq va odob bilan ifodalaydi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/a00a820a29e95486cc78dc3f731de268.mp3",
+    "created": false
+  },
+  {
+    "pk": 305,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmdagi mashinada yong‘in uchun narvon va jihozlar bor. Shu jihozlar bilan odamlarga yordam beradigan kasb egasi kim?",
+    "prepared": "Rasmdagi mashinada yongʻin uchun narvon va jihozlar bor. Shu jihozlar bilan odamlarga yordam beradigan kasb egasi kim?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/5193047cf940f5e15020a8f7bdb998bb.mp3",
+    "created": false
+  },
+  {
+    "pk": 306,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Do‘sting yiqildi va tizzasi og‘riyapti. Avval qaysi ish bilan unga yordam berasan?",
+    "prepared": "Doʻsting yiqildi va tizzasi ogʻriyapti. Avval qaysi ish bilan unga yordam berasan?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/83b6c4772083121f51da2cc6e050d068.mp3",
+    "created": false
+  },
+  {
+    "pk": 307,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Telefonda tanish odam «Salom, yaxshimisan?» dedi. Suhbatni odob bilan davom ettiradigan javobni tanla.",
+    "prepared": "Telefonda tanish odam \"Salom, yaxshimisan?\" dedi. Suhbatni odob bilan davom ettiradigan javobni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/0600a79c782d925a47d9d01e63990370.mp3",
+    "created": false
+  },
+  {
+    "pk": 308,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Non do‘konida sendan oldin ikki xaridor turibdi. Xaridni odob bilan qanday boshlaysan?",
+    "prepared": "Non doʻkonida sendan oldin ikki xaridor turibdi. Xaridni odob bilan qanday boshlaysan?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/177a330ccc4e5bfa52974ec018e0e7e0.mp3",
+    "created": false
+  },
+  {
+    "pk": 309,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Yuzlarni kuzat: tabassum, ko‘z va qoshlar holatini solishtir. Quvonayotgan bolaning yuzini tanla.",
+    "prepared": "Yuzlarni kuzat: tabassum, koʻz va qoshlar holatini solishtir. Quvonayotgan bolaning yuzini tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/ec05d026021feea41a3eaa9fa3a7a819.mp3",
+    "created": false
+  },
+  {
+    "pk": 310,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kasb egasining asosiy ishini esla va odatda shu ish bajariladigan joy bilan bog‘la. Har bir juftning vazifasi mos bo‘lsin.",
+    "prepared": "Kasb egasining asosiy ishini esla va odatda shu ish bajariladigan joy bilan bogʻla. Har bir juftning vazifasi mos boʻlsin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c48b845eb1cb995f2cd330609578645d.mp3",
+    "created": false
+  },
+  {
+    "pk": 311,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Xaridor va sotuvchining suhbatini boshidan oxirigacha joylashtir: salomlashish, mahsulotni berish, minnatdorlik va xayrlashish.",
+    "prepared": "Xaridor va sotuvchining suhbatini boshidan oxirigacha joylashtir: salomlashish, mahsulotni berish, minnatdorlik va xayrlashish.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/72d887151545efb5ec6766a6c8f40b94.mp3",
+    "created": false
+  },
+  {
+    "pk": 312,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Uy uchun olma, sut va non olishing kerak. Senda 10 tanga bor. Shu uch mahsulotni tanlab, narxlarini qo‘sh; kitob bu xarid ro‘yxatiga kirmaydi.",
+    "prepared": "Uy uchun olma, sut va non olishing kerak. Senda oʻn tanga bor. Shu uch mahsulotni tanlab, narxlarini qoʻsh; kitob bu xarid roʻyxatiga kirmaydi.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/72e34011320eda5af8aa484d64e7cceb.mp3",
+    "created": false
+  },
+  {
+    "pk": 313,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bir kunlik piyoda sayohatga ketyapsan. Yo‘lda olib yurish va ichish uchun foydali barcha buyumlarni tanla. Uyda qoladiganini belgilama.",
+    "prepared": "Bir kunlik piyoda sayohatga ketyapsan. Yoʻlda olib yurish va ichish uchun foydali barcha buyumlarni tanla. Uyda qoladiganini belgilama.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7eb56775eea8bcb3729c9a1979501455.mp3",
+    "created": false
+  },
+  {
+    "pk": 314,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Xaridor bo‘lib 4–5 gapli suhbat ayt: salomlash, non so‘ra, narxini so‘ra, to‘lov qilganingni ayt va rahmat aytib xayrlash.",
+    "prepared": "Xaridor boʻlib toʻrt–besh gapli suhbat ayt: salomlash, non soʻra, narxini soʻra, toʻlov qilganingni ayt va rahmat aytib xayrlash.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/85190ec420f4a5cc7fa05b7fd5cce142.mp3",
+    "created": false
+  },
+  {
+    "pk": 315,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "«Oshpaz ovqat tayyorlash bilan birga bemorni operatsiya ham qiladi.» Bu fikrdagi kasb vazifalari to‘g‘ri moslashtirilganmi?",
+    "prepared": "\"Oshpaz ovqat tayyorlash bilan birga bemorni operatsiya ham qiladi.\" Bu fikrdagi kasb vazifalari toʻgʻri moslashtirilganmi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9b854e5b7194be0d2447978a8a0b3e55.mp3",
+    "created": false
+  },
+  {
+    "pk": 316,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Do‘stingning o‘yinchoq bo‘laklari yerga sochilib ketdi. U hali yig‘ishni tugatmadi. Qaysi yechim ham yordam, ham hurmatni bildiradi?",
+    "prepared": "Doʻstingning oʻyinchoq boʻlaklari yerga sochilib ketdi. U hali yigʻishni tugatmadi. Qaysi yechim ham yordam, ham hurmatni bildiradi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/ac072ea530b74dc330e2152ffca4e0fd.mp3",
+    "created": false
+  },
+  {
+    "pk": 317,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmdagi joyda g‘isht, iskala va qurilayotgan bino bor. Bunday joydagi asosiy ishga mos kasbni tanla.",
+    "prepared": "Rasmdagi joyda gʻisht, iskala va qurilayotgan bino bor. Bunday joydagi asosiy ishga mos kasbni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/0ac42b446a5449cb418deac612ddfae2.mp3",
+    "created": false
+  },
+  {
+    "pk": 318,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Mehmon eshikdan kirib keldi. Uni hurmat bilan kutib olishning birinchi qadami qaysi?",
+    "prepared": "Mehmon eshikdan kirib keldi. Uni hurmat bilan kutib olishning birinchi qadami qaysi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e4b9a45218ac42f9185e804be698116d.mp3",
+    "created": false
+  },
+  {
+    "pk": 319,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "O‘zingni shifokor deb tasavvur qil. 4 ta bog‘langan gapda ish joying, tekshiradigan narsang, bir ish quroling va bemorga muloyim muomalangni ayt.",
+    "prepared": "Oʻzingni shifokor deb tasavvur qil. toʻrt ta bogʻlangan gapda ish joying, tekshiradigan narsang, bir ish quroling va bemorga muloyim muomalangni ayt.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e5f236ec84662f4150661fb6d71d9902.mp3",
+    "created": false
+  },
+  {
+    "pk": 320,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Virtual do‘konda xarid rejasini bajar: ro‘yxatdagi mahsulotlarni tanla, jami narxni hisobla, yetarli pulni ber va qaytimni tekshir. Har bosqich oldingi xaridga bog‘liq.",
+    "prepared": "Virtual doʻkonda xarid rejasini bajar: roʻyxatdagi mahsulotlarni tanla, jami narxni hisobla, yetarli pulni ber va qaytimni tekshir. Har bosqich oldingi xaridga bogʻliq.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/3c1dca5fcdd22296c2db6b445e29c9e2.mp3",
+    "created": false
+  },
+  {
+    "pk": 321,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Ro‘yxatingda kitob, olma va sut bor. Senda 12 tanga. Shu mahsulotlarni tanlab, jami narxni tekshir; televizor ro‘yxatga kirmaydi.",
+    "prepared": "Roʻyxatingda kitob, olma va sut bor. Senda oʻn ikki tanga. Shu mahsulotlarni tanlab, jami narxni tekshir; televizor roʻyxatga kirmaydi.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/a4f6705af0bae20e83eeda852cd79419.mp3",
+    "created": false
+  },
+  {
+    "pk": 322,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kitob 5 tanga, olma 4 tanga, sut 3 tanga. Uchalasini olsang, jami qancha to‘laysan?",
+    "prepared": "Kitob besh tanga, olma toʻrt tanga, sut uch tanga. Uchalasini olsang, jami qancha toʻlaysan?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/6d17e611c41ab905f81a9098af39d866.mp3",
+    "created": false
+  },
+  {
+    "pk": 323,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Xarid 12 tanga turadi. Qaytim olish mumkin. Variantlardan qaysi pul xaridga yetadi?",
+    "prepared": "Xarid oʻn ikki tanga turadi. Qaytim olish mumkin. Variantlardan qaysi pul xaridga yetadi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/20d4d32f9fdda0dc04ede60d28673f57.mp3",
+    "created": false
+  },
+  {
+    "pk": 324,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Sotuvchiga 15 tanga berding. Xariding 12 tanga. Qaytimni olishdan oldin qancha bo‘lishi kerakligini hisobla.",
+    "prepared": "Sotuvchiga oʻn besh tanga berding. Xariding oʻn ikki tanga. Qaytimni olishdan oldin qancha boʻlishi kerakligini hisobla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/791752e50f5fdf4f820210db01fab803.mp3",
+    "created": false
+  },
+  {
+    "pk": 325,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bemorning isitmasi bor va u o‘zini yomon his qilyapti. Sen bola sifatida qanday to‘g‘ri yordam berasan?",
+    "prepared": "Bemorning isitmasi bor va u oʻzini yomon his qilyapti. Sen bola sifatida qanday toʻgʻri yordam berasan?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/b337a9779bea2235b2cb582c3c6f1694.mp3",
+    "created": false
+  },
+  {
+    "pk": 326,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "O‘qituvchi savol berdi, javobini bilasan. Boshqa bola gapiryapti. Qaysi harakat tinglashga ham, javob berishga ham imkon yaratadi?",
+    "prepared": "Oʻqituvchi savol berdi, javobini bilasan. Boshqa bola gapiryapti. Qaysi harakat tinglashga ham, javob berishga ham imkon yaratadi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/2477c3930eee782ef77afda5b1c5378b.mp3",
+    "created": false
+  },
+  {
+    "pk": 327,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Ikki bola bitta o‘yinchoqni xohlayapti, ikkalasi ham o‘ynashga haqli. Qaysi kelishuv ikkisiga ham adolatli?",
+    "prepared": "Ikki bola bitta oʻyinchoqni xohlayapti, ikkalasi ham oʻynashga haqli. Qaysi kelishuv ikkisiga ham adolatli?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/8c4e72934d82447a70f9d3432695968e.mp3",
+    "created": false
+  },
+  {
+    "pk": 328,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Sotuvchi va xaridor rollarida kamida 6 gapli suhbat ayt. Mahsulot va miqdorni so‘ra, narxni aniqlashtir, to‘lov hamda qaytimni tekshir, oxirida xayrlash.",
+    "prepared": "Sotuvchi va xaridor rollarida kamida olti gapli suhbat ayt. Mahsulot va miqdorni soʻra, narxni aniqlashtir, toʻlov hamda qaytimni tekshir, oxirida xayrlash.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/aabb4d83ac51e39dd928ac137ab3476c.mp3",
+    "created": false
+  },
+  {
+    "pk": 329,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "«Maktabga birinchi kunim...» hikoyasini 4–5 gap bilan davom ettir. Dastlabki hising, uchratgan odaming, yuz bergan bir vaziyat va uning yechimini ayt.",
+    "prepared": "\"Maktabga birinchi kunim...\" hikoyasini toʻrt–besh gap bilan davom ettir. Dastlabki hising, uchratgan odaming, yuz bergan bir vaziyat va uning yechimini ayt.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/2c7ff5a68b11a781a61e455f04256426.mp3",
+    "created": false
+  },
+  {
+    "pk": 330,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bir kasb nomini yashirib, 4 ta belgi bilan tarifla: qayerda ishlaydi, nima qiladi, qaysi buyumdan foydalanadi va kimga foyda keltiradi. Kasb nomini aytma.",
+    "prepared": "Bir kasb nomini yashirib, toʻrt ta belgi bilan tarifla: qayerda ishlaydi, nima qiladi, qaysi buyumdan foydalanadi va kimga foyda keltiradi. Kasb nomini aytma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/efabab35ba9de50b048608a5bcb21c97.mp3",
+    "created": false
+  },
+  {
+    "pk": 331,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bolaning yonidagi o‘yinchoq va yuz ifodasiga qaragin. Aynan rasmdagi dalilga asoslangan sabab qaysi?",
+    "prepared": "Bolaning yonidagi oʻyinchoq va yuz ifodasiga qaragin. Aynan rasmdagi dalilga asoslangan sabab qaysi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/ae77372e8397997f901c924f67027f3a.mp3",
+    "created": false
+  },
+  {
+    "pk": 332,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Svetofor qizil, yo‘lda esa hozir mashina ko‘rinmayapti. Qanday qaror qoida va xavfsizlikka mos?",
+    "prepared": "Svetofor qizil, yoʻlda esa hozir mashina koʻrinmayapti. Qanday qaror qoida va xavfsizlikka mos?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/83e7bbe2c00f2654084b1815f0bda0bf.mp3",
+    "created": false
+  },
+  {
+    "pk": 333,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Hayot maktabining 5 vaziyatini bajar. Har safar odob, navbat, hisob-kitob yoki xavfsizlik qoidasiga asoslangan qarorni tanla.",
+    "prepared": "Hayot maktabining besh vaziyatini bajar. Har safar odob, navbat, hisob-kitob yoki xavfsizlik qoidasiga asoslangan qarorni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/6c5318ff5c6fa78900803c0e12e8a011.mp3",
+    "created": false
+  },
+  {
+    "pk": 334,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bemor isitmasi borligini aytdi. Shifokor keyingi qaroridan oldin nima qilishi kerak?",
+    "prepared": "Bemor isitmasi borligini aytdi. Shifokor keyingi qaroridan oldin nima qilishi kerak?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/d30b9c821d27ce850f1b0b50d4f60584.mp3",
+    "created": false
+  },
+  {
+    "pk": 335,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Uy uchun non va sut olishing kerak. Ikkalasi jami 6 tanga. Shu ro‘yxatni tanlab, puling aynan yetishini tekshir.",
+    "prepared": "Uy uchun non va sut olishing kerak. Ikkalasi jami olti tanga. Shu roʻyxatni tanlab, puling aynan yetishini tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/03562a792edb7abdcbab0157f6abbc18.mp3",
+    "created": false
+  },
+  {
+    "pk": 336,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Sinfdoshing javob berayotganda sen ham fikr aytmoqchisan. To‘g‘ri ish qaysi?",
+    "prepared": "Sinfdoshing javob berayotganda sen ham fikr aytmoqchisan. Toʻgʻri ish qaysi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/ab103dc07cf911010526612624d50fe5.mp3",
+    "created": false
+  },
+  {
+    "pk": 337,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Xonada tutun va olov ko‘rding. Sen bola sifatida eng avval qanday yo‘l tutasan?",
+    "prepared": "Xonada tutun va olov koʻrding. Sen bola sifatida eng avval qanday yoʻl tutasan?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/55ff81c6d07d69333df4e7dd638975ac.mp3",
+    "created": false
+  },
+  {
+    "pk": 338,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Yo‘lning narigi tomoniga o‘tishing kerak. Qaysi tanlovda joy ham, harakat ham xavfsiz?",
+    "prepared": "Yoʻlning narigi tomoniga oʻtishing kerak. Qaysi tanlovda joy ham, harakat ham xavfsiz?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7292484b3b48b3718936c2edc95d06fa.mp3",
+    "created": false
+  },
+  {
+    "pk": 339,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "O‘sadigan, oziqlanadigan yoki ko‘payadigan narsalarni «Jonli» qutisiga, qolganlarini «Jonsiz» qutisiga joylashtir. O‘simlik ham jonli ekanini unutma.",
+    "prepared": "Oʻsadigan, oziqlanadigan yoki koʻpayadigan narsalarni \"Jonli\" qutisiga, qolganlarini \"Jonsiz\" qutisiga joylashtir. Oʻsimlik ham jonli ekanini unutma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/1300a764831125221ecb33652f87cfe9.mp3",
+    "created": false
+  },
+  {
+    "pk": 340,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmdagi daraxt, yer va yog‘ayotgan yog‘inni kuzat. Bu belgilar birgalikda qaysi faslga mos?",
+    "prepared": "Rasmdagi daraxt, yer va yogʻayotgan yogʻinni kuzat. Bu belgilar birgalikda qaysi faslga mos?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/4e66d74c880858582deb51cbfcccbcf7.mp3",
+    "created": false
+  },
+  {
+    "pk": 341,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Sigir rasmini kuzat. Uning bolasi qaysi hayvon? Yosh hayvonlarning tana shakli va belgilarini solishtir.",
+    "prepared": "Sigir rasmini kuzat. Uning bolasi qaysi hayvon? Yosh hayvonlarning tana shakli va belgilarini solishtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/649b198628b36ec23354a53894dab481.mp3",
+    "created": false
+  },
+  {
+    "pk": 342,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmlarni kundalik ovqatlanishda ishlatiladigan «Meva» va «Sabzavot» guruhlariga ajrat. Har bir rasmni o‘z savatiga qo‘y.",
+    "prepared": "Rasmlarni kundalik ovqatlanishda ishlatiladigan \"Meva\" va \"Sabzavot\" guruhlariga ajrat. Har bir rasmni oʻz savatiga qoʻy.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/3b7505a4e7dc7ca1017dbba82533b83e.mp3",
+    "created": false
+  },
+  {
+    "pk": 343,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Baliq jabralari yordamida suvda nafas oladi. Rasmlardan uning yashashi uchun mos muhitni tanla.",
+    "prepared": "Baliq jabralari yordamida suvda nafas oladi. Rasmlardan uning yashashi uchun mos muhitni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/292b331171ad88aa13d07de14d4e6ab3.mp3",
+    "created": false
+  },
+  {
+    "pk": 344,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmdagi quyoshning markazida qaysi rang eng ko‘p? Palitrani solishtirib, rasmga mos rangni tanla.",
+    "prepared": "Rasmdagi quyoshning markazida qaysi rang eng koʻp? Palitrani solishtirib, rasmga mos rangni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c52acb96193b92e5d8c584502e0bbfc3.mp3",
+    "created": false
+  },
+  {
+    "pk": 345,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bitta asosiy yog‘och tanasi va yuqorida shoxli barg toji bor o‘simlikni top. Gul, qo‘ziqorin va kaktusdan farqini kuzat.",
+    "prepared": "Bitta asosiy yogʻoch tanasi va yuqorida shoxli barg toji bor oʻsimlikni top. Gul, qoʻziqorin va kaktusdan farqini kuzat.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/b219d2d8adc2fd4f13d4debd74460c50.mp3",
+    "created": false
+  },
+  {
+    "pk": 346,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Savol rasmini kuzat: osmon ochiq, quyosh porlayapti. Rasmdagi belgilar qaysi ob-havoga mos?",
+    "prepared": "Savol rasmini kuzat: osmon ochiq, quyosh porlayapti. Rasmdagi belgilar qaysi ob-havoga mos?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/cd02aa174835c70bbae65569f9fa787e.mp3",
+    "created": false
+  },
+  {
+    "pk": 347,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Qanotlari bilan havoda uchadigan jonivorni tanla. Suzish va yerda yurish bilan uchishni adashtirma.",
+    "prepared": "Qanotlari bilan havoda uchadigan jonivorni tanla. Suzish va yerda yurish bilan uchishni adashtirma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e966f22a1945b1e61e8745aa2a2291a6.mp3",
+    "created": false
+  },
+  {
+    "pk": 348,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Tuvakdagi gulning tuprog‘i qurib qoldi. Berilgan narsalardan qaysi biri uni sug‘orish va namlash uchun kerak?",
+    "prepared": "Tuvakdagi gulning tuprogʻi qurib qoldi. Berilgan narsalardan qaysi biri uni sugʻorish va namlash uchun kerak?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/f1d325d456fb4db7c9f9e0af13dea0d4.mp3",
+    "created": false
+  },
+  {
+    "pk": 349,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "O‘simlikni namunaga mos yig‘: ildiz pastda, poya undan yuqorida, barg poyaning yonida, gul tepada. Har bir qismni vazifasiga mos joyga qo‘y.",
+    "prepared": "Oʻsimlikni namunaga mos yigʻ: ildiz pastda, poya undan yuqorida, barg poyaning yonida, gul tepada. Har bir qismni vazifasiga mos joyga qoʻy.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e086b350621868d6ae25c31c04884ce8.mp3",
+    "created": false
+  },
+  {
+    "pk": 350,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Oziq zanjirini o‘simlikdan boshlagin. O‘tni yegan hayvonni keyin, o‘sha hayvon bilan oziqlanadiganini oxiriga qo‘y.",
+    "prepared": "Oziq zanjirini oʻsimlikdan boshlagin. Oʻtni yegan hayvonni keyin, oʻsha hayvon bilan oziqlanadiganini oxiriga qoʻy.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9dc7e95babf3f265dff23cd9530f1dac.mp3",
+    "created": false
+  },
+  {
+    "pk": 351,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bahorni birinchi qo‘y. So‘ng fasllarni yil davomida bir-biridan keyin keladigan tartibda joylashtir.",
+    "prepared": "Bahorni birinchi qoʻy. Soʻng fasllarni yil davomida bir-biridan keyin keladigan tartibda joylashtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/af5b4238419fa261147c96c4a3d4944f.mp3",
+    "created": false
+  },
+  {
+    "pk": 352,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Hayvonlarning tabiiy yashash joylarini solishtir: issiq o‘tloq, muzli sohil va qumli cho‘l. Har birini eng mos muhit bilan bog‘la.",
+    "prepared": "Hayvonlarning tabiiy yashash joylarini solishtir: issiq oʻtloq, muzli sohil va qumli choʻl. Har birini eng mos muhit bilan bogʻla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/761d897035e81b770bb83a4c237d8196.mp3",
+    "created": false
+  },
+  {
+    "pk": 353,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bulut orasida yorqin zigzag chaqnashi tasvirlangan hodisani top. Uni qor yog‘ishi va yerga yaqin tumandan farqla.",
+    "prepared": "Bulut orasida yorqin zigzag chaqnashi tasvirlangan hodisani top. Uni qor yogʻishi va yerga yaqin tumandan farqla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c5260bcee1c79b9b0ec94271cb99e75b.mp3",
+    "created": false
+  },
+  {
+    "pk": 354,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Chap rasmda muz, o‘ngda esa xuddi shu idishda suyuq suv bor. Muz xona iliqligida turgan. Kuzatuvga mos xulosani tanla.",
+    "prepared": "Chap rasmda muz, oʻngda esa xuddi shu idishda suyuq suv bor. Muz xona iliqligida turgan. Kuzatuvga mos xulosani tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/980c3c0aaece374994ee260d07795156.mp3",
+    "created": false
+  },
+  {
+    "pk": 355,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Park yerida qoldirilsa, uzoq vaqt chirimasdan chiqindi bo‘lib qoladigan buyumni tanla. Tabiiy o‘simlik qismlaridan farqla.",
+    "prepared": "Park yerida qoldirilsa, uzoq vaqt chirimasdan chiqindi boʻlib qoladigan buyumni tanla. Tabiiy oʻsimlik qismlaridan farqla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c01f75a19286758728973dc4d0764d3e.mp3",
+    "created": false
+  },
+  {
+    "pk": 356,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Odamlar bilan uyda yoki xo‘jalikda boqiladigan hayvonlarni «Uy hayvonlari», tabiiy muhitda erkin yashaydiganlarini «Yovvoyi hayvonlar» guruhiga ajrat.",
+    "prepared": "Odamlar bilan uyda yoki xoʻjalikda boqiladigan hayvonlarni \"Uy hayvonlari\", tabiiy muhitda erkin yashaydiganlarini \"Yovvoyi hayvonlar\" guruhiga ajrat.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/19e7f9f1dbfcb3503757b72bf28f961b.mp3",
+    "created": false
+  },
+  {
+    "pk": 357,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Har bir hayvonning tashqi shaklini soyasi bilan solishtir: quloq, tumshuq, dum va suzgichlar yordamida juftini top.",
+    "prepared": "Har bir hayvonning tashqi shaklini soyasi bilan solishtir: quloq, tumshuq, dum va suzgichlar yordamida juftini top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/aa88fc81decebba31efb46077f007a22.mp3",
+    "created": false
+  },
+  {
+    "pk": 358,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Gul bir necha kun sug‘orilmadi, tuprog‘i quruq va barglari so‘ldi. Suv unga eng avvalo nima uchun kerak?",
+    "prepared": "Gul bir necha kun sugʻorilmadi, tuprogʻi quruq va barglari soʻldi. Suv unga eng avvalo nima uchun kerak?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/f6e82687df1de3f5a2ddc87f12fa0842.mp3",
+    "created": false
+  },
+  {
+    "pk": 359,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Ikki bir xil nihol bir xil tuproq va yorug‘likda turibdi. Faqat bittasi muntazam sug‘orildi. Rasmdagi farq nimani ko‘rsatadi?",
+    "prepared": "Ikki bir xil nihol bir xil tuproq va yorugʻlikda turibdi. Faqat bittasi muntazam sugʻorildi. Rasmdagi farq nimani koʻrsatadi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/259da614fe73741e1dff9ca92153a3be.mp3",
+    "created": false
+  },
+  {
+    "pk": 360,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Parkdagi tashlab ketilgan buyumlarni «Chiqindi qutisi»ga, o‘sib turgan o‘simliklarni «Tabiatda qolsin»ga ajrat. Tozalash uchun gullarni uzma.",
+    "prepared": "Parkdagi tashlab ketilgan buyumlarni \"Chiqindi qutisi\"ga, oʻsib turgan oʻsimliklarni \"Tabiatda qolsin\"ga ajrat. Tozalash uchun gullarni uzma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/69e7db185f9b5d8fd6393550f4f1db26.mp3",
+    "created": false
+  },
+  {
+    "pk": 361,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Suvda yashayman, suzgichlarim bilan harakatlanaman, jabralarim bilan nafas olaman. Uchala belgiga ham mos hayvonni top.",
+    "prepared": "Suvda yashayman, suzgichlarim bilan harakatlanaman, jabralarim bilan nafas olaman. Uchala belgiga ham mos hayvonni top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/5d356e22bfa1cef68ebfd0e8ac589677.mp3",
+    "created": false
+  },
+  {
+    "pk": 362,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Gullaydigan o‘simlikning rivojlanishini tartibla. Eng avval urug‘, keyin unib chiqqan o‘simlik, oxirida gul ochgan o‘simlik tursin.",
+    "prepared": "Gullaydigan oʻsimlikning rivojlanishini tartibla. Eng avval urugʻ, keyin unib chiqqan oʻsimlik, oxirida gul ochgan oʻsimlik tursin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/734b8395ce17c3230b39817c41c7a223.mp3",
+    "created": false
+  },
+  {
+    "pk": 363,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Parkda bir daraxt kesilib, joyi bo‘sh qolgan. Tabiatga uzoq muddat foyda beradigan ishni tanla.",
+    "prepared": "Parkda bir daraxt kesilib, joyi boʻsh qolgan. Tabiatga uzoq muddat foyda beradigan ishni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/dcde43f12e66d488335e773c6b06a0df.mp3",
+    "created": false
+  },
+  {
+    "pk": 364,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Ba’zi qushlar qishda issiq o‘lkalarga uchadi. Sovuqda hasharot va boshqa ozuqa kamayishini hisobga olsak, asosiy sabab qaysi?",
+    "prepared": "Baʼzi qushlar qishda issiq oʻlkalarga uchadi. Sovuqda hasharot va boshqa ozuqa kamayishini hisobga olsak, asosiy sabab qaysi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c8b035ef541856b556d2c810209ca389.mp3",
+    "created": false
+  },
+  {
+    "pk": 365,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Oddiy tuvakda nihol yetishtirishni rejalashtir. Berilgan rasmlardan unumdor muhit, yorug‘lik va sug‘orish uchun zarur bo‘lganlarning hammasini tanla.",
+    "prepared": "Oddiy tuvakda nihol yetishtirishni rejalashtir. Berilgan rasmlardan unumdor muhit, yorugʻlik va sugʻorish uchun zarur boʻlganlarning hammasini tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c81455c53607d236c485da464b8fbe93.mp3",
+    "created": false
+  },
+  {
+    "pk": 366,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Tabiatni asrash haqida 4–5 bog‘langan gap ayt. Bitta muammoni, uning o‘simlik yoki hayvonga ta’sirini, o‘zing qiladigan ishni va kutilgan foydani tushuntir.",
+    "prepared": "Tabiatni asrash haqida toʻrt–besh bogʻlangan gap ayt. Bitta muammoni, uning oʻsimlik yoki hayvonga taʼsirini, oʻzing qiladigan ishni va kutilgan foydani tushuntir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/cb80275186403941bb902a6e071eb7c0.mp3",
+    "created": false
+  },
+  {
+    "pk": 367,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmlar oddiy bog‘ va uning hayvonlari haqida. Baliqning yashash joyi, daraxtga qo‘nadigan qush va issiq yoz belgilari bir-biriga mos kelmaydigan barcha rasmlarni belgila.",
+    "prepared": "Rasmlar oddiy bogʻ va uning hayvonlari haqida. Baliqning yashash joyi, daraxtga qoʻnadigan qush va issiq yoz belgilari bir-biriga mos kelmaydigan barcha rasmlarni belgila.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/98026823a08846300bb789b5096f6e46.mp3",
+    "created": false
+  },
+  {
+    "pk": 368,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Yosh olimning 5 bosqichini bajar: guruhla, tajribadan xulosa chiqar, muhitni mosla, tabiat uchun qaror tanla va fikringni dalil bilan ayt.",
+    "prepared": "Yosh olimning besh bosqichini bajar: guruhla, tajribadan xulosa chiqar, muhitni mosla, tabiat uchun qaror tanla va fikringni dalil bilan ayt.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/d96867fd672183a3f9d2b66b384c399b.mp3",
+    "created": false
+  },
+  {
+    "pk": 369,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Narsalarni «Jonli» va «Jonsiz» guruhiga ajrat. Faqat yurishiga qarama: gul ham o‘sadigan tirik o‘simlik.",
+    "prepared": "Narsalarni \"Jonli\" va \"Jonsiz\" guruhiga ajrat. Faqat yurishiga qarama: gul ham oʻsadigan tirik oʻsimlik.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/662cd0e2358a13aaf2e83a38b0d1ec93.mp3",
+    "created": false
+  },
+  {
+    "pk": 370,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bir xil idishning chap holatida muz, o‘ng holatida suv bor. Iliq joyda qanday o‘zgarish yuz bergan?",
+    "prepared": "Bir xil idishning chap holatida muz, oʻng holatida suv bor. Iliq joyda qanday oʻzgarish yuz bergan?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/ff250eb5e568c13b873a495e1fb36095.mp3",
+    "created": false
+  },
+  {
+    "pk": 371,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Pingvin va tuyani tabiiy muhitiga mosla. Muzli sohil bilan issiq qumli cho‘lning farqini hisobga ol.",
+    "prepared": "Pingvin va tuyani tabiiy muhitiga mosla. Muzli sohil bilan issiq qumli choʻlning farqini hisobga ol.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/a8cd030d47d81b27545966004909e930.mp3",
+    "created": false
+  },
+  {
+    "pk": 372,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Parkda tashlab ketilgan bo‘sh plastik shisha ko‘rding. Tabiatni asrashga mos qarorni tanla.",
+    "prepared": "Parkda tashlab ketilgan boʻsh plastik shisha koʻrding. Tabiatni asrashga mos qarorni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/70a6e2e6a8f74ac0c61bc76804c653c8.mp3",
+    "created": false
+  },
+  {
+    "pk": 373,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Tabiat haqida 4 ta bog‘langan gap ayt: kuzatgan tirik mavjudoting, unga kerakli sharoit, bir xavf va uni asrash usuling. «Chunki» bilan sababini tushuntir.",
+    "prepared": "Tabiat haqida toʻrt ta bogʻlangan gap ayt: kuzatgan tirik mavjudoting, unga kerakli sharoit, bir xavf va uni asrash usuling. \"Chunki\" bilan sababini tushuntir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/1ac12e3277de98ef7aed11387ffb4d89.mp3",
+    "created": false
+  },
+  {
+    "pk": 409,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Savol rasmidagi olmaning po‘stini kuzat. Namunani aynan takrorlash uchun qaysi bo‘yoqni tanlaysan?",
+    "prepared": "Savol rasmidagi olmaning poʻstini kuzat. Namunani aynan takrorlash uchun qaysi boʻyoqni tanlaysan?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/ab096aae290010b7ba05a5be64fbe0ce.mp3",
+    "created": false
+  },
+  {
+    "pk": 410,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kapalakning barcha qismlarini bo‘ya. Avval qanotlarni, so‘ng tanasini rangla. Ranglar erkin: ikkala tomonni ko‘rib, birorta qismni bo‘sh qoldirma.",
+    "prepared": "Kapalakning barcha qismlarini boʻya. Avval qanotlarni, soʻng tanasini rangla. Ranglar erkin: ikkala tomonni koʻrib, birorta qismni boʻsh qoldirma.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c9ab893dfbb830c3ee17cff02290aeea.mp3",
+    "created": false
+  },
+  {
+    "pk": 411,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunadagi uychani uch bo‘lakdan yig‘: tom yuqorida, devor pastda, dumaloq deraza devorning ichida. Shakl va joylashuvni mosla.",
+    "prepared": "Namunadagi uychani uch boʻlakdan yigʻ: tom yuqorida, devor pastda, dumaloq deraza devorning ichida. Shakl va joylashuvni mosla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/a802943e6540ce0a774d973b566fa584.mp3",
+    "created": false
+  },
+  {
+    "pk": 412,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Qog‘ozga suyuq bo‘yoq surtib rasm chizmoqchisan. Mo‘yli uchi bilan aynan shu ishni bajaradigan buyumni tanla.",
+    "prepared": "Qogʻozga suyuq boʻyoq surtib rasm chizmoqchisan. Moʻyli uchi bilan aynan shu ishni bajaradigan buyumni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/9785281363d28c8448daf1862f882ec4.mp3",
+    "created": false
+  },
+  {
+    "pk": 413,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmlardagi quyosh, yashil barg va ko‘k suvni aynan tasvirda ko‘ringan rang namunalari bilan bog‘la.",
+    "prepared": "Rasmlardagi quyosh, yashil barg va koʻk suvni aynan tasvirda koʻringan rang namunalari bilan bogʻla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/8c46f292de7cc0cafd18e7489491720c.mp3",
+    "created": false
+  },
+  {
+    "pk": 414,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Uchta buyum rasm chizish uchun asbob yoki material. Shu vazifaga xizmat qilmaydigan bittasini top.",
+    "prepared": "Uchta buyum rasm chizish uchun asbob yoki material. Shu vazifaga xizmat qilmaydigan bittasini top.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/359fbecfab90b21c735f028fa394f590.mp3",
+    "created": false
+  },
+  {
+    "pk": 415,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Gulning tayyor qismlarini kuzat. Yetishmagan gulbarg va poyani namunaga mos uyaga qo‘y; gulbarglar markazning ikki tomonida mos joylashsin.",
+    "prepared": "Gulning tayyor qismlarini kuzat. Yetishmagan gulbarg va poyani namunaga mos uyaga qoʻy; gulbarglar markazning ikki tomonida mos joylashsin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/bcb07855da5e58ec0bbb5312a3a489ca.mp3",
+    "created": false
+  },
+  {
+    "pk": 416,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Quvnoq va tez kuyga bolalar sakrab, birga raqs tushishyapti. Shu tasvirlangan holatga eng mos rasmni tanla.",
+    "prepared": "Quvnoq va tez kuyga bolalar sakrab, birga raqs tushishyapti. Shu tasvirlangan holatga eng mos rasmni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/2427eb9105f24a7b3f5b2be6f0573027.mp3",
+    "created": false
+  },
+  {
+    "pk": 417,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Asbobning tashqi shakli va tutqichini kuzat. Cho‘tka, palitra va qalamni rangsiz soyasi bilan bog‘la.",
+    "prepared": "Asbobning tashqi shakli va tutqichini kuzat. Choʻtka, palitra va qalamni rangsiz soyasi bilan bogʻla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e3ad0bfd2c4398a3d619a2a6171cd843.mp3",
+    "created": false
+  },
+  {
+    "pk": 418,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kamalak yoylaridagi ranglarni kuzat. Sariq bilan ko‘k orasida oq bo‘shliq qolgan. Shu joyni to‘ldiradigan rangni tanla.",
+    "prepared": "Kamalak yoylaridagi ranglarni kuzat. Sariq bilan koʻk orasida oq boʻshliq qolgan. Shu joyni toʻldiradigan rangni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/f7346ae48df560ad6160c14a58c82f6d.mp3",
+    "created": false
+  },
+  {
+    "pk": 419,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Gul namunasini kuzat va chizmani aynan takrorla: gulbarglar qizil, markaz sariq, poya va barglar yashil. Barcha bo‘yaladigan qismlarni tekshir.",
+    "prepared": "Gul namunasini kuzat va chizmani aynan takrorla: gulbarglar qizil, markaz sariq, poya va barglar yashil. Barcha boʻyaladigan qismlarni tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/011e3155568193316611a70373d5a8f1.mp3",
+    "created": false
+  },
+  {
+    "pk": 420,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunaga qarab tabiat kollajini yig‘. Daraxtni yerga, qushni daraxt yoniga, quyoshni tepaga qo‘y. Har birining uyasi va o‘lchami mos bo‘lsin.",
+    "prepared": "Namunaga qarab tabiat kollajini yigʻ. Daraxtni yerga, qushni daraxt yoniga, quyoshni tepaga qoʻy. Har birining uyasi va oʻlchami mos boʻlsin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/35dbac6191e4619c0007d638a36685a7.mp3",
+    "created": false
+  },
+  {
+    "pk": 421,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Naqshdagi takrorlanadigan ranglar guruhini o‘zing top. Qoidani oxirigacha tekshir va bo‘sh katakka mos rangni tanla.",
+    "prepared": "Naqshdagi takrorlanadigan ranglar guruhini oʻzing top. Qoidani oxirigacha tekshir va boʻsh katakka mos rangni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7ef59ef7d4b1fb099d3b414fbb093c6a.mp3",
+    "created": false
+  },
+  {
+    "pk": 422,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Mayin, sekin kuyga mos sahna izlayapmiz: gullar orasida osoyishta sayr. Ta’rifdagi sahnani ifodalagan rasmni tanla.",
+    "prepared": "Mayin, sekin kuyga mos sahna izlayapmiz: gullar orasida osoyishta sayr. Taʼrifdagi sahnani ifodalagan rasmni tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7562240f6b5627e23b8eb65863c43100.mp3",
+    "created": false
+  },
+  {
+    "pk": 423,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kapalakning tanasini simmetriya o‘qi deb ol. O‘ng qanotlarni chap qanotlarning aksi kabi, bir xil balandlik va masofada joylashtir.",
+    "prepared": "Kapalakning tanasini simmetriya oʻqi deb ol. Oʻng qanotlarni chap qanotlarning aksi kabi, bir xil balandlik va masofada joylashtir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/365911e8135e38aff79b9499180432ec.mp3",
+    "created": false
+  },
+  {
+    "pk": 424,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Qog‘ozga qizil va sariq bo‘yoqni bir xil miqdorda aralashtirding. Oddiy bo‘yoqlarda qaysi rang hosil bo‘ladi?",
+    "prepared": "Qogʻozga qizil va sariq boʻyoqni bir xil miqdorda aralashtirding. Oddiy boʻyoqlarda qaysi rang hosil boʻladi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7bed77906cc7fce645fcee5786640575.mp3",
+    "created": false
+  },
+  {
+    "pk": 425,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasmda tabiatga g‘amxo‘rlik qilayotgan bolalar bor. Butun rasmning asosiy mazmunini qamrab oladigan sarlavhani tanla.",
+    "prepared": "Rasmda tabiatga gʻamxoʻrlik qilayotgan bolalar bor. Butun rasmning asosiy mazmunini qamrab oladigan sarlavhani tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/3396e09350c9b74d5a4562346075107b.mp3",
+    "created": false
+  },
+  {
+    "pk": 426,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Bu rassom o‘yinida quvonch sariq, xafalik ko‘k, jahl qizil rang bilan belgilanadi. Har bir yuzning tuyg‘usini aniqlab, kelishilgan rang bilan bog‘la.",
+    "prepared": "Bu rassom oʻyinida quvonch sariq, xafalik koʻk, jahl qizil rang bilan belgilanadi. Har bir yuzning tuygʻusini aniqlab, kelishilgan rang bilan bogʻla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/79d6f05abcc637082716d184eae711c4.mp3",
+    "created": false
+  },
+  {
+    "pk": 427,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Baliq mozaikasini namunaga mos yig‘: bosh va tana tutashsin, dum tana ortida, kichik ko‘z boshning ichida bo‘lsin. Har bir bo‘lakni tekshir.",
+    "prepared": "Baliq mozaikasini namunaga mos yigʻ: bosh va tana tutashsin, dum tana ortida, kichik koʻz boshning ichida boʻlsin. Har bir boʻlakni tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/d36f7d5f1874dd9d221087fed40aeb3e.mp3",
+    "created": false
+  },
+  {
+    "pk": 428,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasming haqida 4 ta bog‘langan gap ayt: nimani tasvirlading, qaysi shakllardan foydalanding, ranglarni nega tanlading va qaysi joyi eng yaxshi chiqqan.",
+    "prepared": "Rasming haqida toʻrt ta bogʻlangan gap ayt: nimani tasvirlading, qaysi shakllardan foydalanding, ranglarni nega tanlading va qaysi joyi eng yaxshi chiqqan.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/83798b7566f2e1e07f2fccc9ec9c4ccb.mp3",
+    "created": false
+  },
+  {
+    "pk": 429,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Orzuingdagi maktabni bo‘ya. Bino, tom, eshik, derazalar va tabiat qismlariga ongli ravishda rang tanla. Barcha qismlar bo‘yalsin; ranglar erkin.",
+    "prepared": "Orzuingdagi maktabni boʻya. Bino, tom, eshik, derazalar va tabiat qismlariga ongli ravishda rang tanla. Barcha qismlar boʻyalsin; ranglar erkin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/0b128ecd5cc35808238cadc93a6c88ee.mp3",
+    "created": false
+  },
+  {
+    "pk": 430,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Namunani 3 doira, 2 kvadrat va 2 uchburchakdan yig‘. Har bir shaklni bir marta ishlatib, o‘rni va qo‘shni bo‘laklar bilan munosabatini tekshir.",
+    "prepared": "Namunani uch doira, ikki kvadrat va ikki uchburchakdan yigʻ. Har bir shaklni bir marta ishlatib, oʻrni va qoʻshni boʻlaklar bilan munosabatini tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/f663c85c02ae18d5047562661ded4af7.mp3",
+    "created": false
+  },
+  {
+    "pk": 431,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Chap va o‘ng rasmlarni bo‘lakma-bo‘lak solishtir. Rang yoki buyumlar o‘zgargan barcha belgilarni tanla; bir xil qolganlarini belgilama.",
+    "prepared": "Chap va oʻng rasmlarni boʻlakma-boʻlak solishtir. Rang yoki buyumlar oʻzgargan barcha belgilarni tanla; bir xil qolganlarini belgilama.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e5653e08c4f1f075630f69c67f6d9c63.mp3",
+    "created": false
+  },
+  {
+    "pk": 432,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Sokin, mayin kuy tasvirini tasavvur qilib manzarani bo‘ya. Osmon, yer, uy va daraxt uchun o‘zing tanlagan ranglarni ishlat; barcha qismlar tugallansin.",
+    "prepared": "Sokin, mayin kuy tasvirini tasavvur qilib manzarani boʻya. Osmon, yer, uy va daraxt uchun oʻzing tanlagan ranglarni ishlat; barcha qismlar tugallansin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/7bd562cbab1976cb2c65fbdf9a514563.mp3",
+    "created": false
+  },
+  {
+    "pk": 433,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasm yaratish jarayonini rejalashtir. G‘oyadan boshlab yakuniy tekshiruvgacha bo‘lgan bosqichlarni tartibla.",
+    "prepared": "Rasm yaratish jarayonini rejalashtir. Gʻoyadan boshlab yakuniy tekshiruvgacha boʻlgan bosqichlarni tartibla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/253365afa0189cfbb01a2acde53901a9.mp3",
+    "created": false
+  },
+  {
+    "pk": 434,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Uch palitrani solishtir. Faqat ko‘k va yashilga yaqin sovuq ranglardan tuzilgan palitrani top. Javobni shaxsiy didingga qarab emas, shu belgiga qarab tanla.",
+    "prepared": "Uch palitrani solishtir. Faqat koʻk va yashilga yaqin sovuq ranglardan tuzilgan palitrani top. Javobni shaxsiy didingga qarab emas, shu belgiga qarab tanla.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c577be8462589a44e81aa42546818f07.mp3",
+    "created": false
+  },
+  {
+    "pk": 435,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Tasavvuringdagi ko‘rgazmadan bitta rasmni tanla. 4–5 gapda undagi tasvir, ranglar va joylashuvni tushuntir; nega yoqqanini kamida ikki dalil bilan ayt.",
+    "prepared": "Tasavvuringdagi koʻrgazmadan bitta rasmni tanla. toʻrt–besh gapda undagi tasvir, ranglar va joylashuvni tushuntir; nega yoqqanini kamida ikki dalil bilan ayt.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e9d20e06b6d5d13c01b98d4a72b8122c.mp3",
+    "created": false
+  },
+  {
+    "pk": 436,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Rasm asosida 5–6 gapli hikoya tuz. Qahramonlar, joy, bajarilayotgan ish va natijani bog‘la; rasmdagi kamida uchta detalni hikoyangga qo‘sh.",
+    "prepared": "Rasm asosida besh–olti gapli hikoya tuz. Qahramonlar, joy, bajarilayotgan ish va natijani bogʻla; rasmdagi kamida uchta detalni hikoyangga qoʻsh.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e9463889abf64d1c0f51da3679652dbe.mp3",
+    "created": false
+  },
+  {
+    "pk": 437,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kuzgi daraxtning sarg‘aygan barglari va qurigan yerini bo‘yash uchun iliq kuz ranglarini tanla. Osmonni bu safar hisobga olma; mos ranglarning hammasini belgila.",
+    "prepared": "Kuzgi daraxtning sargʻaygan barglari va qurigan yerini boʻyash uchun iliq kuz ranglarini tanla. Osmonni bu safar hisobga olma; mos ranglarning hammasini belgila.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/1d566b903d9a4440370c4bca39c4671c.mp3",
+    "created": false
+  },
+  {
+    "pk": 438,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Yosh rassomning 5 bosqichida rasmni bo‘ya, mozaika yig‘, bo‘yoq aralashmasini top, manzara yarat va ijodiy qaroringni tushuntir.",
+    "prepared": "Yosh rassomning besh bosqichida rasmni boʻya, mozaika yigʻ, boʻyoq aralashmasini top, manzara yarat va ijodiy qaroringni tushuntir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/e58e653ce9cb53cbf87d2b5ad9811e53.mp3",
+    "created": false
+  },
+  {
+    "pk": 439,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Kapalakning qanotlari va tanasiga rang tanla. Har bir qismni bo‘ya, keyin chap va o‘ng tomondagi ranglarni solishtir. Ranglar erkin.",
+    "prepared": "Kapalakning qanotlari va tanasiga rang tanla. Har bir qismni boʻya, keyin chap va oʻng tomondagi ranglarni solishtir. Ranglar erkin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/150d4f97004cd8da6ea98dfeb0f27266.mp3",
+    "created": false
+  },
+  {
+    "pk": 440,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Baliqning boshi, tanasi, dumi va ko‘zini namunadagi o‘rniga qo‘y. Tugagach, baliqning barcha qismlari to‘g‘ri tutashganini tekshir.",
+    "prepared": "Baliqning boshi, tanasi, dumi va koʻzini namunadagi oʻrniga qoʻy. Tugagach, baliqning barcha qismlari toʻgʻri tutashganini tekshir.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/c051f86e8c882725c4f3beefa52a5beb.mp3",
+    "created": false
+  },
+  {
+    "pk": 441,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Ko‘k va sariq bo‘yoqni bir xil miqdorda aralashtirsang, oddiy bo‘yoqlarda qaysi rang hosil bo‘ladi?",
+    "prepared": "Koʻk va sariq boʻyoqni bir xil miqdorda aralashtirsang, oddiy boʻyoqlarda qaysi rang hosil boʻladi?",
+    "path": "audio/tts/uz-UZ-MadinaNeural/f4f91b3bdd9637e981bf429e7c75c0f8.mp3",
+    "created": false
+  },
+  {
+    "pk": 442,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Tabiat manzarasining barcha qismlarini bo‘ya. Osmon, yer, uy va daraxt ranglarini o‘zing tanla; birorta bo‘yaladigan qism qolmasin.",
+    "prepared": "Tabiat manzarasining barcha qismlarini boʻya. Osmon, yer, uy va daraxt ranglarini oʻzing tanla; birorta boʻyaladigan qism qolmasin.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/3a0060d90d17a5846b7ddc1157135051.mp3",
+    "created": false
+  },
+  {
+    "pk": 443,
+    "kind": "savol",
+    "voice": "uz-UZ-MadinaNeural",
+    "rate": "-10%",
+    "text": "Yaratgan rasming haqida 4 ta bog‘langan gap ayt: g‘oyang, shakllar, rang tanlashingning sababi va oxirida tekshirib yaxshilagan bitta detaling.",
+    "prepared": "Yaratgan rasming haqida toʻrt ta bogʻlangan gap ayt: gʻoyang, shakllar, rang tanlashingning sababi va oxirida tekshirib yaxshilagan bitta detaling.",
+    "path": "audio/tts/uz-UZ-MadinaNeural/594c257ce9bd617492bbeaa4c92a44fe.mp3",
+    "created": false
+  }
+]

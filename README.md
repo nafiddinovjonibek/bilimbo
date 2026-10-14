@@ -22,16 +22,13 @@
   | 🎨 `boyash` | Chizmani palitradagi ranglar bilan bo'yash |
   | 🎤 `mikrofon` | Bola ovozini yozadi, tarbiyachi admin panelda tinglab baholaydi |
   | 🏆 `kvest` | Ketma-ket 5 bosqichli yakuniy sarguzasht |
-- 🔊 **Har bir topshiriq ovozli** — savol va audio matnlar brauzerning nutq sintezi
-  (Web Speech API) orqali **o'zbekcha** o'qib eshittiriladi:
-  - tizimda o'zbek ovozi bo'lsa — matn o'zgarishsiz o'qiladi;
-  - bo'lmasa, lotin yozuvini eng yaqin o'qiydigan turkiy ovoz (turk, ozarbayjon,
-    qozoq...) tanlanadi va matn unga moslab tayyorlanadi (tutuq belgisi olib
-    tashlanadi, `sh→ş`, `ch→ç`);
-  - raqamlar so'z bilan aytiladi (`2–3` → "ikki–uch"), emoji va strelkalar o'qilmaydi.
-
-  > Eng yaxshi natija uchun operatsion tizimga o'zbekcha TTS ovozini o'rnatish
-  > tavsiya etiladi (Windows: *Sozlamalar → Vaqt va til → Til va mintaqa → O'zbek*).
+- 🔊 **Har bir topshiriq ovozli** — savollar oldindan Microsoft'ning o'zbekcha
+  `uz-UZ-MadinaNeural` ovozida MP3 qilinadi (`edge-tts`). Brauzer tayyor faylni
+  ijro etadi, shuning uchun telefon va kompyuterda ovoz bir xil:
+  - `o‘`, `g‘` saqlanadi, emoji o'qilmaydi; `12` — "o'n ikki" bo'ladi;
+  - matn, ovoz yoki tezlik o'zgarsa yangi fayl nomi ishlatiladi;
+  - admin panelda savol/bosqich saqlanganda yetishmayotgan ovoz yaratiladi;
+  - telefon avtomatik ijroni cheklasa, bola 🔊 tugmasini bosib tinglaydi.
 - 🎧 **Haqiqiy ovozli topshiriqlar** — "Ovozni eshit va top" da hayvon ovozi ijro
   etiladi (`static/audio/topshiriq/`). Bunday topshiriqda matnni ovoz sinteziga
   berish mumkin emas — "Mushuk miyovladi" deb o'qilsa javob oshkor bo'ladi.
@@ -69,20 +66,57 @@ python -m venv env
 env\Scripts\activate        # Windows
 # source env/bin/activate   # Linux/Mac
 
-# 3. Django o'rnating
-pip install django
+# 3. Bog'liqliklarni o'rnating
+pip install -r requirements.txt
 
 # 4. Bazani tayyorlang (boshlang'ich bo'lim/savollar avtomatik kiritiladi)
 python manage.py migrate
 
-# 5. Superadmin yarating
+# 5. Savollar uchun o'zbekcha audio tayyorlang (internet kerak)
+python manage.py generate_question_audio
+
+# 6. Superadmin yarating
 python manage.py createsuperuser
 
-# 6. Serverni ishga tushiring
+# 7. Serverni ishga tushiring
 python manage.py runserver
 ```
 
 Sayt: http://127.0.0.1:8000 · Admin panel: http://127.0.0.1:8000/admin/
+
+### O'zbekcha savol ovozlari
+
+Ovoz yaratishda internet kerak; tayyor MP3 ni ijro etishda TTS xizmatiga
+so'rov yuborilmaydi. Fayllar `static/audio/tts/` ichida saqlanadi va odatdagi
+`collectstatic` bilan joylashtiriladi. `edge-tts` — Microsoft Edge onlayn
+ovoz xizmatidan foydalanadigan norasmiy kutubxona, API kaliti talab qilmaydi.
+Doimiy xizmat uchun rasmiy Azure Speech'ga o'tish mumkin.
+
+```bash
+# Madina va Sardorda uchta savol namunasi + tinglash sahifasi
+python manage.py generate_question_audio --samples
+
+# Barcha yangi/o'zgargan savollar (tayyorlari qayta yaratilmaydi)
+python manage.py generate_question_audio
+
+# Ayrim savollar; kvest bo'lsa uning bosqichlari ham olinadi
+python manage.py generate_question_audio --ids 121 150
+
+# Sardor ovozini sinash
+python manage.py generate_question_audio --voice uz-UZ-SardorNeural --limit 3
+```
+
+Namunalar: `static/audio/tts/namunalar.html` faylini brauzerda oching yoki
+server ishlayotganda `/static/audio/tts/namunalar.html` ga kiring.
+Asosiy ovoz va tezlik `core/settings.py` dagi `BILIMBO_TTS_VOICE` hamda
+`BILIMBO_TTS_RATE` bilan tanlanadi. Ularni o'zgartirgach, generatsiya buyrug'ini
+qayta bajaring. `--voice` faqat yaratiladigan fayllarni tanlaydi, sayt sozlamasini
+o'zgartirmaydi. `--rate=-10%`, `--force`, `--jobs 3` ham mavjud.
+
+Admin panelda **Savollar → Tanlangan savollar ovozini tayyorlash / yangilash**
+amali orqali ovozlarni qayta tayyorlash mumkin. Xizmatga ulanish ishlamasa,
+savol saqlanadi va admin ogohlantirish oladi. Yangi matnning audiosi tayyor
+bo'lmaguncha eski savol ovozi ijro etilmaydi.
 
 ## 📁 Tuzilma
 

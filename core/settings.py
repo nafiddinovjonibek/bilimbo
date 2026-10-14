@@ -120,3 +120,7 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # Mikrofonli topshiriqlarda bolalar yozgan ovozlar shu yerga saqlanadi
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+# Savol ovozlari oldindan MP3 qilib saqlanadi. Muqobil: uz-UZ-SardorNeural.
+BILIMBO_TTS_VOICE = 'uz-UZ-MadinaNeural'
+BILIMBO_TTS_RATE = '-10%'

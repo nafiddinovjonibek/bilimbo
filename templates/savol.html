@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static savol_ovozi %}
 
 {% block title %}{{ savol.order }}-topshiriq — {{ savol.bolimcha.name }} — Bilimbo{% endblock %}
 
@@ -457,6 +458,10 @@
     .uya img { width: 100%; height: 100%; object-fit: fill; pointer-events: none; }
     .uya.uya-tayyor, .uya.toldirilgan { border-style: solid; border-color: transparent; }
     .uya.uya-tayyor { cursor: default; }
+    .qurish-kapalak .uya.uya-tayyor,
+    .qurish-kapalak .uya.toldirilgan { border-width: 0; }
+    .qurish-koprik .uya.uya-tayyor,
+    .qurish-koprik .uya.toldirilgan { border-width: 0; }
     .q-tokcha {
         display: flex;
         flex-wrap: wrap;
@@ -714,6 +719,7 @@
 
 {% block content %}
 <div class="savol-card">
+    <p id="ovoz-holat" role="status" aria-live="polite" hidden></p>
     {% if yutuq %}
         <div class="yutuq">
             <span class="stars-big">{{ stars_str }}</span>
@@ -745,6 +751,7 @@
                 <div class="savol-matn">
                     {{ savol.matn }}
                     <button type="button" class="ovoz-btn" data-say="{{ savol.aytiladigan_matn }}"
+                            data-audio="{{ savol.aytiladigan_matn|savol_ovozi }}"
                             aria-label="Eshitish">🔊</button>
                 </div>
                 <div class="kvest-progress">
@@ -771,117 +778,12 @@
     {% endif %}
 </div>
 
+<script src="{% static 'js/savol-ovozi.js' %}"></script>
 <script>
 (function () {
-    // ===== Ovoz: har bir topshiriq o'zbekcha o'qiladi =====
-    var synth = window.speechSynthesis;
-
-    // Brauzerlarda o'zbek ovozi kamdan-kam uchraydi. Shuning uchun mavjud
-    // ovozlar orasidan o'zbek tovushlariga eng yaqinini tanlaymiz: lotin
-    // yozuvini o'zbekchaga o'xshash o'qiydigan turkiy tillar birinchi o'rinda.
-    var TIL_TARTIBI = ['uz', 'tr', 'az', 'kk', 'ky', 'tk'];
-    var tanlanganOvoz = null, ovozTili = null;
-
-    function ovoznTanla() {
-        var ovozlar = synth.getVoices() || [];
-        for (var i = 0; i < TIL_TARTIBI.length; i++) {
-            var kod = TIL_TARTIBI[i];
-            var mos = ovozlar.filter(function (v) {
-                return (v.lang || '').toLowerCase().indexOf(kod) === 0;
-            });
-            if (mos.length) {
-                tanlanganOvoz = mos[0];
-                ovozTili = kod;
-                return;
-            }
-        }
-        // Turkiy ovoz topilmadi — brauzerning o'z ovozi o'qiydi
-        tanlanganOvoz = null;
-        ovozTili = null;
-    }
-
-    if (synth) {
-        ovoznTanla();
-        synth.addEventListener('voiceschanged', ovoznTanla);
-    }
-
-    var SONLAR = ['nol', 'bir', 'ikki', 'uch', "to'rt", 'besh',
-                  'olti', 'yetti', 'sakkiz', "to'qqiz", "o'n"];
-
-    function tayyorla(matn) {
-        var s = String(matn || '');
-
-        // Emoji va belgilar ovozda "star", "arrow" bo'lib o'qilmasligi uchun olib tashlanadi
-        s = s.replace(/[\u{1F000}-\u{1FAFF}\u{2190}-\u{2BFF}\u{FE0F}\u{2600}-\u{27BF}]/gu, ' ');
-
-        // Raqamlar chet el ovozida chet tilida o'qilmasligi uchun so'z bilan yoziladi
-        s = s.replace(/\d+/g, function (n) {
-            return SONLAR[+n] !== undefined ? SONLAR[+n] : n.split('').map(function (d) {
-                return SONLAR[+d];
-            }).join(' ');
-        });
-
-        if (ovozTili !== 'uz') {
-            // Tutuq belgisi (o', g') o'zbekcha bo'lmagan ovozda pauza bo'lib eshitiladi
-            s = s.replace(/[’‘'ʻʼ`]/g, '');
-            if (ovozTili === 'tr') {
-                // Turkcha yozuvda sh → ş, ch → ç; x harfi esa "iks" bo'lib o'qiladi
-                s = s.replace(/sh/g, 'ş').replace(/Sh/g, 'Ş')
-                     .replace(/ch/g, 'ç').replace(/Ch/g, 'Ç')
-                     .replace(/x/g, 'h').replace(/X/g, 'H');
-            }
-        }
-
-        return s.replace(/\s+/g, ' ').trim();
-    }
-
-    function gapir(matn, btn) {
-        if (!synth) return;
-        synth.cancel();
-        var u = new SpeechSynthesisUtterance(tayyorla(matn));
-        if (tanlanganOvoz) {
-            u.voice = tanlanganOvoz;
-            u.lang = tanlanganOvoz.lang;
-        } else {
-            u.lang = 'uz-UZ';
-        }
-        u.rate = 0.85;
-        u.pitch = 1.1;
-        if (btn) {
-            btn.classList.add('gapiryapti');
-            u.onend = u.onerror = function () { btn.classList.remove('gapiryapti'); };
-        }
-        synth.speak(u);
-    }
-    // Haqiqiy ovoz fayli (hayvon ovozi va h.k.) — matn o'qilmaydi
-    var joriyAudio = null;
-    function ijroEt(manba, btn) {
-        if (synth) synth.cancel();
-        if (joriyAudio) joriyAudio.pause();
-        joriyAudio = new Audio(manba);
-        btn.classList.add('gapiryapti');
-        joriyAudio.onended = joriyAudio.onerror = function () {
-            btn.classList.remove('gapiryapti');
-        };
-        joriyAudio.play().catch(function () {
-            btn.classList.remove('gapiryapti');
-        });
-    }
-
-    document.addEventListener('click', function (e) {
-        var b = e.target.closest('.ovoz-btn, .audio-btn');
-        if (!b) return;
-        e.preventDefault();
-        if (b.dataset.play) {
-            ijroEt(b.dataset.play, b);
-        } else {
-            gapir(b.dataset.say, b);
-        }
-    });
-    // Sahifa ochilganda faol topshiriq o'qib eshittiriladi
+    // Sahifa yoki kvest bosqichi ochilganda saqlangan o'zbekcha MP3 ijro etiladi.
     function birinchiniAyt() {
-        var b = document.querySelector('.kvest-bosqich.faol .ovoz-btn, .topshiriq .ovoz-btn');
-        if (b) gapir(b.dataset.say);
+        window.bilimboOvoz.birinchiniAyt();
     }
 
     // ===== Ketma-ketlik: sudrash + bosib almashtirish =====

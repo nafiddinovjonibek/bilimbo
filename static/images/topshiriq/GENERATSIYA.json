@@ -1,0 +1,587 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "date": "2026-10-13",
+  "format": "WebP quality 90, original dimensions and exact alpha preserved; lossless fallback if visible PSNR < 32 dB",
+  "images": [
+    {
+      "asset": "variantlar/olma",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One ripe red apple with a short brown stem and single green leaf."
+    },
+    {
+      "asset": "variantlar/banan",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A curved yellow banana with lightly peeled top, recognizable fruit."
+    },
+    {
+      "asset": "variantlar/nok",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One ripe green-yellow pear with brown stem."
+    },
+    {
+      "asset": "variantlar/mashina",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A blue compact passenger car, side view, four-wheel passenger vehicle, no writing."
+    },
+    {
+      "asset": "variantlar/it",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly brown-and-white dog sitting, full body, floppy ears."
+    },
+    {
+      "asset": "variantlar/mushuk",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly ginger tabby cat sitting, full body, curved tail."
+    },
+    {
+      "asset": "variantlar/sigir",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Black and white dairy cow, full body side view, clear udder and small horns."
+    },
+    {
+      "asset": "variantlar/tovuq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A brown hen with red comb, full body, feathered wings and two legs."
+    },
+    {
+      "asset": "variantlar/velosiped",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One turquoise bicycle, side view, two wheels, pedals, seat and handlebars visible."
+    },
+    {
+      "asset": "variantlar/urug",
+      "transparent_background": true,
+      "prompt": "Use case: scientific-educational. Asset type: single preschool educational picture card for the seed stage of a flowering fruit tree. Premium cohesive children's picture-book gouache illustration, softly textured paint, gentle dimensional shading, crisp silhouette, readable at small size. Subject: one small dark brown teardrop-shaped APPLE SEED resting on a small cutaway patch of fertile brown soil. It is a seed from a fruit tree, NOT a bean, nut or acorn. No leaves, no sprout, no fruit, no other objects. Whole subject centered with equal generous padding. Genuine transparent background. No letters, words, numbers, logo, watermark or border."
+    },
+    {
+      "asset": "variantlar/nihol",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Young sprout growing from a small soil patch, two green leaves and thin stem."
+    },
+    {
+      "asset": "variantlar/gul",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One red flowering plant with five red petals, yellow center, green stem and two leaves, whole plant."
+    },
+    {
+      "asset": "variantlar/daraxt",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A mature green deciduous fruit tree, brown wooden trunk, broad leafy canopy, no flowers."
+    },
+    {
+      "asset": "variantlar/baliq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One orange freshwater fish, side view, fins, gill and scales recognizable, no water or bubble."
+    },
+    {
+      "asset": "variantlar/qush",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One small blue songbird in side view, perched upright, full body, two wings, feet and beak."
+    },
+    {
+      "asset": "variantlar/tuya",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A tan two-humped camel, full body side view, no rider."
+    },
+    {
+      "asset": "variantlar/sher",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly adult male lion with golden mane, full body side view, four paws."
+    },
+    {
+      "asset": "variantlar/sichqon",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A small grey mouse, full body, rounded ears and long thin tail."
+    },
+    {
+      "asset": "variantlar/fil",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly grey elephant, full body side view, trunk, big ears and four legs."
+    },
+    {
+      "asset": "variantlar/tosh",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One rounded grey rock with natural mineral texture."
+    },
+    {
+      "asset": "variantlar/kitob",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One open picture book with blank softly colored pages and blue cover, no writing."
+    },
+    {
+      "asset": "variantlar/savat",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One empty woven wicker basket with curved handle."
+    },
+    {
+      "asset": "variantlar/sabzi",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One orange carrot with fresh green leafy top."
+    },
+    {
+      "asset": "variantlar/uy",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One cozy small house, blue walls, red triangular roof, brown door and two yellow windows, whole building."
+    },
+    {
+      "asset": "variantlar/qolqop",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One knitted blue mitten with distinct thumb, no hand."
+    },
+    {
+      "asset": "variantlar/paypoq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One cozy striped green sock, no foot."
+    },
+    {
+      "asset": "variantlar/poyabzal",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One red child's lace-up shoe, side view, no foot."
+    },
+    {
+      "asset": "variantlar/top",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One black-and-white football, spherical."
+    },
+    {
+      "asset": "variantlar/shifokor",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly adult woman physician with white coat and stethoscope, full body standing, neutral friendly expression."
+    },
+    {
+      "asset": "variantlar/oshpaz",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly adult man chef in white chef hat and apron, full body holding a wooden spoon."
+    },
+    {
+      "asset": "variantlar/politsiyachi",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly adult road traffic officer in dark blue uniform and cap, full body, no weapon or badge text."
+    },
+    {
+      "asset": "variantlar/dehqon",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly adult farmer wearing straw hat and overalls, full body holding a small basket of vegetables."
+    },
+    {
+      "asset": "variantlar/oqituvchi",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Friendly adult woman teacher wearing neat everyday clothes, full body holding an open blank book, no board."
+    },
+    {
+      "asset": "variantlar/shprits",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One simple capped medical syringe without exposed needle, scientific educational object."
+    },
+    {
+      "asset": "variantlar/stetoskop",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One dark teal medical stethoscope with earpieces, tubing and round silver chestpiece."
+    },
+    {
+      "asset": "variantlar/telefon",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One simple upright blue mobile telephone with blank screen."
+    },
+    {
+      "asset": "variantlar/yongin-mashinasi",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One red fire engine with roof ladder and emergency lights, side view, no writing."
+    },
+    {
+      "asset": "variantlar/sut",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One simple white milk carton with blue top and milk splash picture, no letters or numbers."
+    },
+    {
+      "asset": "variantlar/non",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One round Uzbek golden non bread with patterned center."
+    },
+    {
+      "asset": "variantlar/ryukzak",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One blue child's travel backpack, zippered compartments and straps visible."
+    },
+    {
+      "asset": "variantlar/kiyim",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One folded green long-sleeve sweatshirt and simple tan trousers as a single clothing set."
+    },
+    {
+      "asset": "variantlar/suv-shisha",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One reusable clear blue drinking-water bottle with water and cap."
+    },
+    {
+      "asset": "variantlar/televizor",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One flat-screen television with black frame, blank dark blue screen, stand."
+    },
+    {
+      "asset": "variantlar/bemor",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One child resting in bed under a light blanket with thermometer beside pillow, awake, calm, mildly unwell, no medical procedure."
+    },
+    {
+      "asset": "variantlar/yiglayotgan-bola",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A young Uzbek child with short dark hair sitting beside a clearly broken toy car whose detached wheel is visible, sad with two small tears, full body, minimal ground patch. The broken toy is essential."
+    },
+    {
+      "asset": "variantlar/yiqilgan-bola",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: A young Uzbek child sitting on a playground ground after stumbling, one lightly scraped knee, bicycle standing behind at small scale, awake alert mildly upset, no blood or injury gore, full body. Clearly a fall rather than unexplained crying."
+    },
+    {
+      "asset": "variantlar/bodring",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One whole dark green cucumber with bumpy skin."
+    },
+    {
+      "asset": "variantlar/buzoq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One small black-and-white calf, full body side view, youthful proportions, no udder."
+    },
+    {
+      "asset": "variantlar/toychoq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One young tan foal, full body side view, slender legs and short mane."
+    },
+    {
+      "asset": "variantlar/qozichoq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One young white woolly lamb, full body side view, curled wool and no horns."
+    },
+    {
+      "asset": "variantlar/kapalak",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One colorful butterfly with four symmetrical wings, yellow body, red upper wings, blue lower wings, front view."
+    },
+    {
+      "asset": "variantlar/toshbaqa",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One green land tortoise with brown patterned shell, full body side view."
+    },
+    {
+      "asset": "variantlar/kaktus",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One green cactus with two branches, fine spines and tiny pink blossom, isolated soil patch."
+    },
+    {
+      "asset": "variantlar/qoziqorin",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One red capped mushroom with white spots and beige stem, no landscape."
+    },
+    {
+      "asset": "variantlar/pingvin",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One emperor penguin, full body front three-quarter view, black-and-white body and yellow neck."
+    },
+    {
+      "asset": "variantlar/quyon",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One white rabbit sitting, full body, long upright ears, no carrot."
+    },
+    {
+      "asset": "variantlar/tulki",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One orange-red fox, full body, white chest and black paws, large bushy tail."
+    },
+    {
+      "asset": "variantlar/ayiq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One friendly brown bear, full body standing on four paws."
+    },
+    {
+      "asset": "variantlar/plastik-shisha",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One discarded transparent plastic water bottle slightly crumpled with blue cap, no text."
+    },
+    {
+      "asset": "variantlar/qogoz",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One discarded crumpled off-white paper sheet."
+    },
+    {
+      "asset": "variantlar/barg",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One fresh green oval leaf with prominent branching veins and small stem."
+    },
+    {
+      "asset": "variantlar/ot-giyoh",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One tuft of green meadow grass with several narrow blades growing from small soil patch."
+    },
+    {
+      "asset": "variantlar/tuproq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Small cross-section mound of fertile dark brown soil, fine roots, no plant above."
+    },
+    {
+      "asset": "variantlar/qum",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: Small mound of golden sand, granular texture, no plants."
+    },
+    {
+      "asset": "variantlar/kesilgan-daraxt",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One cut tree stump with clear annual rings and small severed trunk log beside it."
+    },
+    {
+      "asset": "variantlar/chiqindi-qutisi",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One green public waste bin with open lid, no symbol or writing."
+    },
+    {
+      "asset": "variantlar/chotka",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One artist paintbrush with wood handle, metal ferrule and soft brown bristles carrying a little blue paint."
+    },
+    {
+      "asset": "variantlar/palitra",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One wooden oval painter palette with thumb hole and seven separate colorful paint daubs, no brush."
+    },
+    {
+      "asset": "variantlar/qoshiq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One polished metal soup spoon."
+    },
+    {
+      "asset": "variantlar/robot",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Style: premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate recognizable proportions, crisp silhouette, refined cheerful colors, clear at 100px. Composition: centered single subject, whole object visible, fills 75% of square canvas, equal padding. Background: genuinely transparent. No text, letters, digits, logo, border, watermark, cast shadow outside subject, other objects or characters. Subject: One cheerful small toy robot, turquoise rectangular body, round eyes, two arms and legs."
+    },
+    {
+      "asset": "variantlar/suv",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: A small blue freshwater pond with visible water surface and gentle ripples, shoreline reeds, absolutely no bottle."
+    },
+    {
+      "asset": "variantlar/chol",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Hot sandy desert with dunes and a small dry shrub, no water, snow or animals."
+    },
+    {
+      "asset": "variantlar/ormon",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Green woodland with several leafy trees, grass and a winding path, no animals."
+    },
+    {
+      "asset": "variantlar/quyoshli",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Bright golden sun in clear blue sky over a green meadow, no rain, snow or clouds."
+    },
+    {
+      "asset": "variantlar/yomgirli",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Rainy grey sky with grey cloud and clearly visible raindrops over a green meadow."
+    },
+    {
+      "asset": "variantlar/qorli",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: A grey cloud releasing large distinct white snowflakes against pale blue sky, snow covered ground."
+    },
+    {
+      "asset": "variantlar/tuman",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Morning meadow with trees softened by dense low grey mist, no rain, snow or fire."
+    },
+    {
+      "asset": "variantlar/chaqmoq",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Dark storm cloud with distinct bright zigzag lightning strike, rain streaks, no people."
+    },
+    {
+      "asset": "variantlar/bahor",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: One tree in a green meadow during spring with new green leaves and pink blossoms, flowers and soft sunshine."
+    },
+    {
+      "asset": "variantlar/yoz",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Same composition one tree in a green meadow during summer, full dark green leafy canopy, bright sun, no snow."
+    },
+    {
+      "asset": "variantlar/kuz",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Same composition one tree in autumn meadow, orange yellow leaves falling, golden brown grass, no snow."
+    },
+    {
+      "asset": "variantlar/qish",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Same composition one bare tree in snowy winter meadow, visible snowfall and white ground."
+    },
+    {
+      "asset": "variantlar/savanna",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Golden grassland savanna with one flat-top acacia and distant low hills, no forest, snow or water."
+    },
+    {
+      "asset": "variantlar/muzlik",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Antarctic icy coast, blue glacier and snow, no trees or animals."
+    },
+    {
+      "asset": "variantlar/kasalxona",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Small modern clinic building with green medical cross icon, accessible entrance and windows, no words."
+    },
+    {
+      "asset": "variantlar/maktab",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: Friendly school building with a playground and blank board near entrance, no writing."
+    },
+    {
+      "asset": "variantlar/kocha",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: A road junction with zebra crossing, curb and traffic lights, no words or vehicles."
+    },
+    {
+      "asset": "variantlar/qurilish",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card, square. Style: premium cohesive children's picture-book gouache illustration, softly textured paint, refined cheerful colors, strong recognizable silhouette, clear on mobile. Full scene inside simple rounded scenic vignette with transparent surroundings and generous padding. No text, letters, numbers, logo, watermark or border. Scene: An unfinished building with visible brick walls, scaffolding and crane, no workers or text."
+    },
+    {
+      "asset": "qiz-gul-sugormoqda",
+      "transparent_background": false,
+      "prompt": "Use case: illustration-story. Asset type: existing Uzbek educational question illustration. Premium cohesive children's picture-book gouache illustration, warm natural daylight, soft painted texture, accurate anatomy, clear readable actions, refined cheerful palette, matching a boy reading a book in a sunny room. Scene: Landscape 3:2: a 6-year-old Uzbek girl with two dark braids standing beside a red flowering plant in a garden, actively pouring water from a small green watering can onto the soil around the roots. Clear visible stream into soil, careful attentive posture, whole child and flowering plant visible. No other activities. No letters, numbers, words, logos or watermark."
+    },
+    {
+      "asset": "bolalar-daraxt-ekmoqda",
+      "transparent_background": false,
+      "prompt": "Use case: illustration-story. Asset type: existing Uzbek educational question illustration. Premium cohesive children's picture-book gouache illustration, warm natural daylight, soft painted texture, accurate anatomy, clear readable actions, refined cheerful palette, matching a boy reading a book in a sunny room. Scene: Landscape 3:2: two Uzbek children age 6 planting one young sapling together in a sunny school garden. A boy carefully fills soil around the roots with a small trowel, a girl supports the thin trunk upright. Sapling roots planted in a shallow hole, soil and watering can nearby. Clear collaborative planting action, no cutting trees. No letters, numbers, words, logos or watermark."
+    },
+    {
+      "asset": "bolalar-bogda",
+      "transparent_background": false,
+      "prompt": "Use case: illustration-story. Asset type: existing Uzbek educational question illustration. Premium cohesive children's picture-book gouache illustration, warm natural daylight, soft painted texture, accurate anatomy, clear readable actions, refined cheerful palette, matching a boy reading a book in a sunny room. Scene: Landscape 3:2 story scene: three Uzbek children age 6 in a sunny garden caring for nature together. One boy gently plants a young sapling in soil, one girl waters a red flowering plant at its roots, one child puts a discarded empty plastic bottle into a green rubbish bin. Whole bodies and clear distinct actions, birds in a leafy tree and simple flowers. Coherent calm readable composition, no text. No letters, numbers, words, logos or watermark."
+    },
+    {
+      "asset": "variantlar/daraxt-gullagan",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate proportions, crisp silhouette, clear at small size. Centered subject filling 75% of square canvas with equal padding. Genuine transparent background. No text, letters, digits, logo, watermark, border. Subject: A young small apple tree growing from a tiny soil patch, thin woody trunk, several small branches covered in distinct pink-white blossoms and fresh light green leaves. Whole tree visible. No fruit. This is flowering young tree stage after seed and seedling and before mature tree."
+    },
+    {
+      "asset": "variantlar/delfin",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Asset type: single preschool educational picture card. Premium cohesive children's picture-book gouache illustration, warm softly textured paint, gentle dimensional shading, accurate proportions, crisp silhouette, clear at small size. Centered subject filling 75% of square canvas with equal padding. Genuine transparent background. No text, letters, digits, logo, watermark, border. Subject: One friendly grey dolphin side view, sleek marine mammal body with horizontal tail flukes, dorsal fin, flippers and a clear beak. Whole animal visible, no water, no other subject."
+    },
+    {
+      "asset": "bola-kitob-oqiyapti",
+      "transparent_background": false,
+      "prompt": "Use case: illustration-story. Asset type: existing Uzbek preschool educational question illustration, landscape 3:2, high quality polished children's picture-book gouache illustration with softly textured colors, expressive natural characters, accurate hands, clear action at small mobile size. Primary request: a 6-year-old Uzbek boy with short dark hair sitting upright on a small wooden chair at a desk in a sunny reading corner, actively reading one open picture book held in both hands, eyes on pages. Composition: whole child, chair, desk, open book clearly visible, simple softly painted indoor background, warm daylight. Only action is reading; no sleeping or running. No text, letters, numerals, watermark, logos. Save final image for project to replace bola-kitob-oqiyapti.png."
+    },
+    {
+      "asset": "variantlar/sanoq-olma-va-nok",
+      "transparent_background": false,
+      "prompt": "Use case: scientific-educational. Asset type: one preschool counting question illustration for an Uzbek learning game, landscape 3:2. Primary request: a polished premium children's picture-book gouache illustration of EXACTLY EIGHT whole fruits on a light natural wooden tabletop with a simple cream cloth. EXACTLY SIX APPLES and EXACTLY TWO PEARS. The six apples consist of four RED APPLES and two GREEN APPLES; the two pears are YELLOW, elongated, visibly pear-shaped with narrow necks, clearly distinct from round apples. Composition: bird's-eye view, arranged in TWO ROWS of FOUR separate fruits. Top row left to right: RED APPLE, YELLOW PEAR, GREEN APPLE, RED APPLE. Bottom row left to right: GREEN APPLE, RED APPLE, YELLOW PEAR, RED APPLE. Every fruit fully visible and similar scale, generous consistent gaps, nothing overlaps, no hidden fruit, each apple is clearly round with dimple and short stem, each pear has unmistakable narrow neck and broad lower half. Style: refined warm gouache texture, gentle dimensional shading, appealing natural materials, crisp readable forms at mobile size, coherent with a premium children's storybook. Background very quiet pale cream, focus on fruits. Constraints: no other fruits, no leaves scattered on table, no bowls, no baskets, no cut fruit, no people, no characters, no text, no digits, no labels, no symbols, no counting hints, no watermark. Count and fruit identity must match the eight-object row plan exactly."
+    },
+    {
+      "asset": "variantlar/uy237-tom",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: one individual children's wooden construction puzzle piece for an educational game. Premium children's picture-book product illustration, beautifully painted real wood grain, refined gouache rendering, subtle chamfer highlights, soft warm light from upper left, clean tactile finish. Strictly straight-on ORTHOGRAPHIC FRONT VIEW, absolutely no perspective, no visible side surfaces or base, no cast shadow outside the object. One solid piece only, centered, fully visible, crisp simple silhouette. Genuine transparent background. No stand, ground plane, background, text, numbers, logo, surrounding objects, loose decorations. Subject: a single RED WOODEN TRIANGULAR ROOF block. Exactly an isosceles triangle with centered top apex, flat horizontal bottom, width-to-height ratio 56:30. Rich vermilion-red painted front surface with delicately visible wood texture and subtle engraved roof-tile pattern, fine softened edges, entire triangle visible. No house or wall or chimney or windows. Geometry is essential: a wide simple triangle, not a pyramid."
+    },
+    {
+      "asset": "variantlar/uy237-devor",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: one individual children's wooden construction puzzle piece for an educational game. Premium children's picture-book product illustration, beautifully painted real wood grain, refined gouache rendering, subtle chamfer highlights, soft warm light from upper left, clean tactile finish. Strictly straight-on ORTHOGRAPHIC FRONT VIEW, absolutely no perspective, no visible side surfaces or base, no cast shadow outside the object. One solid piece only, centered, fully visible, crisp simple silhouette. Genuine transparent background. No stand, ground plane, background, text, numbers, logo, surrounding objects, loose decorations. Subject: a single BLUE WOODEN SQUARE WALL block, exact square outline, front face entirely square and blue, subtly beveled edges. One small warm-yellow four-pane window engraved and painted directly on the front in the UPPER HALF of the square. Window width about 32 percent of square, centered horizontally, surrounded by plenty of blue wall. The window is an ornament on the SAME solid square block, not a separate puzzle piece. No door, roof, house, extra blocks, visible thickness. Rich blue paint and subtle wood grain, friendly tactile toy."
+    },
+    {
+      "asset": "variantlar/uy237-eshik",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: one individual children's wooden construction puzzle piece for an educational game. Premium children's picture-book product illustration, beautifully painted real wood grain, refined gouache rendering, subtle chamfer highlights, soft warm light from upper left, clean tactile finish. Strictly straight-on ORTHOGRAPHIC FRONT VIEW, absolutely no perspective, no visible side surfaces or base, no cast shadow outside the object. One solid piece only, centered, fully visible, crisp simple silhouette. Genuine transparent background. No stand, ground plane, background, text, numbers, logo, surrounding objects, loose decorations. Subject: one BROWN WOODEN DOOR puzzle piece. Simple tall RECTANGLE, width-to-height ratio 13:21, flat horizontal top and bottom and vertical sides, subtly softened corners. Warm walnut-brown front surface with fine wood grain, one simple recessed rectangular panel and one small round brass-colored knob on the right. All details are engraved/painted on the same one solid piece. No frame around it, no house, no roof, no wall. Full rectangular piece visible."
+    },
+    {
+      "asset": "variantlar/robot242-bosh",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric robot assembly puzzle.\nStyle: premium handcrafted painted beechwood educational toy, polished 3D storybook rendering, subtle realistic wood grain and tiny tactile details, clean saturated enamel face with warm exposed thin wood rim, soft studio illumination from upper left. Straight-on orthographic front view, camera perpendicular to face, no visible side-plane perspective, no tilt. One single flat toy block centered with comfortable transparent margin. No floor or cast shadow outside the silhouette, no text, no letters, no labels, no watermark, no extra objects. This is one separate robot part, NOT a whole robot. Keep all decorative details INSIDE the specified geometric silhouette. Truly transparent background. Crisp readable shape at small thumbnail size.\nSubject: one perfectly CIRCULAR yellow toy robot head, exactly round symmetric silhouette. Golden sunflower yellow painted front with a very thin warm wood edge. Two kind dark navy round eyes with tiny white catchlights placed horizontally at equal height, a simple shallow curved smiling mouth, two subtle cheek dots. No ears, no antenna, no neck, no protruding parts. The outer silhouette must be a mathematically clean circle. Friendly and sophisticated rather than a crude emoji."
+    },
+    {
+      "asset": "variantlar/robot242-tana",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric robot assembly puzzle.\nStyle: premium handcrafted painted beechwood educational toy, polished 3D storybook rendering, subtle realistic wood grain and tiny tactile details, clean saturated enamel face with warm exposed thin wood rim, soft studio illumination from upper left. Straight-on orthographic front view, camera perpendicular to face, no visible side-plane perspective, no tilt. One single flat toy block centered with comfortable transparent margin. No floor or cast shadow outside the silhouette, no text, no letters, no labels, no watermark, no extra objects. This is one separate robot part, NOT a whole robot. Keep all decorative details INSIDE the specified geometric silhouette. Truly transparent background. Crisp readable shape at small thumbnail size.\nSubject: one blue RECTANGULAR toy robot torso block, width:height = 4:3, long sides exactly horizontal and short sides exactly vertical, very slightly softened corners. Rich cornflower blue enamel front and a thin warm wood rim. A small inset rounded navy control panel centered in the upper middle containing ONE circular gauge and TWO small colored circular buttons arranged horizontally underneath it, with a subtle groove below the panel. Decorative detail fully contained inside rectangle. No limbs, no head, no neck, no extra blocks. Sophisticated toy craftsmanship, no writing on the gauge."
+    },
+    {
+      "asset": "variantlar/robot242-qol",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric robot assembly puzzle.\nStyle: premium handcrafted painted beechwood educational toy, polished 3D storybook rendering, subtle realistic wood grain and tiny tactile details, clean saturated enamel face with warm exposed thin wood rim, soft studio illumination from upper left. Straight-on orthographic front view, camera perpendicular to face, no visible side-plane perspective, no tilt. One single flat toy block centered with comfortable transparent margin. No floor or cast shadow outside the silhouette, no text, no letters, no labels, no watermark, no extra objects. This is one separate robot part, NOT a whole robot. Keep all decorative details INSIDE the specified geometric silhouette. Truly transparent background. Crisp readable shape at small thumbnail size.\nSubject: one perfectly SQUARE green toy robot hand block, width equals height, horizontal/vertical sides, very slightly softened corners. Leaf green enamel front with thin warm wood edge. Centered shallow rounded-square palm recess with two tiny horizontal carved grip grooves in its lower half; a tiny circular brass fastener near each upper corner. Symmetric design equally usable for a left or right hand. No separate fingers, no arm stalk, no protruding parts; only ONE square block."
+    },
+    {
+      "asset": "variantlar/robot242-oyoq",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric robot assembly puzzle.\nStyle: premium handcrafted painted beechwood educational toy, polished 3D storybook rendering, subtle realistic wood grain and tiny tactile details, clean saturated enamel face with warm exposed thin wood rim, soft studio illumination from upper left. Straight-on orthographic front view, camera perpendicular to face, no visible side-plane perspective, no tilt. One single flat toy block centered with comfortable transparent margin. No floor or cast shadow outside the silhouette, no text, no letters, no labels, no watermark, no extra objects. This is one separate robot part, NOT a whole robot. Keep all decorative details INSIDE the specified geometric silhouette. Truly transparent background. Crisp readable shape at small thumbnail size.\nSubject: one upright ISOSCELES TRIANGLE orange toy robot foot block, sharp apex at top center and perfectly horizontal wide base below, width:height = 17:20. Bright tangerine orange enamel face with thin warm wood edge. A small centered shallow triangular inset line follows the outer shape, with two small rounded grip grooves horizontally near the lower third. Symmetric design equally usable as left or right foot. Only this ONE triangle, no rectangle ankle, no leg or other parts. The apex must be centered and the two sloping sides absolutely straight."
+    },
+    {
+      "asset": "variantlar/qasr246-tom",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric castle assembly puzzle.\nStyle: premium handcrafted painted beechwood educational castle toy, polished 3D storybook rendering, subtle realistic wood grain and tactile carved detail, clean colorful enamel face and thin warm natural beechwood rim, soft studio light from upper left. Straight-on orthographic front view, camera exactly perpendicular to face, zero perspective tilt or visible side planes. Exactly ONE separate flat toy block centered with transparent margin, whole silhouette visible. Keep decorative details INSIDE specified geometric silhouette. No floor, no external cast shadow, no scene, no text, no labels, no watermark, no extra blocks, no characters. This is ONE separated castle part, NOT a complete castle. Genuinely transparent background. Crisp readable at small thumbnail size.\nSubject: ONE upright red isosceles triangle tower-roof block, width:height exactly 22:20. Apex at top center, straight sloping sides, perfectly horizontal base. Warm cherry red enamel, thin warm wood rim. Shallow carved overlapping scalloped red roof tiles in neat horizontal courses entirely inside triangle, restrained dimensional shading. No flag, no spire above triangle, no tower, no base plinth. A symmetric roof equally usable for left or right tower."
+    },
+    {
+      "asset": "variantlar/qasr246-minora",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric castle assembly puzzle.\nStyle: premium handcrafted painted beechwood educational castle toy, polished 3D storybook rendering, subtle realistic wood grain and tactile carved detail, clean colorful enamel face and thin warm natural beechwood rim, soft studio light from upper left. Straight-on orthographic front view, camera exactly perpendicular to face, zero perspective tilt or visible side planes. Exactly ONE separate flat toy block centered with transparent margin, whole silhouette visible. Keep decorative details INSIDE specified geometric silhouette. No floor, no external cast shadow, no scene, no text, no labels, no watermark, no extra blocks, no characters. This is ONE separated castle part, NOT a complete castle. Genuinely transparent background. Crisp readable at small thumbnail size.\nSubject: ONE tall narrow RECTANGULAR tower block, width:height exactly 18:40. All outer edges straight horizontal/vertical, slightly softened corners. Muted cool light blue-gray stone-colored enamel with shallow carved offset rectangular stone courses, thin warm wood rim. ONE narrow dark navy arched window centered in the upper third, warm cream carved stone surround; below it only tidy stone pattern. Symmetric facade equally usable as left or right tower. No roof, no battlement protruding from silhouette, no gate, no side walls, no extra piece."
+    },
+    {
+      "asset": "variantlar/qasr246-devor",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric castle assembly puzzle.\nStyle: premium handcrafted painted beechwood educational castle toy, polished 3D storybook rendering, subtle realistic wood grain and tactile carved detail, clean colorful enamel face and thin warm natural beechwood rim, soft studio light from upper left. Straight-on orthographic front view, camera exactly perpendicular to face, zero perspective tilt or visible side planes. Exactly ONE separate flat toy block centered with transparent margin, whole silhouette visible. Keep decorative details INSIDE specified geometric silhouette. No floor, no external cast shadow, no scene, no text, no labels, no watermark, no extra blocks, no characters. This is ONE separated castle part, NOT a complete castle. Genuinely transparent background. Crisp readable at small thumbnail size.\nSubject: ONE wide horizontal RECTANGULAR castle-wall block, width:height exactly 48:26. All outer edges perfectly horizontal/vertical, slightly softened corners. Muted cool light blue-gray stone-colored enamel with shallow carved offset rectangular stone courses and thin warm wood rim. Clean upper stone course and a subtle carved horizontal molding near the top; the lower wall is a continuous evenly spaced stone pattern. Same craft as a matching blue-gray toy tower. NO gate, NO arch, NO hole, NO windows, NO towers, NO roof, NO protruding battlements. Only this one plain stone-pattern wall, so a separate gate sprite can later be placed over its center."
+    },
+    {
+      "asset": "variantlar/qasr246-darvoza",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent sprite for a child's geometric castle assembly puzzle.\nStyle: premium handcrafted painted beechwood educational castle toy, polished 3D storybook rendering, subtle realistic wood grain and tactile carved detail, clean colorful enamel face and thin warm natural beechwood rim, soft studio light from upper left. Straight-on orthographic front view, camera exactly perpendicular to face, zero perspective tilt or visible side planes. Exactly ONE separate flat toy block centered with transparent margin, whole silhouette visible. Keep decorative details INSIDE specified geometric silhouette. No floor, no external cast shadow, no scene, no text, no labels, no watermark, no extra blocks, no characters. This is ONE separated castle part, NOT a complete castle. Genuinely transparent background. Crisp readable at small thumbnail size.\nSubject: ONE vertical brown wooden castle-gate RECTANGULAR block, width:height exactly 14:16. Straight horizontal top and bottom, vertical sides, slightly softened corners. Warm walnut and honey brown front with subtle wood grain, thin natural beechwood rim. An arched inset decorative border INSIDE the rectangular block surrounds two matching vertical wood gate panels; exactly two small dark iron ring handles at equal height, restrained iron hinge strips. The ARCH is carved on the front face while the OUTER silhouette remains rectangular. No stone wall, no tower, no steps, no protruding hardware, no extra piece."
+    },
+    {
+      "asset": "variantlar/kapalak247-yuqori-qanot",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story.\nAsset type: isolated transparent part sprite for a child's butterfly mirror-symmetry assembly puzzle.\nStyle: premium children's natural-history picture book illustration, softly painted gouache with restrained dimensional shading and delicate tactile texture, elegant rounded organic silhouette, friendly refined saturated colors, accurate recognizable butterfly anatomy. Straight-on dorsal/front illustration of a flat butterfly, camera perpendicular, NO perspective tilt. Crisp at small size. ONE isolated requested butterfly part only, fully visible and centered with transparent margin. Genuinely transparent background. No scenery, no floor, no cast shadow outside silhouette, no text, no labels, no watermark.\nSubject: ONE LEFT UPPER butterfly wing, detached from the body. Broad fan-shaped wing extending UP and to the LEFT; its small pointed attachment tip is at the LOWER RIGHT corner. Wide organic rounded triangular contour, not a geometric triangle; ratio bounding width:height approximately 36:29. A rich cobalt-blue outer edge with a neat row of pale cream dots, warm turquoise and sky-blue inner panels separated by slender dark navy veins. ONE amber-gold oval eye spot outlined in navy in the upper outer-left area. Tiny delicately scalloped edge, clearly one continuous organic butterfly wing. No right wing, no lower wing, no body, no antennae, no insect or other objects. Attachment tip points RIGHT toward the center of an eventual assembled butterfly."
+    },
+    {
+      "asset": "variantlar/kapalak247-quyi-qanot",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story.\nAsset type: isolated transparent part sprite for a child's butterfly mirror-symmetry assembly puzzle.\nStyle: premium children's natural-history picture book illustration, softly painted gouache with restrained dimensional shading and delicate tactile texture, elegant rounded organic silhouette, friendly refined saturated colors, accurate recognizable butterfly anatomy. Straight-on dorsal/front illustration of a flat butterfly, camera perpendicular, NO perspective tilt. Crisp at small size. ONE isolated requested butterfly part only, fully visible and centered with transparent margin. Genuinely transparent background. No scenery, no floor, no cast shadow outside silhouette, no text, no labels, no watermark.\nSubject: ONE LEFT LOWER butterfly wing, detached from the body. Rounded teardrop-shaped fan extending DOWN and to the LEFT; its small narrow attachment tip is at the UPPER RIGHT corner. Organic curved contour, not a geometric shape, ratio bounding width:height approximately 27:22. Matching turquoise-blue butterfly palette: a rich cobalt-blue scalloped outer rim with pale cream dots, teal and sky-blue interior panels divided by slim dark navy veins. ONE smaller amber-gold eye spot with navy outline toward the outer lower-left side. Rounded bottom edge, no long swallowtail. No upper wing, no right wing, no body, no antennae, no insect or extra objects. Attachment tip points RIGHT toward center of eventual butterfly."
+    },
+    {
+      "asset": "variantlar/kapalak247-tana",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story.\nAsset type: isolated transparent part sprite for a child's butterfly mirror-symmetry assembly puzzle.\nStyle: premium children's natural-history picture book illustration, softly painted gouache with restrained dimensional shading and delicate tactile texture, elegant rounded organic silhouette, friendly refined saturated colors, accurate recognizable butterfly anatomy. Straight-on dorsal/front illustration of a flat butterfly, camera perpendicular, NO perspective tilt. Crisp at small size. ONE isolated requested butterfly part only, fully visible and centered with transparent margin. Genuinely transparent background. No scenery, no floor, no cast shadow outside silhouette, no text, no labels, no watermark.\nSubject: ONE complete butterfly BODY ONLY without any wings. Perfectly vertical, bilaterally symmetric front-facing friendly butterfly head, thorax and long slender segmented abdomen. Deep indigo and soft violet coloring with a few subtle lighter blue segment highlights. Small rounded violet head at top with exactly two kind dark eyes and a tiny smile. Exactly two thin graceful dark antennae curve equally outward to the left and right, with tiny rounded amber tips. Body is long and slim, full bounding box including antennae width:height approximately 20:54. Abdomen points straight down, gently tapering to a rounded tip. No wings, no legs projecting sideways, no other insects or objects. All body and antennae remain visible. Anatomy must be clear, clean and exactly centered so it can be split down the vertical center line for a mirror-symmetry educational puzzle."
+    },
+    {
+      "asset": "variantlar/raketa252-uch",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: one transparent painted wooden geometric puzzle tile for a child's rocket shape-analysis question.\nStyle: premium handcrafted beechwood educational toy, polished 3D picture-book rendering, softly tactile painted enamel with subtle natural wood grain, clean saturated color, VERY THIN warm exposed wooden rim. Straight-on orthographic front view, no tilt, no perspective or visible side planes. Precisely one flat tile with requested mathematically clear outer shape, fully visible, centered with transparent margin. Soft upper-left studio lighting. Truly transparent background. No floor, no external cast shadow. No text, no numbers, no labels, no watermark, no other objects or tiles. Do not draw a complete rocket. Surface should be plain; no inlaid geometric decoration, dots, holes, rivets, buttons or grooves that could confuse a child counting the actual shape tiles.\nSubject: ONE warm golden-yellow upright ISOSCELES TRIANGLE nose-cone tile. Bounding width:height = 140:120. Apex at top center, absolutely straight sloping sides and horizontal bottom edge, almost sharp corners with tiny safe rounding. Plain yellow painted face with quiet wood-grain texture and delicate shading. The outline must be unmistakably a triangle."
+    },
+    {
+      "asset": "variantlar/raketa252-korpus",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: one transparent painted wooden geometric puzzle tile for a child's rocket shape-analysis question.\nStyle: premium handcrafted beechwood educational toy, polished 3D picture-book rendering, softly tactile painted enamel with subtle natural wood grain, clean saturated color, VERY THIN warm exposed wooden rim. Straight-on orthographic front view, no tilt, no perspective or visible side planes. Precisely one flat tile with requested mathematically clear outer shape, fully visible, centered with transparent margin. Soft upper-left studio lighting. Truly transparent background. No floor, no external cast shadow. No text, no numbers, no labels, no watermark, no other objects or tiles. Do not draw a complete rocket. Surface should be plain; no inlaid geometric decoration, dots, holes, rivets, buttons or grooves that could confuse a child counting the actual shape tiles.\nSubject: ONE teal-blue vertical RECTANGLE rocket-body tile. Bounding width:height = 140:165. Four clearly straight edges, width noticeably less than height, very slightly softened corners. Plain rich teal-blue painted face, subtle wood-grain texture and gentle shading. The tile is NOT a square, no window, no emblem, no smaller geometric shapes painted on it."
+    },
+    {
+      "asset": "variantlar/raketa252-qanot",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: one transparent painted wooden geometric puzzle tile for a child's rocket shape-analysis question.\nStyle: premium handcrafted beechwood educational toy, polished 3D picture-book rendering, softly tactile painted enamel with subtle natural wood grain, clean saturated color, VERY THIN warm exposed wooden rim. Straight-on orthographic front view, no tilt, no perspective or visible side planes. Precisely one flat tile with requested mathematically clear outer shape, fully visible, centered with transparent margin. Soft upper-left studio lighting. Truly transparent background. No floor, no external cast shadow. No text, no numbers, no labels, no watermark, no other objects or tiles. Do not draw a complete rocket. Surface should be plain; no inlaid geometric decoration, dots, holes, rivets, buttons or grooves that could confuse a child counting the actual shape tiles.\nSubject: ONE warm coral-red RIGHT-ANGLED TRIANGLE rocket-fin tile. Bounding width:height = 95:130. Triangle vertices at the TOP RIGHT, BOTTOM RIGHT and BOTTOM LEFT. The RIGHT edge is vertical, BOTTOM edge horizontal, and diagonal slopes from top right down to bottom left. Right angle at bottom right. Plain coral-red painted face, subtle wood-grain texture. Do not create an isosceles or equilateral triangle. No extra part or decoration."
+    },
+    {
+      "asset": "variantlar/raketa252-doira",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: one transparent painted wooden geometric puzzle tile for a child's rocket shape-analysis question.\nStyle: premium handcrafted beechwood educational toy, polished 3D picture-book rendering, softly tactile painted enamel with subtle natural wood grain, clean saturated color, VERY THIN warm exposed wooden rim. Straight-on orthographic front view, no tilt, no perspective or visible side planes. Precisely one flat tile with requested mathematically clear outer shape, fully visible, centered with transparent margin. Soft upper-left studio lighting. Truly transparent background. No floor, no external cast shadow. No text, no numbers, no labels, no watermark, no other objects or tiles. Do not draw a complete rocket. Surface should be plain; no inlaid geometric decoration, dots, holes, rivets, buttons or grooves that could confuse a child counting the actual shape tiles.\nSubject: ONE perfectly CIRCULAR violet-purple rocket-window tile, width equals height. Plain soft violet enamel front with a tiny quiet glossy light reflection and subtle wood-grain texture, very thin warm natural wooden rim. Entire disc is solid and filled; no hole, no internal ring, no outline circles within it, no porthole bolts, no icons. The outer silhouette must be an exact circle."
+    },
+    {
+      "asset": "variantlar/koprik254-ravoq",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: isolated transparent component of a child's six-piece bridge assembly puzzle.\nStyle: premium handcrafted painted beechwood educational bridge toy, polished 3D storybook rendering, subtle natural wood grain and tactile carving, softly saturated painted enamel, thin warm wood rim, soft studio light from upper left. Exact straight-on orthographic SIDE elevation, no perspective or visible receding side planes, no tilt. One flat toy component centered with transparent margin, fully visible. Genuinely transparent background, including holes inside the component. No ground, no outside cast shadow, no scene, no text, no labels, no watermark, no characters, no vehicles, no water or scenery. ONE connected component only, not a whole assembled bridge.\nSubject: ONE RED BOWSTRING ARCH TRUSS bridge superstructure component, wide horizontal silhouette, full bounding width:height exactly 69:23. A single broad smoothly curved red arch starts at the bottom left, rises to its highest point at top center, and returns to bottom right. A straight thin horizontal red lower chord connects the two arch ends. Exactly FIVE evenly spaced slim vertical red hanger bars connect the curved upper arch to the straight lower chord. All these red members join into ONE continuous toy component. Empty spaces between the bars are fully transparent. Gentle rounded safe edges, subtle warm wood texture; tiny gold-painted fastener details only at member joints. Symmetric outline. Flat side elevation of an arch, not a tunnel looking down a road. No roadway deck, no piers, no supports below the horizontal chord. No roof, no triangular top, no additional arches. Readable at small size."
+    },
+    {
+      "asset": "variantlar/koprik254-yolak",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: isolated transparent component of a child's six-piece bridge assembly puzzle.\nStyle: premium handcrafted painted beechwood educational bridge toy, polished 3D storybook rendering, subtle natural wood grain and tactile carving, softly saturated painted enamel, thin warm wood rim, soft studio light from upper left. Exact straight-on orthographic SIDE elevation, no perspective or visible receding side planes, no tilt. One flat toy component centered with transparent margin, fully visible. Genuinely transparent background, including holes inside the component. No ground, no outside cast shadow, no scene, no text, no labels, no watermark, no characters, no vehicles, no water or scenery. ONE connected component only, not a whole assembled bridge.\nSubject: ONE BLUE horizontal RECTANGULAR bridge-deck segment, bounding width:height exactly 23:8, straight horizontal top and bottom edges, vertical left and right edges, very slightly softened corners. Rich muted teal-blue painted front with delicate horizontal wood grain, a thin beechwood rim. Two restrained horizontal inset grooves run across the face and three tiny symmetrical carved vertical joinery marks remain fully INSIDE the rectangle. Identical reusable middle, left or right segment. No railing protruding above, no arch, no pillars, no road perspective, no additional piece. The outer silhouette is exactly a simple wide rectangle."
+    },
+    {
+      "asset": "variantlar/koprik254-tayanch",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept.\nAsset type: isolated transparent component of a child's six-piece bridge assembly puzzle.\nStyle: premium handcrafted painted beechwood educational bridge toy, polished 3D storybook rendering, subtle natural wood grain and tactile carving, softly saturated painted enamel, thin warm wood rim, soft studio light from upper left. Exact straight-on orthographic SIDE elevation, no perspective or visible receding side planes, no tilt. One flat toy component centered with transparent margin, fully visible. Genuinely transparent background, including holes inside the component. No ground, no outside cast shadow, no scene, no text, no labels, no watermark, no characters, no vehicles, no water or scenery. ONE connected component only, not a whole assembled bridge.\nSubject: ONE LIGHT BLUE-GRAY upright RECTANGULAR bridge-pier block, bounding width:height exactly 16:18, straight horizontal top and bottom, vertical sides, very slightly softened corners. Painted stone-colored beechwood face with three clean courses of shallow carved offset rectangular stones, subtle soft texture, thin warm wood rim. Symmetric balanced design equally usable as left or right supporting pier. No cap protruding, no base plinth, no window, no arch, no road deck, no other blocks. Precisely one slightly tall rectangular support."
+    }
+  ]
+}

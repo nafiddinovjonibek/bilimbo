@@ -1,0 +1,29 @@
+{
+  "key": "2.3.7",
+  "tur": "tanlov",
+  "before": {
+    "sarlavha": "Geometrik tahlil",
+    "matn": "Uy devorlari va tomini yasagan asosiy shakllarni sana. Eshik ichidagi bezaklarni alohida bo‘lak deb hisoblama. Qaysi tarkib to‘g‘ri?",
+    "ovoz_matn": "Uy devorlari va tomini yasagan asosiy shakllarni sana. Eshik ichidagi bezaklarni alohida bo‘lak deb hisoblama. Qaysi tarkib to‘g‘ri?",
+    "rasm": "images/topshiriq/variantlar/namuna-uy.svg",
+    "izoh": ""
+  },
+  "after": {
+    "sarlavha": "Raketaning shakllarini tahlil qil",
+    "matn": "Raketadagi barcha rangli bo‘laklarni tahlil qil. Uchburchaklar, to‘g‘ri to‘rtburchaklar va doiralarni alohida sana. Qaysi kartochkada aynan shu bo‘laklar bor?",
+    "ovoz_matn": "Raketadagi barcha rangli bo‘laklarni tahlil qil. Uchburchaklar, to‘g‘ri to‘rtburchaklar va doiralarni alohida sana. Qaysi kartochkada aynan shu bo‘laklar bor?",
+    "rasm": "images/topshiriq/variantlar/raketa252.svg",
+    "izoh": "Shaklni tashqi chetiga qarab aniqlagin. Bir xil shakllarni bir guruhga ajratib sana."
+  },
+  "variants_before": [
+    {"order": 1, "matn": "2 ta kvadrat, 1 ta uchburchak", "rasm": "", "togri": true},
+    {"order": 2, "matn": "2 ta kvadrat, 2 ta uchburchak", "rasm": "", "togri": false},
+    {"order": 3, "matn": "3 ta kvadrat, 1 ta uchburchak", "rasm": "", "togri": false}
+  ],
+  "variants_after": [
+    {"order": 1, "matn": "2 ta uchburchak, 3 ta to‘g‘ri to‘rtburchak, 1 ta doira", "rasm": "images/topshiriq/variantlar/raketa252-toplam-1.svg", "togri": false},
+    {"order": 2, "matn": "3 ta uchburchak, 2 ta to‘g‘ri to‘rtburchak, 1 ta doira", "rasm": "images/topshiriq/variantlar/raketa252-toplam-2.svg", "togri": true},
+    {"order": 3, "matn": "3 ta uchburchak, 1 ta to‘g‘ri to‘rtburchak, 2 ta doira", "rasm": "images/topshiriq/variantlar/raketa252-toplam-3.svg", "togri": false}
+  ],
+  "teacher_notes": "Yagona to‘g‘ri javob: 3 uchburchak (sariq uch va ikki qizil yon qanot), 2 ko‘k to‘g‘ri to‘rtburchak (korpusning ikki bo‘lagi), 1 binafsha doira (oyna). Uchala javob kartochkasida ham 6 bo‘lak bor. Birinchi variantda bitta uchburchak o‘rniga ortiqcha to‘rtburchak, uchinchi variantda bitta to‘rtburchak o‘rniga ortiqcha doira bor. Mavjud uch variant va tanlov turi saqlanadi."
+}

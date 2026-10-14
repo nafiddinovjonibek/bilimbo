@@ -1,0 +1,24 @@
+{
+  "key": "2.1.2",
+  "tur": "tanlov",
+  "variants": [
+    {"matn": "5", "togri": false},
+    {"matn": "6", "togri": true},
+    {"matn": "7", "togri": false}
+  ],
+  "before": {
+    "sarlavha": "Sanab javob ber",
+    "matn": "Olmalar turli joyda turgan bo‘lsa ham, har birini bir marta sana. Rasmda jami nechta olma bor?",
+    "ovoz_matn": "Olmalar turli joyda turgan bo‘lsa ham, har birini bir marta sana. Rasmda jami nechta olma bor?",
+    "rasm": "images/topshiriq/variantlar/sanoq-olma-6.svg",
+    "izoh": ""
+  },
+  "after": {
+    "sarlavha": "Olmalarni ajratib sana",
+    "matn": "Qizil va yashil olmalarni birga sana. Noklar hisobga kirmaydi. Jami nechta olma bor?",
+    "ovoz_matn": "Qizil va yashil olmalarni birga sana. Noklar hisobga kirmaydi. Jami nechta olma bor?",
+    "rasm": "images/topshiriq/variantlar/sanoq-olma-va-nok.webp",
+    "izoh": "Mevaning shakliga qarab ajrat. Har bir olmani faqat bir marta sana."
+  },
+  "teacher_notes": "Rasmda 4 qizil olma, 2 yashil olma va 2 sariq nok bor. Faqat olma sanaladi: 4 + 2 = 6. Noklar chalg‘ituvchi elementlar; javob variantlari va ularning IDlari saqlanadi."
+}

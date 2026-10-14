@@ -1,0 +1,35 @@
+{
+  "key": "2.3.9",
+  "tur": "qurish",
+  "before": {
+    "sarlavha": "Qurilish loyihasi",
+    "matn": "Ko‘prikni namunaga mos yig‘: ikkita tayanch pastda, uchta yo‘lak bo‘lagi yonma-yon, uchburchak tepada. Hammasi joylashgach, ikki tomonni solishtir.",
+    "ovoz_matn": "Ko‘prikni namunaga mos yig‘: ikkita tayanch pastda, uchta yo‘lak bo‘lagi yonma-yon, uchburchak tepada. Hammasi joylashgach, ikki tomonni solishtir.",
+    "rasm": "images/topshiriq/variantlar/namuna-koprik.svg",
+    "izoh": "Shakllarning rangi, o‘lchami va joylashuvini namuna bilan solishtir."
+  },
+  "after": {
+    "sarlavha": "Ko‘prikni reja asosida yig‘",
+    "matn": "Namunadagi ko‘prikni olti bo‘lakdan yig‘. Yo‘lak bo‘laklari bir tekis tutashsin, tayanchlar ikki tomonda teng tursin. Yuqoridagi ravoqni yo‘lakning ustiga moslab joylashtir.",
+    "ovoz_matn": "Namunadagi ko‘prikni olti bo‘lakdan yig‘. Yo‘lak bo‘laklari bir tekis tutashsin, tayanchlar ikki tomonda teng tursin. Yuqoridagi ravoqni yo‘lakning ustiga moslab joylashtir.",
+    "rasm": "images/topshiriq/variantlar/namuna-koprik254.svg",
+    "izoh": "Avval uzun va qisqa bo‘laklarni solishtirib, ularning joyini rejalashtir. So‘ng ko‘prikning ikki tomonini tekshir."
+  },
+  "variants_before": [
+    {"order": 1, "matn": "Cho'qqi", "rasm": "images/topshiriq/variantlar/bolak-uchburchak-qizil-20x18.svg", "slot": "42,8.857,16,20.571"},
+    {"order": 2, "matn": "Yo'lak (chap)", "rasm": "images/topshiriq/variantlar/bolak-tortburchak-kok-26x12.svg", "slot": "18,31.714,20.8,13.714"},
+    {"order": 3, "matn": "Yo'lak (o'rta)", "rasm": "images/topshiriq/variantlar/bolak-tortburchak-kok-26x12.svg", "slot": "39.6,31.714,20.8,13.714"},
+    {"order": 4, "matn": "Yo'lak (o'ng)", "rasm": "images/topshiriq/variantlar/bolak-tortburchak-kok-26x12.svg", "slot": "61.2,31.714,20.8,13.714"},
+    {"order": 5, "matn": "Chap ustun", "rasm": "images/topshiriq/variantlar/bolak-kvadrat-kulrang-20x28.svg", "slot": "22.8,47.714,16,32"},
+    {"order": 6, "matn": "O'ng ustun", "rasm": "images/topshiriq/variantlar/bolak-kvadrat-kulrang-20x28.svg", "slot": "61.2,47.714,16,32"}
+  ],
+  "variants_after": [
+    {"order": 1, "matn": "Ko‘prik ravog‘i", "rasm": "images/topshiriq/variantlar/koprik254-ravoq.svg", "slot": "15.5,17.143,69,32.857"},
+    {"order": 2, "matn": "Chap yo‘lak", "rasm": "images/topshiriq/variantlar/koprik254-yolak.svg", "slot": "15.5,50,23,11.429"},
+    {"order": 3, "matn": "O‘rta yo‘lak", "rasm": "images/topshiriq/variantlar/koprik254-yolak.svg", "slot": "38.5,50,23,11.429"},
+    {"order": 4, "matn": "O‘ng yo‘lak", "rasm": "images/topshiriq/variantlar/koprik254-yolak.svg", "slot": "61.5,50,23,11.429"},
+    {"order": 5, "matn": "Chap tayanch", "rasm": "images/topshiriq/variantlar/koprik254-tayanch.svg", "slot": "22.5,61.429,16,25.714"},
+    {"order": 6, "matn": "O‘ng tayanch", "rasm": "images/topshiriq/variantlar/koprik254-tayanch.svg", "slot": "61.5,61.429,16,25.714"}
+  ],
+  "teacher_notes": "Olti mavjud bo‘lak saqlangan: bir ravoq, uch bir xil yo‘lak, ikki bir xil tayanch. Yo‘laklar va tayanchlar o‘zaro o‘rin almashtirsa ham yechim to‘g‘ri. Ravoq pastki chizig‘i yo‘lakka tutashadi; ikkala tayanch bir xil balandlikda yo‘lakning tagiga joylashadi. Namuna shu variant rasmlari va uyalar koordinatalaridan tuziladi."
+}

@@ -119,7 +119,7 @@ class Savol(models.Model):
     )
     sarlavha = models.CharField(max_length=120, blank=True, verbose_name='Topshiriq nomi')
     matn = models.TextField(verbose_name='Savol matni')
-    # "Har bir topshiriq ovozli" — brauzer shu matnni ovoz chiqarib o'qiydi
+    # "Har bir topshiriq ovozli" — shu matndan o'zbekcha MP3 tayyorlanadi
     ovoz_matn = models.TextField(
         blank=True,
         verbose_name='Ovozlashtiriladigan matn',

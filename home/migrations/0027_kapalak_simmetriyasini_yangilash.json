@@ -1,0 +1,35 @@
+{
+  "key": "2.3.2",
+  "tur": "qurish",
+  "before": {
+    "sarlavha": "Simmetriyani to'ldir",
+    "matn": "O‘rtadagi tik chiziqni oyna deb tasavvur qil. Har bir chap bo‘lakning o‘ngdagi juftini chiziqdan teng masofada, bir xil balandlikda joylashtir.",
+    "ovoz_matn": "O‘rtadagi tik chiziqni oyna deb tasavvur qil. Har bir chap bo‘lakning o‘ngdagi juftini chiziqdan teng masofada, bir xil balandlikda joylashtir.",
+    "rasm": "images/topshiriq/variantlar/namuna-simmetriya.svg",
+    "izoh": "Shakllarning rangi, o‘lchami va joylashuvini namuna bilan solishtir."
+  },
+  "after": {
+    "sarlavha": "Kapalakning oyna aksini yig‘",
+    "matn": "Chapdagi kapalak yarmini kuzat. Uchta o‘ng bo‘lakni mos joylarga qo‘yib, uning oyna aksini hosil qil. Qanotlarning shakli, rangi va naqshlari ikki tomonda mos kelsin.",
+    "ovoz_matn": "Chapdagi kapalak yarmini kuzat. Uchta o‘ng bo‘lakni mos joylarga qo‘yib, uning oyna aksini hosil qil. Qanotlarning shakli, rangi va naqshlari ikki tomonda mos kelsin.",
+    "rasm": "images/topshiriq/variantlar/namuna-kapalak247.svg",
+    "izoh": "Qanot uchlari va naqshlarining qayerga qaraganini solishtir. Ikkala tomon ham bir xil balandlikda bo‘lsin."
+  },
+  "variants_before": [
+    {"order": 1, "matn": "Chap uchburchak", "rasm": "images/topshiriq/variantlar/bolak-uchburchak-qizil-20x24.svg", "slot": "32.4,15.714,16,27.429"},
+    {"order": 2, "matn": "Chap doira", "rasm": "images/topshiriq/variantlar/bolak-doira-sariq-16x16.svg", "slot": "34,45.429,12.8,18.286"},
+    {"order": 3, "matn": "Chap kvadrat", "rasm": "images/topshiriq/variantlar/bolak-kvadrat-binafsha-24x22.svg", "slot": "30.8,66,19.2,25.143"},
+    {"order": 4, "matn": "O'ng uchburchak", "rasm": "images/topshiriq/variantlar/bolak-uchburchak-qizil-20x24.svg", "slot": "51.6,15.714,16,27.429"},
+    {"order": 5, "matn": "O'ng doira", "rasm": "images/topshiriq/variantlar/bolak-doira-sariq-16x16.svg", "slot": "53.2,45.429,12.8,18.286"},
+    {"order": 6, "matn": "O'ng kvadrat", "rasm": "images/topshiriq/variantlar/bolak-kvadrat-binafsha-24x22.svg", "slot": "50,66,19.2,25.143"}
+  ],
+  "variants_after": [
+    {"order": 1, "matn": "Chap yuqori qanot", "rasm": "images/topshiriq/variantlar/kapalak247-chap-yuqori.svg", "slot": "12,11.429,36,41.429"},
+    {"order": 2, "matn": "Chap quyi qanot", "rasm": "images/topshiriq/variantlar/kapalak247-chap-quyi.svg", "slot": "21,47.143,27,31.429"},
+    {"order": 3, "matn": "Tananing chap yarmi", "rasm": "images/topshiriq/variantlar/kapalak247-chap-tana.svg", "slot": "40,11.429,10,77.143"},
+    {"order": 4, "matn": "O‘ng yuqori qanot", "rasm": "images/topshiriq/variantlar/kapalak247-ong-yuqori.svg", "slot": "52,11.429,36,41.429"},
+    {"order": 5, "matn": "O‘ng quyi qanot", "rasm": "images/topshiriq/variantlar/kapalak247-ong-quyi.svg", "slot": "52,47.143,27,31.429"},
+    {"order": 6, "matn": "Tananing o‘ng yarmi", "rasm": "images/topshiriq/variantlar/kapalak247-ong-tana.svg", "slot": "50,11.429,10,77.143"}
+  ],
+  "teacher_notes": "Olti mavjud variant saqlanadi: chapdagi uch bo‘lak avvalgidek tayyor, o‘ngdagi uch bo‘lak ko‘chiriladi. O‘ng rasmlar chap tasvirlarning SVG orqali aniq gorizontal aksi; alohida rasm yo‘llari noto‘g‘ri qanot yoki chap bo‘lak qabul qilinishining oldini oladi. Namuna shu olti tasvirdan yig‘iladi."
+}

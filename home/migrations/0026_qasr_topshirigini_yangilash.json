@@ -1,0 +1,35 @@
+{
+  "key": "2.3.1",
+  "tur": "qurish",
+  "before": {
+    "sarlavha": "Qasrni reja asosida yig‘",
+    "matn": "Qasrni namunaga aynan mos yig‘. Ikki minora bir xil balandlikda, darvoza o‘rtada bo‘lsin; tomlar, devor va darvozaning joyini tekshir.",
+    "ovoz_matn": "Qasrni namunaga aynan mos yig‘. Ikki minora bir xil balandlikda, darvoza o‘rtada bo‘lsin; tomlar, devor va darvozaning joyini tekshir.",
+    "rasm": "images/topshiriq/variantlar/namuna-qasr.svg",
+    "izoh": "Shakllarning rangi, o‘lchami va joylashuvini namuna bilan solishtir."
+  },
+  "after": {
+    "sarlavha": "Ikki minorali qasr yig‘",
+    "matn": "Namunadagi qasrni olti bo‘lakdan yig‘. Minoralarning balandligi va tomlarning yo‘nalishini solishtir. Devor bilan darvoza joyini topib, qasrning ikki tomonini bir xil qilib tugat.",
+    "ovoz_matn": "Namunadagi qasrni olti bo‘lakdan yig‘. Minoralarning balandligi va tomlarning yo‘nalishini solishtir. Devor bilan darvoza joyini topib, qasrning ikki tomonini bir xil qilib tugat.",
+    "rasm": "images/topshiriq/variantlar/namuna-qasr246.svg",
+    "izoh": "Avval bo‘laklarning shakli va o‘lchamini taqqosla. Oxirida qasrning pastki chizig‘i va ikki tomonini tekshir."
+  },
+  "variants_before": [
+    {"order": 1, "rasm": "images/topshiriq/variantlar/bolak-uchburchak-qizil-22x20.svg", "slot": "14.8,11.143,17.6,22.857"},
+    {"order": 2, "rasm": "images/topshiriq/variantlar/bolak-uchburchak-qizil-22x20.svg", "slot": "67.6,11.143,17.6,22.857"},
+    {"order": 3, "rasm": "images/topshiriq/variantlar/bolak-kvadrat-kulrang-18x40.svg", "slot": "16.4,34,14.4,45.714"},
+    {"order": 4, "rasm": "images/topshiriq/variantlar/bolak-kvadrat-kulrang-18x40.svg", "slot": "69.2,34,14.4,45.714"},
+    {"order": 5, "rasm": "images/topshiriq/variantlar/bolak-tortburchak-kulrang-48x26.svg", "slot": "30.8,50,38.4,29.714"},
+    {"order": 6, "rasm": "images/topshiriq/variantlar/bolak-tortburchak-jigar-14x16.svg", "slot": "44.4,61.429,11.2,18.286"}
+  ],
+  "variants_after": [
+    {"order": 1, "rasm": "images/topshiriq/variantlar/qasr246-tom.svg", "slot": "14.8,11.143,17.6,22.857"},
+    {"order": 2, "rasm": "images/topshiriq/variantlar/qasr246-tom.svg", "slot": "67.6,11.143,17.6,22.857"},
+    {"order": 3, "rasm": "images/topshiriq/variantlar/qasr246-minora.svg", "slot": "16.4,34,14.4,45.714"},
+    {"order": 4, "rasm": "images/topshiriq/variantlar/qasr246-minora.svg", "slot": "69.2,34,14.4,45.714"},
+    {"order": 5, "rasm": "images/topshiriq/variantlar/qasr246-devor.svg", "slot": "30.8,50,38.4,29.714"},
+    {"order": 6, "rasm": "images/topshiriq/variantlar/qasr246-darvoza.svg", "slot": "44.4,61.429,11.2,18.286"}
+  ],
+  "teacher_notes": "Mavjud olti bo‘lak, uyalar koordinatalari va tekshiruv tartibi saqlangan. Ikki tom bir xil rasmga, ikki minora bir xil rasmga ega; ularning o‘rin almashishi to‘g‘ri yechim sifatida qabul qilinadi. Namuna aynan variant rasmlari va uyalar koordinatalaridan yig‘iladi."
+}

@@ -1,0 +1,30 @@
+{
+  "key": "2.2.2",
+  "tur": "qurish",
+  "before": {
+    "sarlavha": "Konstruktor yig'",
+    "matn": "Namunani avval kuzat: ikki devor yonma-yon, tom yuqorida, eshik markazda. Bloklarni mos uyaga qo‘yib, uyni aynan yig‘.",
+    "ovoz_matn": "Namunani avval kuzat: ikki devor yonma-yon, tom yuqorida, eshik markazda. Bloklarni mos uyaga qo‘yib, uyni aynan yig‘.",
+    "rasm": "images/topshiriq/variantlar/namuna-uy.svg",
+    "izoh": "Shakllarning rangi, o‘lchami va joylashuvini namuna bilan solishtir."
+  },
+  "after": {
+    "sarlavha": "Yog‘och uycha yig‘",
+    "matn": "Namunaga qarab uychani yig‘. Ikki ko‘k devor yonma-yon, qizil tom ularning ustida tursin. Eshikni pastdagi markazga qo‘y. Derazalarning balandligini ham tekshir.",
+    "ovoz_matn": "Namunaga qarab uychani yig‘. Ikki ko‘k devor yonma-yon, qizil tom ularning ustida tursin. Eshikni pastdagi markazga qo‘y. Derazalarning balandligini ham tekshir.",
+    "rasm": "images/topshiriq/variantlar/namuna-uy237.svg",
+    "izoh": "Avval har bir bo‘lakning joyini rejalashtir. Tugagach, uychangni namuna bilan solishtir."
+  },
+  "variants_before": [
+    {"order": 1, "rasm": "images/topshiriq/variantlar/bolak-uchburchak-qizil-56x30.svg", "slot": "27.6,8.857,44.8,34.286"},
+    {"order": 2, "rasm": "images/topshiriq/variantlar/bolak-kvadrat-kok-26x26.svg", "slot": "29.2,43.143,20.8,29.714"},
+    {"order": 3, "rasm": "images/topshiriq/variantlar/bolak-kvadrat-kok-26x26.svg", "slot": "50,43.143,20.8,29.714"},
+    {"order": 4, "rasm": "images/topshiriq/variantlar/bolak-tortburchak-jigar-16x16.svg", "slot": "43.6,54.571,12.8,18.286"}
+  ],
+  "variants_after": [
+    {"order": 1, "rasm": "images/topshiriq/variantlar/uy237-tom.svg", "slot": "27.6,8.857,44.8,34.286"},
+    {"order": 2, "rasm": "images/topshiriq/variantlar/uy237-devor.svg", "slot": "29.2,43.143,20.8,29.714"},
+    {"order": 3, "rasm": "images/topshiriq/variantlar/uy237-devor.svg", "slot": "50,43.143,20.8,29.714"},
+    {"order": 4, "rasm": "images/topshiriq/variantlar/uy237-eshik.svg", "slot": "44.8,48.857,10.4,24"}
+  ]
+}

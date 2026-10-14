@@ -1,0 +1,35 @@
+{
+  "key": "2.2.7",
+  "tur": "qurish",
+  "before": {
+    "sarlavha": "Geometrik figuradan rasm yasash",
+    "matn": "Robot namunasini yig‘: bosh tepada, tana markazda, ikki qo‘l yonlarda, oyoqlar pastda. Har bir bo‘lakning shakli va joyini tekshir.",
+    "ovoz_matn": "Robot namunasini yig‘: bosh tepada, tana markazda, ikki qo‘l yonlarda, oyoqlar pastda. Har bir bo‘lakning shakli va joyini tekshir.",
+    "rasm": "images/topshiriq/variantlar/namuna-robot.svg",
+    "izoh": "Shakllarning rangi, o‘lchami va joylashuvini namuna bilan solishtir."
+  },
+  "after": {
+    "sarlavha": "Shakllardan robot yig‘",
+    "matn": "Namunani diqqat bilan kuzat. Olti bo‘lakdan xuddi shunday robot yig‘: shakl, rang va bezaklar mos bo‘lsin. Qo‘l va oyoqlar ikki tomonda bir xil balandlikda tursin.",
+    "ovoz_matn": "Namunani diqqat bilan kuzat. Olti bo‘lakdan xuddi shunday robot yig‘: shakl, rang va bezaklar mos bo‘lsin. Qo‘l va oyoqlar ikki tomonda bir xil balandlikda tursin.",
+    "rasm": "images/topshiriq/variantlar/namuna-robot242.svg",
+    "izoh": "Avval katta bo‘laklarning joyini rejalashtir. So‘ng ikkala tomonni solishtirib tekshir."
+  },
+  "variants_before": [
+    {"order": 1, "rasm": "images/topshiriq/variantlar/bolak-doira-sariq-28x26.svg", "slot": "38.8,6.571,22.4,29.714"},
+    {"order": 2, "rasm": "images/topshiriq/variantlar/bolak-tortburchak-kok-40x30.svg", "slot": "34,36.286,32,34.286"},
+    {"order": 3, "rasm": "images/topshiriq/variantlar/bolak-kvadrat-yashil-15x15.svg", "slot": "21.2,38.571,12,17.143"},
+    {"order": 4, "rasm": "images/topshiriq/variantlar/bolak-kvadrat-yashil-15x15.svg", "slot": "66.8,38.571,12,17.143"},
+    {"order": 5, "rasm": "images/topshiriq/variantlar/bolak-uchburchak-tosariq-17x20.svg", "slot": "34.8,70.571,13.6,22.857"},
+    {"order": 6, "rasm": "images/topshiriq/variantlar/bolak-uchburchak-tosariq-17x20.svg", "slot": "51.6,70.571,13.6,22.857"}
+  ],
+  "variants_after": [
+    {"order": 1, "rasm": "images/topshiriq/variantlar/robot242-bosh.svg", "slot": "39.6,6.571,20.8,29.714"},
+    {"order": 2, "rasm": "images/topshiriq/variantlar/robot242-tana.svg", "slot": "34,36.286,32,34.286"},
+    {"order": 3, "rasm": "images/topshiriq/variantlar/robot242-qol.svg", "slot": "22,38.571,12,17.143"},
+    {"order": 4, "rasm": "images/topshiriq/variantlar/robot242-qol.svg", "slot": "66,38.571,12,17.143"},
+    {"order": 5, "rasm": "images/topshiriq/variantlar/robot242-oyoq.svg", "slot": "34.8,70.571,13.6,22.857"},
+    {"order": 6, "rasm": "images/topshiriq/variantlar/robot242-oyoq.svg", "slot": "51.6,70.571,13.6,22.857"}
+  ],
+  "teacher_notes": "Mavjud olti bo‘lak va ularning tekshiruv tartibi saqlangan. Ikki qo‘l bir xil rasmga, ikki oyoq bir xil rasmga ega; o‘rin almashsa ham yechim qabul qilinadi. Doira diametri 100:70 maydonda tenglashtirilgan. Namuna aynan variant tasvirlari va uyalar koordinatalaridan tuziladi."
+}

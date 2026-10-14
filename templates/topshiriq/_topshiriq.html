@@ -1,4 +1,4 @@
-{% load static %}
+{% load static savol_ovozi %}
 {# Bitta topshiriqning tanasi. Kvest ichida ham, alohida ham shu partial ishlatiladi. #}
 <div class="topshiriq" data-tur="{{ h.savol.tur }}" data-pk="{{ h.savol.pk }}">
 
@@ -9,6 +9,7 @@
     <div class="savol-matn">
         {{ h.savol.matn|linebreaksbr }}
         <button type="button" class="ovoz-btn" data-say="{{ h.savol.aytiladigan_matn }}"
+                data-audio="{{ h.savol.aytiladigan_matn|savol_ovozi }}"
                 aria-label="Savolni eshitish">🔊</button>
     </div>
 
@@ -18,7 +19,8 @@
             🔊 Audioni eshitish
         </button>
     {% elif h.savol.audio_matn %}
-        <button type="button" class="audio-btn" data-say="{{ h.savol.audio_matn }}">
+        <button type="button" class="audio-btn" data-say="{{ h.savol.audio_matn }}"
+                data-audio="{{ h.savol.audio_matn|savol_ovozi }}">
             🔊 Audioni eshitish
         </button>
     {% endif %}
@@ -159,7 +161,7 @@
     {# ===== Namunaga qarab yig'ish ===== #}
     {% elif h.savol.tur == 'qurish' %}
         <p class="yordam">Bo'lakni bo'sh joyga sudrang. Bosib tanlab ham qo'ysa bo'ladi.</p>
-        <div class="qurish" data-pk="{{ h.savol.pk }}">
+        <div class="qurish{% if h.savol.rasm == 'images/topshiriq/variantlar/namuna-kapalak247.svg' %} qurish-kapalak{% elif h.savol.rasm == 'images/topshiriq/variantlar/namuna-koprik254.svg' %} qurish-koprik{% endif %}" data-pk="{{ h.savol.pk }}">
             {% if h.savol.rasm %}
                 <figure class="q-namuna">
                     <img src="{% static h.savol.rasm %}" alt="Namuna">
