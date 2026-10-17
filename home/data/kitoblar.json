@@ -1,0 +1,78 @@
+{
+  "2": {
+    "nom": "Nutq sirlari",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Jabborova Donoxon Rustam qizi"
+  },
+  "3": {
+    "nom": "Maktabgacha yoshdagi bolalarda nutqni rivojlantirishning zamonaviy metodlari",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Asadova Vazira Bobirovna"
+  },
+  "4": {
+    "nom": "Montessori bilan ta’lim",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Kamolova Dinora Sultonmurod qizi"
+  },
+  "5": {
+    "nom": "Yosh tadqiqotchi",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Sayfullayev G‘ulom Mahmudovich, Nabiyeva Sarvinoz Otabek qizi"
+  },
+  "7": {
+    "nom": "Maktabgacha ta’lim yoshdagi bolalarni milliy qadriyatlar asosida tarbiyalash",
+    "mualliflar": "Kamilova Gulmira Alimovna, Qurbonova Go‘zal Rajab qizi, Hasanova Shahzoda Zafarjon qizi"
+  },
+  "8": {
+    "nom": "Fasllar sehridagi o‘yinlar",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Yo‘ldosheva Muattar Jamol qizi"
+  },
+  "9": {
+    "nom": "Do‘st bo‘lishni o‘rganamiz",
+    "mualliflar": "Kamilova Gulmira Alimovna, Qurbonova Go‘zal Rajab qizi, Hayotova Mukarrama Farxod qizi"
+  },
+  "10": {
+    "nom": "Sog‘lom tarbiya: xalqaro nigoh va zamonaviy yondashuvlar",
+    "mualliflar": "Kamilova Gulmira Alimovna, Qurbonova Go‘zal Rajab qizi, To‘xtayeva Sokina Qurbon qizi"
+  },
+  "yangi/1": {
+    "nom": "Maktabgacha ta’limda o‘yin va teatr faoliyatini tashkil etish metodikasi",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Qobilova Shahrizoda Yorqinjon qizi",
+    "order": 11
+  },
+  "yangi/2": {
+    "nom": "Адаптация к новой среде",
+    "mualliflar": "Камилова Гульмира Алимовна, Курбанова Гузаль Раджаб кизи, Киемова Мафтуна Хусен кизи",
+    "order": 12
+  },
+  "yangi/3": {
+    "nom": "Maktabgacha ta’lim tashkilotlari katta guruhi bolalarida gender tolerantlikni shakllantirishning pedagogik imkoniyatlari",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi",
+    "order": 13
+  },
+  "yangi/4": {
+    "nom": "Qiziqarli matematika",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Islomova Mehriniso Mirzoyevna",
+    "order": 14
+  },
+  "yangi/5": {
+    "duplicate_of": "yangi/4",
+    "duplicate_sha256": "1394d8cd26ad634e9404e0bb65ef5ad34427c828d04082c51e0bf9a28d5942e0"
+  },
+  "yangi/6": {
+    "nom": "Maktabgacha ta’lim tizimida STEAM texnologiyalari",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Jamolova Shoyira Uyg‘un qizi",
+    "order": 15
+  },
+  "yangi/7": {
+    "nom": "Kichik yurakchalar uchun mo‘jiza",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Nazarova Aziza Sohib qizi",
+    "order": 16
+  },
+  "yangi/8": {
+    "nom": "Bolam baxtli bo‘lsin desangiz…",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Halimova Zarnigor Tolmas qizi",
+    "order": 17
+  },
+  "yangi/9": {
+    "nom": "Let’s learn English!",
+    "mualliflar": "Qurbonova Go‘zal Rajab qizi, Rabiyeva Muhabbat Akmaljonovna",
+    "order": 18
+  }
+}

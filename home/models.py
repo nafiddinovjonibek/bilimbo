@@ -2,7 +2,11 @@ import json
 import re
 
 from django.contrib.auth.models import AbstractUser
+from django.core.exceptions import ValidationError
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
+
+from .storage import private_voice_storage
 
 
 class User(AbstractUser):
@@ -17,25 +21,89 @@ class User(AbstractUser):
         default=Role.OQUVCHI,
         verbose_name='Rol',
     )
+    teacher_approved = models.BooleanField(default=False, verbose_name='Tarbiyachi tasdiqlangan')
+    guruh = models.ForeignKey(
+        'Guruh', null=True, blank=True, on_delete=models.SET_NULL,
+        related_name='oquvchilar', verbose_name='Guruhi',
+    )
 
     class Meta:
         verbose_name = 'Foydalanuvchi'
         verbose_name_plural = 'Foydalanuvchilar'
+        constraints = [
+            models.CheckConstraint(
+                condition=models.Q(guruh__isnull=True) | models.Q(role='oquvchi', is_superuser=False),
+                name='only_students_have_group',
+            ),
+        ]
 
     def __str__(self):
         return f'{self.username} ({self.get_role_display()})'
 
     @property
     def is_superadmin(self):
-        return self.role == self.Role.SUPERADMIN
+        return self.is_superuser or self.role == self.Role.SUPERADMIN
 
     @property
     def is_tarbiyachi(self):
-        return self.role == self.Role.TARBIYACHI
+        return not self.is_superadmin and self.role == self.Role.TARBIYACHI
 
     @property
     def is_oquvchi(self):
-        return self.role == self.Role.OQUVCHI
+        return not self.is_superadmin and self.role == self.Role.OQUVCHI
+
+    @property
+    def is_approved_teacher(self):
+        return self.is_tarbiyachi and self.teacher_approved and self.is_active
+
+    def clean(self):
+        super().clean()
+        if self.guruh_id and not self.is_oquvchi:
+            raise ValidationError({'guruh': 'Guruhga faqat o‘quvchi biriktiriladi.'})
+        if self.pk and not self.is_tarbiyachi and self.guruhlar.exists():
+            raise ValidationError({'role': 'Avval bu tarbiyachining guruhlarini boshqa tarbiyachiga o‘tkazing.'})
+
+
+class Guruh(models.Model):
+    nom = models.CharField(max_length=100, verbose_name='Guruh nomi')
+    tarbiyachi = models.ForeignKey(
+        User, on_delete=models.PROTECT, related_name='guruhlar', verbose_name='Tarbiyachi',
+        limit_choices_to={'role': User.Role.TARBIYACHI, 'teacher_approved': True, 'is_active': True},
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['nom', 'pk']
+        verbose_name = 'Guruh'
+        verbose_name_plural = 'Guruhlar'
+
+    def __str__(self):
+        return self.nom
+
+    def clean(self):
+        super().clean()
+        if self.tarbiyachi_id and not self.tarbiyachi.is_approved_teacher:
+            raise ValidationError({'tarbiyachi': 'Faol va administrator tasdiqlagan tarbiyachini tanlang.'})
+
+
+class Kitob(models.Model):
+    manba = models.CharField(max_length=100, unique=True, verbose_name='Manba papkasi')
+    nom = models.CharField(max_length=255, verbose_name='Nomi')
+    mualliflar = models.TextField(blank=True, verbose_name='Mualliflar')
+    order = models.PositiveIntegerField(default=0, verbose_name='Tartib raqami')
+    sahifalar = models.PositiveIntegerField(verbose_name='Sahifalar (muqova bilan)')
+    faol = models.BooleanField(default=True, verbose_name='Faol')
+    fayl = models.CharField(max_length=255, editable=False)
+    muqova = models.CharField(max_length=255, editable=False)
+    fingerprint = models.CharField(max_length=64, editable=False)
+
+    class Meta:
+        ordering = ['order', 'pk']
+        verbose_name = 'Kitob'
+        verbose_name_plural = 'Kitoblar'
+
+    def __str__(self):
+        return self.nom
 
 
 class Bolim(models.Model):
@@ -286,7 +354,11 @@ class Savol(models.Model):
         """POST ma'lumotidan javobning to'g'riligini aniqlaydi."""
         if self.tur == self.Tur.TANLOV:
             javob = post.get(f'javob_{self.pk}') or post.get('javob')
-            return javob is not None and self.variantlar.filter(pk=javob, togri=True).exists()
+            try:
+                javob = int(javob)
+            except (ValueError, TypeError):
+                return False
+            return self.variantlar.filter(pk=javob, togri=True).exists()
 
         if self.tur in (self.Tur.KOPTANLOV, self.Tur.XARID):
             # Belgilangan to'plam to'g'ri to'plam bilan aynan mos kelishi kerak
@@ -474,11 +546,20 @@ class OvozJavob(models.Model):
         related_name='ovoz_javoblar',
         verbose_name='Savol',
     )
-    fayl = models.FileField(upload_to='ovoz/%Y/%m/', verbose_name='Ovoz fayli')
+    fayl = models.FileField(
+        storage=private_voice_storage, upload_to='ovoz/%Y/%m/', verbose_name='Ovoz fayli',
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     tarbiyachi_bahosi = models.PositiveSmallIntegerField(
         null=True, blank=True, verbose_name='Tarbiyachi bahosi (1–3 yulduz)',
+        validators=[MinValueValidator(1), MaxValueValidator(3)],
     )
+    tarbiyachi_izohi = models.TextField(blank=True, max_length=1000, verbose_name='Tarbiyachi izohi')
+    baholagan = models.ForeignKey(
+        User, null=True, blank=True, on_delete=models.SET_NULL,
+        related_name='baholangan_ovozlar', verbose_name='Baholagan',
+    )
+    baholangan_at = models.DateTimeField(null=True, blank=True, verbose_name='Baholangan vaqt')
 
     class Meta:
         ordering = ['-created_at']

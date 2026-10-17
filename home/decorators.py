@@ -15,7 +15,13 @@ def role_required(*roles):
         @wraps(view_func)
         @login_required
         def wrapper(request, *args, **kwargs):
-            if request.user.role in roles:
+            user = request.user
+            allowed = (
+                ('superadmin' in roles and user.is_superadmin)
+                or ('tarbiyachi' in roles and user.is_approved_teacher)
+                or ('oquvchi' in roles and user.is_oquvchi)
+            )
+            if allowed:
                 return view_func(request, *args, **kwargs)
             raise PermissionDenied
         return wrapper
@@ -25,3 +31,4 @@ def role_required(*roles):
 superadmin_required = role_required('superadmin')
 tarbiyachi_required = role_required('tarbiyachi')
 oquvchi_required = role_required('oquvchi')
+educator_required = role_required('superadmin', 'tarbiyachi')

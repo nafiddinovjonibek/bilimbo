@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Kirish cheklangan — Bilimbo{% endblock %}
+{% block content %}
+<section class="auth-card" style="text-align:center;">
+    <div class="auth-emoji">🔒</div><h1>Bu sahifaga kirish cheklangan</h1>
+    <p style="margin:16px 0;">Hisobingizning ruxsatlarini tekshiring yoki administratorga murojaat qiling.</p>
+    <a class="btn btn-green" href="{% url 'home' %}">Bosh sahifa</a>
+</section>
+{% endblock %}

@@ -22,6 +22,10 @@
             --ink: #35407d;
             --card-bg: #ffffff;
             --card-shadow: rgba(53, 64, 125, .18);
+            --scroll-track: #dff3ff;
+            --scroll-thumb: #a06cf0;
+            --scroll-thumb-end: #ff6b6b;
+            --scroll-thumb-hover: #8b55dc;
             /* Fon rasmi — ekran o'lchamiga qarab almashadi */
             --fon: url("{% static 'images/fon/kun.webp' %}");
             --fon-rang: #4fb3f0;
@@ -38,16 +42,39 @@
             --fon-rang: #141a4d;
             --yozuv-soya: 0 2px 6px rgba(0, 0, 0, .55);
         }
+        html:has(body.tun), body.tun {
+            --scroll-track: #1c2a6e;
+            --scroll-thumb: #a78bfa;
+            --scroll-thumb-end: #57c9f5;
+            --scroll-thumb-hover: #c4b5fd;
+        }
         @media (max-width: 720px) {
             :root { --fon: url("{% static 'images/fon/kun-mobile.webp' %}"); }
             body.tun { --fon: url("{% static 'images/fon/tun-mobile.webp' %}"); }
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scrollbar-width: thin;
+            scrollbar-color: var(--scroll-thumb) var(--scroll-track);
         }
-        html::-webkit-scrollbar { display: none; }
+        html { scrollbar-gutter: stable; }
+        /* Chromium/Safari: sayt tugmalariga mos yumaloq, rangli tutqich. */
+        @supports selector(::-webkit-scrollbar) {
+            * { scrollbar-width: auto; scrollbar-color: auto; }
+        }
+        ::-webkit-scrollbar { width: 12px; height: 12px; }
+        ::-webkit-scrollbar-track { background: var(--scroll-track); border-radius: 999px; }
+        ::-webkit-scrollbar-thumb {
+            min-height: 48px;
+            min-width: 48px;
+            background: linear-gradient(180deg, var(--scroll-thumb), var(--scroll-thumb-end));
+            border: 3px solid var(--scroll-track);
+            border-radius: 999px;
+        }
+        ::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
+        ::-webkit-scrollbar-corner { background: var(--scroll-track); }
         body {
             font-family: 'Baloo 2', 'Comic Sans MS', 'Segoe UI', sans-serif;
             color: var(--ink);
@@ -104,6 +131,13 @@
         .brand span:nth-child(6) { color: var(--purple); }
         .brand span:nth-child(7) { color: var(--coral); }
         .nav-right { display: flex; align-items: center; gap: 10px; }
+        .nav-books { color: var(--ink); text-decoration: none; font-size: 22px; padding: 3px 6px; border-radius: 10px; }
+        .nav-books:focus-visible { outline: 3px solid var(--purple); }
+        @media (max-width: 480px) {
+            .navbar .user-info { max-width: 20vw; }
+            .navbar .nav-right { gap: 6px; }
+            .navbar .nav-books { font-size: 20px; padding: 3px 4px; }
+        }
         .user-info { font-weight: 700; font-size: 15px; }
         .logout-icon { display: none; }
         .badge {
@@ -385,8 +419,10 @@
         <a href="{% url 'home' %}" class="brand"><span>B</span><span>i</span><span>l</span><span>i</span><span>m</span><span>b</span><span>o</span></a>
         <div class="nav-right">
             {% if user.is_authenticated %}
+                {% if user.is_superadmin or user.is_approved_teacher %}<a class="nav-books" href="{% url 'kabinet' %}" aria-label="Kabinet" title="Kabinet">🏫</a>{% endif %}
+                <a class="nav-books" href="{% url 'kutubxona' %}" aria-label="Kitoblar" title="Kitoblar">📚</a>
                 <span class="user-info">{{ user.get_full_name|default:user.username }}</span>
-                <span class="badge">{{ user.get_role_display }}</span>
+                <span class="badge">{% if user.is_superadmin %}Superadmin{% else %}{{ user.get_role_display }}{% endif %}</span>
                 <form action="{% url 'logout' %}" method="post" style="display:inline">
                     {% csrf_token %}
                     <button type="submit" class="btn btn-outline btn-logout">

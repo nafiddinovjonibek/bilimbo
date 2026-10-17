@@ -1,0 +1,18 @@
+{% extends 'portal/base.html' %}
+{% block portal_title %}✅ Tarbiyachilarni tasdiqlash{% endblock %}
+{% block portal_intro %}<p>Tasdiqlangan tarbiyachi o‘z guruhlarini boshqaradi va ulardagi bolalarning natijalarini ko‘radi.</p>{% endblock %}
+{% block portal_content %}
+<div class="portal-grid">
+{% for teacher in teachers %}<article class="portal-card">
+    <h2>{{ teacher.get_full_name|default:teacher.username }}</h2>
+    <p class="portal-muted">{{ teacher.username }} · {{ teacher.group_count }} ta guruh</p>
+    <p style="margin-top:10px;">{% if teacher.teacher_approved %}✅ Tasdiqlangan{% else %}⏳ Tasdiq kutilmoqda{% endif %}{% if not teacher.is_active %} · Hisob o‘chirilgan{% endif %}</p>
+    <form method="post" action="{% url 'tarbiyachi_approval' teacher.pk %}">{% csrf_token %}
+        <div class="portal-actions">
+            {% if teacher.teacher_approved %}<button class="btn btn-outline btn-small" name="action" value="revoke" type="submit">Tasdiqni bekor qilish</button>
+            {% else %}<button class="btn btn-green btn-small" name="action" value="approve" type="submit">Tarbiyachini tasdiqlash</button>{% endif %}
+        </div>
+    </form>
+</article>{% empty %}<section class="portal-card portal-empty">Hozircha tarbiyachi hisoblari yo‘q.</section>{% endfor %}
+</div>
+{% endblock %}

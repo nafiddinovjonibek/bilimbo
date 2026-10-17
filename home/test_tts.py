@@ -5,11 +5,13 @@ from unittest.mock import AsyncMock, patch
 
 from django.contrib import admin, messages
 from django.core.management import call_command
+from django.core.management.base import CommandError
 from django.template.loader import render_to_string
 from django.test import SimpleTestCase, TestCase, override_settings
 
 from .admin import SavolAdmin
 from .models import Savol
+from .narakeet import NarakeetConfigurationError, NarakeetError
 from .tts import generate_speech, prepare_speech, question_texts, speech_path, speech_url
 from .views import _oyin_holati
 
@@ -70,7 +72,46 @@ class SpeechCacheTests(SimpleTestCase):
         self.assertEqual(destination.read_bytes(), old_audio)
         self.assertEqual(list(destination.parent.glob('*.part')), [])
 
+    def test_odina_is_preferred_as_soon_as_its_audio_is_ready(self):
+        text = 'Olmani tanla.'
+        madina = speech_path(text, 'uz-UZ-MadinaNeural', '-10%')
+        fallback = self.root / 'static' / madina
+        fallback.parent.mkdir(parents=True)
+        fallback.write_bytes(b'audio' * 256)
+        with override_settings(BILIMBO_TTS_VOICE='odina', BILIMBO_TTS_RATE='+0%',
+                               BILIMBO_TTS_FALLBACK_VOICE='uz-UZ-MadinaNeural',
+                               BILIMBO_TTS_FALLBACK_RATE='-10%'):
+            self.assertTrue(speech_url(text).endswith(madina))
+            odina = speech_path(text)
+            preferred = self.root / 'static' / odina
+            preferred.parent.mkdir(parents=True)
+            preferred.write_bytes(b'odina audio' * 256)
+            self.assertTrue(speech_url(text).endswith(odina))
+            self.assertEqual(speech_url('Boshqa savol.'), '')
 
+    @override_settings(NARAKEET_API_KEY='')
+    def test_missing_odina_key_does_not_send_any_request(self):
+        with patch('home.tts.save_narakeet_audio', new=AsyncMock()) as save:
+            with self.assertRaises(NarakeetConfigurationError):
+                asyncio.run(generate_speech('Olmani tanla.', voice='odina', rate='+0%'))
+        save.assert_not_called()
+        self.assertFalse((self.root / 'static/audio/tts/odina').exists())
+
+    @override_settings(NARAKEET_API_KEY='test-only-key')
+    def test_narakeet_failures_are_not_retried_and_do_not_leave_partial_audio(self):
+        async def fail(text, path, rate, timeout):
+            path.write_bytes(b'incomplete audio')
+            raise NarakeetError('So‘rov natijasi noma’lum.')
+
+        with patch('home.tts.save_narakeet_audio', new=AsyncMock(side_effect=fail)) as save:
+            with self.assertRaises(NarakeetError):
+                asyncio.run(generate_speech('Olmani tanla.', voice='odina', rate='+0%', attempts=3))
+        self.assertEqual(save.await_count, 1)
+        self.assertEqual(list((self.root / 'static').rglob('*.part')), [])
+        self.assertEqual(list((self.root / 'static').rglob('*.mp3')), [])
+
+
+@override_settings(BILIMBO_TTS_VOICE='uz-UZ-MadinaNeural', BILIMBO_TTS_RATE='-10%')
 class QuestionSpeechTests(TestCase):
     def test_real_sounds_are_not_synthesized_and_kvest_steps_are_included(self):
         texts = list(question_texts(Savol.objects.all()))
@@ -112,3 +153,10 @@ class QuestionSpeechTests(TestCase):
                     model_admin._prepare_audio(object(), [question])
         self.assertEqual(Savol.objects.get(pk=question.pk).ovoz_matn, 'Yangi savol saqlandi.')
         self.assertEqual(message.call_args.kwargs['level'], messages.WARNING)
+
+    @override_settings(NARAKEET_API_KEY='')
+    def test_odina_command_reports_missing_key_before_starting_a_batch(self):
+        with patch('home.management.commands.generate_question_audio.generate_speech', new=AsyncMock()) as generate:
+            with self.assertRaisesMessage(CommandError, 'NARAKEET_API_KEY'):
+                call_command('generate_question_audio', voice='odina', limit=1)
+        generate.assert_not_called()

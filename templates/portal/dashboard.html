@@ -1,0 +1,37 @@
+{% extends 'portal/base.html' %}
+{% block portal_title %}{% if user.is_superadmin %}🏫 Boshqaruv{% else %}🏫 Guruhlarim{% endif %}{% endblock %}
+{% block portal_intro %}<p>Salom, {{ user.get_full_name|default:user.username }}! Guruhlar va o‘quvchilar rivojlanishini shu yerdan kuzating.</p>{% endblock %}
+{% block portal_content %}
+<div class="portal-stats{% if user.is_superadmin %} portal-stats-admin{% endif %}">
+    <div class="portal-stat"><strong>{{ groups|length }}</strong><span>Guruh</span></div>
+    <div class="portal-stat"><strong>{{ student_count }}</strong><span>O‘quvchi</span></div>
+    <div class="portal-stat"><strong>{{ result_count }}</strong><span>Bajarilgan topshiriq</span></div>
+    <div class="portal-stat"><strong>{{ pending_audio }}</strong><span>Baholash kutilayotgan ovoz</span></div>
+    {% if user.is_superadmin %}
+        <div class="portal-stat"><strong>{{ pending_teachers }}</strong><span>Tasdiq kutayotgan tarbiyachi</span></div>
+        <div class="portal-stat"><strong>{{ unassigned_count }}</strong><span>Guruhsiz o‘quvchi</span></div>
+    {% endif %}
+</div>
+{% if user.is_superadmin and pending_teachers %}<p class="portal-banner">Tarbiyachilar tasdiq kutmoqda. <a class="text-link" href="{% url 'tarbiyachilar' %}">Tasdiqlash →</a></p>{% endif %}
+{% if user.is_superadmin and unassigned_count %}<p class="portal-banner">Guruhga biriktirilmagan o‘quvchilar bor. <a class="text-link" href="{% url 'oquvchilar' %}?biriktirilmagan=1">Ko‘rish va biriktirish →</a></p>{% endif %}
+<div class="portal-actions" style="margin:0 0 24px;">
+    <a class="btn btn-green" href="{% url 'guruh_yangi' %}">＋ Guruh yaratish</a>
+    {% if user.is_superadmin and user.is_staff %}<a class="btn btn-outline" href="{% url 'admin:index' %}">Kontent va foydalanuvchilar</a>{% endif %}
+</div>
+<div class="portal-grid">
+    {% for group in groups %}
+    <article class="portal-card">
+        <h2>🏫 {{ group.nom }}</h2>
+        <p>{{ group.pupils }} ta o‘quvchi</p>
+        <p class="portal-muted">Tarbiyachi: {{ group.tarbiyachi.get_full_name|default:group.tarbiyachi.username }}</p>
+        {% if not group.tarbiyachi.is_approved_teacher %}<p class="errors">Tarbiyachi faol emas yoki tasdiqlanmagan.</p>{% endif %}
+        <div class="portal-actions">
+            <a class="btn btn-small" href="{% url 'oquvchilar' %}?guruh={{ group.pk }}">O‘quvchilar</a>
+            <a class="btn btn-green btn-small" href="{% url 'oquvchi_add' group.pk %}">O‘quvchi qo‘shish</a>
+            <a class="text-link" href="{% url 'guruh_edit' group.pk %}">Tahrirlash</a>
+            <a class="text-link" href="{% url 'guruh_delete' group.pk %}">O‘chirish</a>
+        </div>
+    </article>
+    {% empty %}<div class="portal-card portal-empty"><h2>Hozircha guruh yo‘q</h2><p>Guruh yaratib, o‘quvchilarni qo‘shishdan boshlang.</p></div>{% endfor %}
+</div>
+{% endblock %}

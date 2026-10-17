@@ -1,0 +1,41 @@
+{% extends 'portal/base.html' %}
+{% block portal_page_title %}{% if own_results %}Natijalarim{% else %}O‘quvchi natijalari{% endif %}{% endblock %}
+{% block portal_title %}{% if own_results %}⭐ Natijalarim{% else %}👧 {{ pupil.get_full_name|default:pupil.username }}{% endif %}{% endblock %}
+{% block portal_content %}
+<section class="portal-card">
+    <h2>{{ pupil.get_full_name|default:pupil.username }}</h2>
+    <p>Login: {{ pupil.username }}</p>
+    <p>{% if pupil.guruh %}🏫 {{ pupil.guruh.nom }} · {{ pupil.guruh.tarbiyachi.get_full_name|default:pupil.guruh.tarbiyachi.username }}{% else %}Guruhga biriktirilmagan{% endif %}</p>
+    <p style="margin-top:12px; font-weight:800;">{{ solved_count }} ta topshiriq · ⭐ {{ points }} ta o‘yin yulduzi</p>
+    {% if not own_results %}<div class="portal-actions"><a class="btn btn-small" href="{% url 'oquvchi_edit' pupil.pk %}">Ma’lumot va guruhni tahrirlash</a></div>{% endif %}
+</section>
+<div class="portal-grid">
+    {% for row in sections %}<article class="portal-card">
+        <p class="portal-muted">{{ row.section.bolim.name }}</p><h2>{{ row.section.name }}</h2>
+        <p>{{ row.solved }} / {{ row.total }} ta topshiriq · ⭐ {{ row.points }}</p>
+        <progress class="portal-progress" max="100" value="{{ row.percent }}" aria-label="{{ row.section.name }}: {{ row.percent }} foiz">{{ row.percent }}%</progress>
+    </article>{% endfor %}
+</div>
+<section class="portal-card" style="margin-top:24px;">
+    <h2>🎤 Ovozli javoblar va tarbiyachi baholari</h2>
+    <p class="portal-muted">Tarbiyachi bahosi ovozli javob uchun alohida beriladi. O‘yin yulduzlari topshiriq bajarilganda hisoblanadi.</p>
+    {% for voice in voices %}
+    <div style="border-top:1px solid #9aa8c64d; padding-top:16px; margin-top:16px;">
+        <h3>{{ voice.savol.sarlavha|default:voice.savol.matn }}</h3>
+        <p class="portal-muted">{{ voice.created_at|date:'d.m.Y H:i' }}</p>
+        <audio controls preload="none" src="{% url 'ovoz_fayl' voice.pk %}" aria-label="Ovozli javobni tinglash"></audio>
+        {% if voice.tarbiyachi_bahosi %}<p><strong>⭐ {{ voice.tarbiyachi_bahosi }} / 3</strong></p>{% else %}<p>Baholash kutilmoqda</p>{% endif %}
+        {% if voice.tarbiyachi_izohi %}<p>{{ voice.tarbiyachi_izohi|linebreaksbr }}</p>{% endif %}
+        {% if not own_results %}<a class="text-link" href="{% url 'ovoz_review' voice.pk %}">Baholash / izoh berish →</a>{% endif %}
+    </div>
+    {% empty %}<p style="margin-top:16px;">Hali ovozli javob yo‘q.</p>{% endfor %}
+</section>
+<section class="portal-card">
+    <h2>Oxirgi bajarilgan topshiriqlar</h2>
+    <div class="portal-table-wrap"><table class="portal-table"><thead><tr><th>Topshiriq</th><th>Yulduzlar</th><th>Sana</th></tr></thead>
+    <tbody>{% for result in recent_results %}<tr>
+        <td><a class="text-link" href="{% if own_results %}{% url 'savol' result.savol.pk %}{% else %}{% url 'sinov_savol' result.savol.pk %}{% endif %}">{{ result.savol.sarlavha|default:result.savol.matn }}</a></td>
+        <td>⭐ {{ result.stars }}</td><td>{{ result.updated_at|date:'d.m.Y H:i' }}</td>
+    </tr>{% empty %}<tr><td colspan="3">Hali topshiriq bajarilmagan.</td></tr>{% endfor %}</tbody></table></div>
+</section>
+{% endblock %}

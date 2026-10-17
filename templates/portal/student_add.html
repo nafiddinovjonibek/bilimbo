@@ -1,0 +1,23 @@
+{% extends 'portal/base.html' %}
+{% block portal_title %}👧 O‘quvchi qo‘shish{% endblock %}
+{% block portal_intro %}<p>{{ group.nom }}</p>{% endblock %}
+{% block portal_content %}
+<div class="portal-grid">
+    <section class="portal-card portal-form">
+        <h2>Yangi hisob yaratish</h2>
+        <p class="portal-muted" style="margin-bottom:18px;">Bola shu login va boshlang‘ich parol bilan o‘yinlarga kiradi.</p>
+        <form method="post">{% csrf_token %}<input type="hidden" name="action" value="create">
+            {% include 'portal/_fields.html' with form=new_form %}
+            <button type="submit" class="btn btn-green">Yaratish va biriktirish</button>
+        </form>
+    </section>
+    <section class="portal-card portal-form">
+        <h2>Mavjud hisobni biriktirish</h2>
+        <p class="portal-muted" style="margin-bottom:18px;">{% if user.is_superadmin %}O‘quvchi loginini kiriting. Boshqa guruhdan ham shu guruhga o‘tkazishingiz mumkin.{% else %}Guruhga hali biriktirilmagan o‘quvchi hisobini uning egasi bilan tasdiqlab qo‘shing.{% endif %}</p>
+        <form method="post">{% csrf_token %}<input type="hidden" name="action" value="attach">
+            {% include 'portal/_fields.html' with form=attach_form %}
+            <button type="submit" class="btn">Guruhga biriktirish</button>
+        </form>
+    </section>
+</div>
+{% endblock %}

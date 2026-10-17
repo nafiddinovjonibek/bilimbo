@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Kitoblar — Bilimbo{% endblock %}
+
+{% block extra_style %}
+<style>
+    .library-back { color: #fff; font-weight: 800; text-shadow: var(--yozuv-soya); }
+    .books-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 28px; }
+    .book-card { background: var(--card-bg); border-radius: 22px; padding: 18px; box-shadow: 0 6px 0 var(--card-shadow); display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+    .book-cover { display: block; background: #e8edf5; border-radius: 12px; overflow: hidden; }
+    .book-cover img { display: block; width: 100%; height: auto; aspect-ratio: 540 / 780; object-fit: contain; }
+    .book-card h2 { font-size: 20px; line-height: 1.25; }
+    .book-authors { font-size: 14px; line-height: 1.5; opacity: .85; }
+    .book-pages { font-size: 14px; font-weight: 700; margin-top: auto; }
+    .book-card .btn { text-align: center; }
+    .books-empty { margin: 30px auto; max-width: 500px; background: var(--card-bg); padding: 28px; border-radius: 22px; text-align: center; }
+    @media (max-width: 850px) { .books-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; } }
+    @media (max-width: 480px) { .books-grid { grid-template-columns: minmax(0, 1fr); max-width: 340px; margin-inline: auto; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<main class="container">
+    <a class="library-back" href="{% url 'home' %}">← Bosh sahifa</a>
+    <div class="page-title">
+        <h1>📚 Kitoblar</h1>
+        <p>O‘qing, o‘rganing va yangi g‘oyalarni kashf eting!</p>
+    </div>
+    <div class="books-grid">
+        {% for kitob in kitoblar %}
+        <article class="book-card">
+            <a class="book-cover" href="{% url 'kitob_oqish' kitob.pk %}" aria-label="{{ kitob.nom }} — o‘qish">
+                <img src="{% url 'kitob_muqova' kitob.pk %}" alt="{{ kitob.nom }} muqovasi" loading="lazy" width="540" height="780" draggable="false">
+            </a>
+            <h2>{{ kitob.nom }}</h2>
+            <p class="book-authors">{{ kitob.mualliflar }}</p>
+            <p class="book-pages">{{ kitob.sahifalar }} sahifa · Muqova bilan</p>
+            <a class="btn btn-green" href="{% url 'kitob_oqish' kitob.pk %}">Kitobni o‘qish →</a>
+        </article>
+        {% endfor %}
+    </div>
+    {% if not kitoblar %}<p class="books-empty">Kitoblar tez orada qo‘shiladi.</p>{% endif %}
+</main>
+{% endblock %}

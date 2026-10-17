@@ -14,8 +14,11 @@ from django.contrib.staticfiles import finders
 from django.templatetags.static import static
 from django.utils.html import strip_tags
 
+from .narakeet import require_api_key, save_audio as save_narakeet_audio
 
-VOICES = ('uz-UZ-MadinaNeural', 'uz-UZ-SardorNeural')
+
+EDGE_VOICES = ('uz-UZ-MadinaNeural', 'uz-UZ-SardorNeural')
+VOICES = (*EDGE_VOICES, 'odina')
 DEFAULT_VOICE = VOICES[0]
 DEFAULT_RATE = '-10%'
 EMOJI = re.compile('[\U0001f000-\U0001faff\u2190-\u2bff\ufe0f\u200d\u20e3]')
@@ -54,7 +57,7 @@ def speech_profile(voice=None, rate=None):
     voice = voice or getattr(settings, 'BILIMBO_TTS_VOICE', DEFAULT_VOICE)
     rate = rate or getattr(settings, 'BILIMBO_TTS_RATE', DEFAULT_RATE)
     if voice not in VOICES:
-        raise ValueError('Faqat Madina yoki Sardor o‘zbekcha ovozini tanlang.')
+        raise ValueError('Madina, Sardor yoki Odina o‘zbekcha ovozini tanlang.')
     if not re.fullmatch(r'[+-]\d{1,3}%', rate):
         raise ValueError('Ovoz tezligi +0% yoki -10% ko‘rinishida bo‘lishi kerak.')
     return voice, rate
@@ -77,11 +80,20 @@ def audio_ready(path):
 
 def speech_url(text):
     """Bu funksiya tarmoqqa chiqmaydi va sahifa ochilishini kutdirmaydi."""
-    relative = speech_path(text)
-    if not relative:
-        return ''
-    found = finders.find(relative)
-    return static(relative) if found and audio_ready(Path(found)) else ''
+    voice, rate = speech_profile()
+    profiles = [(voice, rate)]
+    if voice == 'odina':
+        fallback = getattr(settings, 'BILIMBO_TTS_FALLBACK_VOICE', '')
+        fallback_rate = getattr(settings, 'BILIMBO_TTS_FALLBACK_RATE', DEFAULT_RATE)
+        if fallback in EDGE_VOICES:
+            profiles.append((fallback, fallback_rate))
+    for selected_voice, selected_rate in profiles:
+        relative = speech_path(text, selected_voice, selected_rate)
+        if relative:
+            found = finders.find(relative)
+            if found and audio_ready(Path(found)):
+                return static(relative)
+    return ''
 
 
 def question_texts(questions):
@@ -103,17 +115,24 @@ async def generate_speech(text, voice=None, rate=None, *, force=False,
     if not force and audio_ready(destination):
         return relative, False
 
-    # Saytning ishlashi uchun edge-tts o'rnatilgan bo'lishi shart emas.
-    import edge_tts
+    if voice == 'odina':
+        require_api_key()
+        attempts = 1  # Narakeet pullik so'rovlarini avtomatik takrorlamaymiz.
+    else:
+        # Saytning ishlashi uchun edge-tts o'rnatilgan bo'lishi shart emas.
+        import edge_tts
 
     destination.parent.mkdir(parents=True, exist_ok=True)
     for attempt in range(attempts):
         with tempfile.NamedTemporaryFile(dir=destination.parent, suffix='.part', delete=False) as file:
             temporary = Path(file.name)
         try:
-            speech = edge_tts.Communicate(prepare_speech(text), voice, rate=rate,
-                                         connect_timeout=10, receive_timeout=20)
-            await asyncio.wait_for(speech.save(str(temporary)), timeout=timeout)
+            if voice == 'odina':
+                await save_narakeet_audio(prepare_speech(text), temporary, rate, timeout)
+            else:
+                speech = edge_tts.Communicate(prepare_speech(text), voice, rate=rate,
+                                             connect_timeout=10, receive_timeout=20)
+                await asyncio.wait_for(speech.save(str(temporary)), timeout=timeout)
             if not audio_ready(temporary):
                 raise RuntimeError('TTS xizmati bo‘sh audio qaytardi.')
             temporary.replace(destination)

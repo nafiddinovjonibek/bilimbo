@@ -1,0 +1,13 @@
+{% extends 'portal/base.html' %}
+{% block portal_title %}🧪 Topshiriqlarni sinash{% endblock %}
+{% block portal_intro %}<p>Barcha topshiriqlar ochiq. Sinovda ball, natija va ovozli yozuv saqlanmaydi.</p>{% endblock %}
+{% block portal_content %}
+{% for section in sections %}
+<section class="portal-card">
+    <p class="portal-muted">{{ section.bolim.emoji }} {{ section.bolim.name }}</p><h2>{{ section.name }}</h2>
+    <div class="portal-question-list">
+        {% for question in section.savollar.all %}<a href="{% url 'sinov_savol' question.pk %}">{{ question.tur_emoji }} {{ question.order }}. {{ question.sarlavha|default:question.matn }} <span class="portal-muted">· {{ question.get_daraja_display }}</span></a>{% endfor %}
+    </div>
+</section>
+{% endfor %}
+{% endblock %}

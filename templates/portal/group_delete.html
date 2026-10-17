@@ -1,0 +1,12 @@
+{% extends 'portal/base.html' %}
+{% block portal_title %}Guruhni o‘chirish{% endblock %}
+{% block portal_content %}
+<section class="portal-card portal-form">
+    <h2>{{ group.nom }}</h2>
+    <p>Guruh o‘chirilganda o‘quvchilar guruhsiz qoladi. Ularning hisoblari, natijalari va ovozli javoblari saqlanadi.</p>
+    <form method="post">{% csrf_token %}<div class="portal-actions">
+        <button class="btn btn-danger" type="submit">Guruhni o‘chirish</button>
+        <a class="btn btn-outline" href="{% url 'kabinet' %}">Bekor qilish</a>
+    </div></form>
+</section>
+{% endblock %}

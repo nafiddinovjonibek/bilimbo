@@ -1,0 +1,43 @@
+[
+  {
+    "provider": "Narakeet",
+    "voice": "Dilnoza",
+    "kind": "provider_demo",
+    "audio_url": "https://www.narakeet.com/samples/voices/dilnoza.mp3",
+    "source_url": "https://www.narakeet.com/languages/#group-Uzbek",
+    "seconds": 12.26
+  },
+  {
+    "provider": "Narakeet",
+    "voice": "Odina",
+    "selected": true,
+    "kind": "provider_demo",
+    "audio_url": "https://www.narakeet.com/samples/voices/odina.mp3",
+    "source_url": "https://www.narakeet.com/languages/#group-Uzbek",
+    "seconds": 10.92
+  },
+  {
+    "provider": "Narakeet",
+    "voice": "Gulnora",
+    "kind": "provider_demo",
+    "audio_url": "https://www.narakeet.com/samples/voices/gulnora.mp3",
+    "source_url": "https://www.narakeet.com/languages/#group-Uzbek",
+    "seconds": 11.18
+  },
+  {
+    "provider": "Narakeet",
+    "voice": "Zulfiya",
+    "kind": "provider_demo",
+    "audio_url": "https://www.narakeet.com/samples/voices/zulfiya.mp3",
+    "source_url": "https://www.narakeet.com/languages/#group-Uzbek",
+    "seconds": 11.66
+  },
+  {
+    "provider": "Narakeet",
+    "voice": "Shavkat",
+    "kind": "provider_demo",
+    "audio_url": "https://www.narakeet.com/samples/voices/shavkat.mp3",
+    "source_url": "https://www.narakeet.com/languages/#group-Uzbek",
+    "seconds": 10.8
+  }
+]

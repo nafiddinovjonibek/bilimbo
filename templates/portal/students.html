@@ -1,0 +1,22 @@
+{% extends 'portal/base.html' %}
+{% block portal_title %}{% if group %}👧 {{ group.nom }}{% else %}👧 O‘quvchilar{% endif %}{% endblock %}
+{% block portal_content %}
+<section class="portal-card">
+    <form class="portal-filter" method="get">
+        <div class="field"><label for="group-filter">Guruh</label><select class="input" name="guruh" id="group-filter">
+            <option value="">Barcha guruhlar</option>
+            {% for option in groups %}<option value="{{ option.pk }}" {% if group.pk == option.pk %}selected{% endif %}>{{ option.nom }}</option>{% endfor %}
+        </select></div>
+        <button type="submit" class="btn btn-small">Ko‘rsatish</button>
+    </form>
+    {% if group %}<p style="margin-bottom:20px;"><a class="btn btn-green btn-small" href="{% url 'oquvchi_add' group.pk %}">＋ O‘quvchi qo‘shish</a></p>{% endif %}
+    <div class="portal-table-wrap"><table class="portal-table">
+        <thead><tr><th>O‘quvchi</th><th>Guruh</th><th>Topshiriqlar</th><th>Yulduzlar</th><th></th></tr></thead>
+        <tbody>{% for pupil in students %}<tr>
+            <td><a class="text-link" href="{% url 'oquvchi_detail' pupil.pk %}">{{ pupil.get_full_name|default:pupil.username }}</a><br><span class="portal-muted">{{ pupil.username }}</span></td>
+            <td>{{ pupil.guruh.nom|default:'Biriktirilmagan' }}</td><td>{{ pupil.solved }}</td><td>⭐ {{ pupil.points|default:0 }}</td>
+            <td><a class="text-link" href="{% url 'oquvchi_edit' pupil.pk %}">Tahrirlash</a></td>
+        </tr>{% empty %}<tr><td colspan="5">O‘quvchilar yo‘q. Guruhni tanlab, o‘quvchi qo‘shing.</td></tr>{% endfor %}</tbody>
+    </table></div>
+</section>
+{% endblock %}

@@ -10,22 +10,33 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+import os
 from pathlib import Path
+
+from dotenv import load_dotenv
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / '.env')
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!c4$p4#$g!9@w7_f40lg8%!%rof51r)+00fs%r1-&@1vc-%6!h'
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DJANGO_DEBUG', 'true').lower() in {'1', 'true', 'yes'}
 
-ALLOWED_HOSTS = []
+# Development keeps the existing key; production requires a private signing key.
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', '')
+if not SECRET_KEY:
+    if not DEBUG:
+        raise ImproperlyConfigured('DJANGO_DEBUG=false uchun DJANGO_SECRET_KEY kiriting.')
+    SECRET_KEY = 'django-insecure-!c4$p4#$g!9@w7_f40lg8%!%rof51r)+00fs%r1-&@1vc-%6!h'
+
+ALLOWED_HOSTS = [host.strip() for host in os.getenv('DJANGO_ALLOWED_HOSTS', '').split(',') if host.strip()]
+SESSION_COOKIE_SECURE = not DEBUG
+CSRF_COOKIE_SECURE = not DEBUG
 
 
 # Application definition
@@ -117,10 +128,19 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-# Mikrofonli topshiriqlarda bolalar yozgan ovozlar shu yerga saqlanadi
+# Ommaviy media fayllari. Bolalar ovozlari alohida yopiq papkada saqlanadi.
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-# Savol ovozlari oldindan MP3 qilib saqlanadi. Muqobil: uz-UZ-SardorNeural.
-BILIMBO_TTS_VOICE = 'uz-UZ-MadinaNeural'
-BILIMBO_TTS_RATE = '-10%'
+# Kitoblar hech qachon MEDIA_URL yoki STATIC_URL orqali tarqatilmaydi.
+PRIVATE_BOOKS_ROOT = Path(os.getenv('PRIVATE_BOOKS_ROOT', str(BASE_DIR / 'private' / 'books')))
+PRIVATE_VOICES_ROOT = Path(os.getenv('PRIVATE_VOICES_ROOT', str(BASE_DIR / 'private' / 'voices')))
+BOOK_READER_TOKEN_AGE = 60 * 60
+BOOK_READER_REQUESTS_PER_MINUTE = 90
+
+# Tanlangan ovoz: Odina. Uning MP3 si tayyor bo'lguncha Madina keshi ijro etiladi.
+BILIMBO_TTS_VOICE = os.getenv('BILIMBO_TTS_VOICE', 'odina')
+BILIMBO_TTS_RATE = os.getenv('BILIMBO_TTS_RATE', '+0%')
+BILIMBO_TTS_FALLBACK_VOICE = 'uz-UZ-MadinaNeural'
+BILIMBO_TTS_FALLBACK_RATE = '-10%'
+NARAKEET_API_KEY = os.getenv('NARAKEET_API_KEY', '')

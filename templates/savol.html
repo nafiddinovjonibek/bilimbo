@@ -719,25 +719,36 @@
 
 {% block content %}
 <div class="savol-card">
+    {% if sinov %}
+        <div style="padding:14px; margin-bottom:18px; border-radius:16px; background:#f0e7ff; color:#6840a6; font-weight:700;">
+            🧪 Sinov rejimi — ball, natija va ovozli javob saqlanmaydi.
+            <a href="{% url 'sinov' %}" style="display:block; color:inherit; margin-top:6px;">← Barcha topshiriqlar</a>
+        </div>
+    {% endif %}
     <p id="ovoz-holat" role="status" aria-live="polite" hidden></p>
     {% if yutuq %}
         <div class="yutuq">
-            <span class="stars-big">{{ stars_str }}</span>
-            <h2>Barakalla! 🎉</h2>
-            <p>Siz {{ stars }} ta yulduz yutdingiz!</p>
+            {% if sinov %}
+                <h2>To‘g‘ri bajarildi! ✅</h2>
+                <p>Sinov yakunlandi.</p>
+            {% else %}
+                <span class="stars-big">{{ stars_str }}</span>
+                <h2>Barakalla! 🎉</h2>
+                <p>Siz {{ stars }} ta yulduz yutdingiz!</p>
+            {% endif %}
             {% if next_savol %}
-                <a href="{% url 'savol' next_savol.pk %}" class="btn btn-green">Keyingi topshiriq ➡️</a>
+                <a href="{% if sinov %}{% url 'sinov_savol' next_savol.pk %}{% else %}{% url 'savol' next_savol.pk %}{% endif %}" class="btn btn-green">Keyingi topshiriq ➡️</a>
             {% else %}
                 <p style="font-size:20px; color:var(--ink)">Siz bu bo'limchani tugatdingiz! 🏆</p>
             {% endif %}
-            <a href="{% url 'bolimcha' savol.bolimcha.pk %}" class="btn btn-outline">Topshiriqlar xaritasi</a>
+            <a href="{% if sinov %}{% url 'sinov' %}{% else %}{% url 'bolimcha' savol.bolimcha.pk %}{% endif %}" class="btn btn-outline">{% if sinov %}Barcha topshiriqlar{% else %}Topshiriqlar xaritasi{% endif %}</a>
         </div>
     {% else %}
         <div class="savol-head">
             <span class="savol-raqam">{{ savol.order }}-topshiriq / 10</span>
             <span class="daraja-badge {{ savol.daraja }}">{{ savol.get_daraja_display }}</span>
         </div>
-        <div class="potentsial">Hozir topsangiz: {{ potentsial_str }}</div>
+        {% if not sinov %}<div class="potentsial">Hozir topsangiz: {{ potentsial_str }}</div>{% endif %}
 
         {% if xato %}
             <div class="xato-msg">Xato! Yana urinib ko'ring 💪</div>

@@ -1,0 +1,18 @@
+{% extends 'portal/base.html' %}
+{% block portal_title %}🎤 Ovozli javoblar{% endblock %}
+{% block portal_content %}
+<div class="portal-actions" style="margin:0 0 24px;">
+    <a class="btn {% if not all_voices %}btn-green{% else %}btn-outline{% endif %}" href="{% url 'ovozlar' %}">Baholash kutilmoqda</a>
+    <a class="btn {% if all_voices %}btn-green{% else %}btn-outline{% endif %}" href="{% url 'ovozlar' %}?holat=hammasi">Hammasi</a>
+</div>
+<div class="portal-grid">
+{% for voice in voices %}<article class="portal-card">
+    <h2>{{ voice.user.get_full_name|default:voice.user.username }}</h2>
+    <p class="portal-muted">{{ voice.user.guruh.nom|default:'Guruhsiz' }} · {{ voice.created_at|date:'d.m.Y H:i' }}</p>
+    <h3>{{ voice.savol.sarlavha|default:voice.savol.matn }}</h3>
+    <audio controls preload="none" src="{% url 'ovoz_fayl' voice.pk %}" aria-label="Ovozli javobni tinglash"></audio>
+    <p>{% if voice.tarbiyachi_bahosi %}⭐ {{ voice.tarbiyachi_bahosi }} / 3{% else %}Baholash kutilmoqda{% endif %}</p>
+    <div class="portal-actions"><a class="btn btn-green btn-small" href="{% url 'ovoz_review' voice.pk %}">Tinglash va baholash</a><a class="text-link" href="{% url 'oquvchi_detail' voice.user.pk %}">Natijalar</a></div>
+</article>{% empty %}<section class="portal-card portal-empty">Bu ro‘yxatda ovozli javoblar yo‘q.</section>{% endfor %}
+</div>
+{% endblock %}

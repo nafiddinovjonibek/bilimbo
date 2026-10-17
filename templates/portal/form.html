@@ -1,0 +1,14 @@
+{% extends 'portal/base.html' %}
+{% block portal_page_title %}{{ page_title }}{% endblock %}
+{% block portal_content %}
+<section class="portal-card portal-form">
+    <form method="post">
+        {% csrf_token %}
+        {% include 'portal/_fields.html' %}
+        <div class="portal-actions">
+            <button class="btn btn-green" type="submit">Saqlash</button>
+            <a class="btn btn-outline" href="{{ back_url }}">Orqaga</a>
+        </div>
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{% block portal_page_title %}Kabinet{% endblock %} — Bilimbo{% endblock %}
+{% block extra_style %}{% include 'portal/_style.html' %}{% endblock %}
+{% block content %}
+<main class="container portal">
+    <div class="portal-head">
+        <h1>{% block portal_title %}{{ page_title|default:'Kabinet' }}{% endblock %}</h1>
+        {% block portal_intro %}{% endblock %}
+    </div>
+    <nav class="portal-nav" aria-label="Kabinet bo‘limlari">
+        {% if user.is_superadmin or user.is_approved_teacher %}
+            <a href="{% url 'kabinet' %}">🏫 Guruhlar</a>
+            <a href="{% url 'oquvchilar' %}">👧 O‘quvchilar</a>
+            <a href="{% url 'ovozlar' %}">🎤 Ovozli javoblar</a>
+            <a href="{% url 'sinov' %}">🧪 Topshiriqlarni sinash</a>
+            {% if user.is_superadmin %}<a href="{% url 'tarbiyachilar' %}">✅ Tarbiyachilar</a>{% endif %}
+        {% else %}<a href="{% url 'home' %}">🏠 Bosh sahifa</a>{% endif %}
+        <a href="{% url 'kutubxona' %}">📚 Kitoblar</a>
+    </nav>
+    {% for message in messages %}<p class="portal-notice" role="status">{{ message }}</p>{% endfor %}
+    {% block portal_content %}{% endblock %}
+</main>
+{% endblock %}

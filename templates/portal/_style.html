@@ -1,0 +1,53 @@
+<style>
+    .portal { max-width: 1060px; }
+    .portal-head { margin: 8px 0 20px; color: #fff; text-shadow: var(--yozuv-soya); }
+    .portal-head h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.25; margin-bottom: 8px; }
+    .portal-head p { font-weight: 700; }
+    .portal-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 24px; }
+    .portal-nav a { background: var(--card-bg); color: var(--ink); font-weight: 800; border-radius: 999px; padding: 9px 16px; text-decoration: none; box-shadow: 0 3px 0 var(--card-shadow); }
+    .portal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .portal-card { padding: 24px; background: var(--card-bg); border-radius: 22px; box-shadow: 0 5px 0 var(--card-shadow); min-width: 0; margin-bottom: 20px; }
+    .portal-grid .portal-card { margin-bottom: 0; }
+    .portal-card h2 { font-size: 23px; line-height: 1.3; margin-bottom: 10px; overflow-wrap: anywhere; }
+    .portal-card h3 { font-size: 18px; margin: 14px 0 6px; }
+    .portal-muted { font-size: 14px; opacity: .85; line-height: 1.5; }
+    .portal-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .portal .btn-small { padding: 8px 16px; font-size: 14px; }
+    .portal .btn-danger { background: #d84c5a; box-shadow: 0 5px 0 #b52f3d; }
+    .portal a.text-link { color: inherit; font-weight: 800; }
+    .portal-stats { display: grid; grid-template-columns: repeat(var(--stat-columns, 4), minmax(0, 1fr)); gap: 14px; margin-bottom: 24px; }
+    .portal-stats-admin { --stat-columns: 3; }
+    .portal-stat { background: var(--card-bg); padding: 18px; border-radius: 20px; box-shadow: 0 4px 0 var(--card-shadow); text-align: center; }
+    .portal-stat strong { display: block; font-size: 30px; }
+    .portal-stat span { font-size: 14px; font-weight: 700; }
+    .portal-banner { padding: 16px 20px; margin-bottom: 20px; background: #fff4cc; color: #755b08; border-radius: 18px; font-weight: 700; }
+    .portal-notice { padding: 14px 18px; margin-bottom: 16px; border-radius: 16px; background: #e7f7e9; color: #237237; font-weight: 700; }
+    .portal-table-wrap { overflow-x: auto; }
+    .portal-table { width: 100%; min-width: 560px; border-collapse: collapse; text-align: left; font-size: 15px; }
+    .portal-table th, .portal-table td { padding: 13px 10px; border-bottom: 1px solid #9aa8c64d; vertical-align: middle; }
+    .portal-table th { font-size: 13px; white-space: nowrap; }
+    .portal-table td { overflow-wrap: anywhere; }
+    .portal-table audio { max-width: 100%; width: 240px; }
+    .portal audio { display: block; max-width: 100%; margin: 12px 0; }
+    .portal-filter { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin-bottom: 20px; }
+    .portal-filter .field { flex: 1; min-width: 180px; margin-bottom: 0; }
+    .portal-form { max-width: 650px; }
+    .portal-form .helptext { display: block; font-size: 13px; opacity: .85; margin-top: 6px; }
+    .portal-form ul { padding-left: 20px; }
+    .portal-progress { width: 100%; height: 13px; border: none; border-radius: 999px; background: #dfe5ff; accent-color: var(--green); }
+    .portal-progress::-webkit-progress-bar { border-radius: 999px; background: #dfe5ff; }
+    .portal-progress::-webkit-progress-value { border-radius: 999px; background: var(--green); }
+    .portal-progress::-moz-progress-bar { border-radius: 999px; background: var(--green); }
+    .portal-question-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+    .portal-question-list a { color: inherit; text-decoration: none; padding: 12px; border: 2px solid #dbe4ff; border-radius: 14px; font-weight: 700; }
+    .portal-empty { text-align: center; padding: 34px 20px; }
+    @media (max-width: 720px) {
+        .portal-grid, .portal-question-list { grid-template-columns: minmax(0, 1fr); }
+        .portal-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .portal-card { padding: 20px 16px; }
+        .portal-nav { gap: 8px; }
+        .portal-nav a { padding: 8px 12px; font-size: 14px; }
+        .portal-table { font-size: 14px; }
+        .portal-table th, .portal-table td { padding: 12px 8px; }
+    }
+</style>

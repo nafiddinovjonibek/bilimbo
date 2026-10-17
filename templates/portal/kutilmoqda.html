@@ -1,0 +1,14 @@
+{% extends 'portal/base.html' %}
+{% block portal_page_title %}Tasdiq kutilmoqda{% endblock %}
+{% block portal_title %}👋 Xush kelibsiz, {{ user.first_name|default:user.username }}!{% endblock %}
+{% block portal_content %}
+<section class="portal-card portal-empty">
+    <h2>Tarbiyachi hisobingiz tasdiq kutmoqda</h2>
+    <p>Administrator tasdiqlagandan keyin guruh yaratish, o‘quvchilarni biriktirish va ularning natijalarini kuzatish ochiladi.</p>
+    <p class="portal-muted" style="margin-top:12px;">Tasdiqlash uchun platforma administratoriga murojaat qiling. Hozir kitoblardan foydalanishingiz mumkin.</p>
+    <div class="portal-actions" style="justify-content:center;">
+        <a class="btn btn-green" href="{% url 'kutubxona' %}">📚 Kitoblarni o‘qish</a>
+        <a class="btn btn-outline" href="{% url 'home' %}">Holatni yangilash</a>
+    </div>
+</section>
+{% endblock %}

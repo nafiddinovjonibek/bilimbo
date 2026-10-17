@@ -3,13 +3,15 @@ from collections import Counter
 from datetime import timedelta
 
 from django.contrib.auth import login, logout
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import LoginView
 from django.db.models import Count, Sum
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
+from django.views.decorators.http import require_POST
+from django.views.decorators.cache import never_cache
 
 from .forms import LoginForm, RegisterForm
+from .decorators import oquvchi_required
 from .models import Bolim, Bolimcha, OvozJavob, Savol, SavolNatija
 
 
@@ -30,9 +32,14 @@ def _seriya(kunlar):
     return n
 
 
+@never_cache
 def home(request):
     if not request.user.is_authenticated:
         return render(request, 'index.html', {'bolimlar': None})
+    if request.user.is_superadmin or request.user.is_tarbiyachi:
+        if request.user.is_tarbiyachi and not request.user.is_approved_teacher:
+            return render(request, 'portal/kutilmoqda.html')
+        return redirect('kabinet')
 
     bolimlar = Bolim.objects.prefetch_related('bolimchalar')
     natijalar = SavolNatija.objects.filter(user=request.user)
@@ -50,6 +57,7 @@ def home(request):
 
     return render(request, 'index.html', {
         'bolimlar': bolimlar,
+        'guruh': request.user.guruh,
         'yutuqlar': yutuqlar,
         'ballar': natijalar.aggregate(j=Sum('stars'))['j'] or 0,
         'seriya': _seriya({
@@ -64,7 +72,8 @@ def _asosiy_savollar(sub):
     return sub.savollar.filter(kvest__isnull=True)
 
 
-@login_required
+@never_cache
+@oquvchi_required
 def bolim(request, num):
     bolim = get_object_or_404(Bolim, order=num)
     items = []
@@ -80,7 +89,8 @@ def bolim(request, num):
     return render(request, 'bolim.html', {'bolim': bolim, 'items': items})
 
 
-@login_required
+@never_cache
+@oquvchi_required
 def bolimcha(request, pk):
     sub = get_object_or_404(Bolimcha, pk=pk)
     natijalar = {
@@ -170,7 +180,8 @@ def _ovozni_saqla(request, savol):
             OvozJavob.objects.create(user=request.user, savol=s, fayl=fayl)
 
 
-@login_required
+@never_cache
+@oquvchi_required
 def savol(request, pk):
     savol = get_object_or_404(Savol, pk=pk, kvest__isnull=True)
 
@@ -246,6 +257,7 @@ def register_view(request):
     return render(request, 'auth/register.html', {'form': form})
 
 
+@require_POST
 def logout_view(request):
     logout(request)
     return redirect('login')
